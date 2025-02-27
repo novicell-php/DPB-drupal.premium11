@@ -1,0 +1,1 @@
+Sitemap: https://drupal.dk/sitemap.xml

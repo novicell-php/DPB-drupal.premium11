@@ -1,0 +1,55 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a one-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set classes = [
+  'layout',
+  'layout--onecol',
+  'section'
+] %}
+
+<section {{ attributes.addClass(classes) }}>
+  {% if settings.column_width == 'section--width-full' %}
+    {% if header and header is not empty %}
+    <div class="layout-builder__section--header">
+      {{ header }}
+    </div>
+    {% endif %}
+    <div {{ region_attributes.content.addClass(['layout__region', 'layout__region--first']) }}>
+      {{ content.content }}
+    </div>
+  {% elseif settings.column_width == 'section--width-narrow' %}
+    <div class="container">
+      {% if header and header is not empty %}
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 layout-builder__section--header">
+          {{ header }}
+        </div>
+      </div>
+      {% endif %}
+      <div class="row">
+        <div {{ region_attributes.content.addClass(['col-xs-12', 'col-md-8', 'col-md-offset-2', 'layout-builder__region', 'js-layout-builder-region', 'layout__region', 'layout__region--first']) }}>
+          {{ content.content }}
+        </div>
+      </div>
+    </div>
+  {% else %}
+    {% if header and header is not empty %}
+    <div class="container layout-builder__section--header">
+      {{ header }}
+    </div>
+    {% endif %}
+    <div {{ region_attributes.content.addClass(['container', 'layout__region', 'layout__region--first']) }}>
+      {{ content.content }}
+    </div>
+  {% endif %}
+</section>
