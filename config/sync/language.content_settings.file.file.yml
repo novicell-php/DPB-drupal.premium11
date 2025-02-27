@@ -1,0 +1,13 @@
+uuid: 2e19ff3e-979e-4126-b5cf-33d73b357c4f
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+_core:
+  default_config_hash: qNOmFjyQ01zbfLLe4GsVfznXGXvHGfVnj34z3SA-hnE
+id: file.file
+target_entity_type_id: file
+target_bundle: file
+default_langcode: site_default
+language_alterable: false

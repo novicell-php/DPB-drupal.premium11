@@ -1,0 +1,13 @@
+uuid: 0ab73431-c43d-4c1e-83c0-cd5b1ea4bbeb
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 792cTjWOv-tu7Ue7iULELNLGYAc4J9AG5naMheDLelY
+id: media.appetiser_wide
+label: 'Appetiser wide'
+description: null
+targetEntityType: media
+cache: true

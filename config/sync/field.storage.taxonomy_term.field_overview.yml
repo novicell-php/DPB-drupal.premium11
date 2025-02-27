@@ -1,0 +1,24 @@
+uuid: 2f7b220b-1b32-4f69-a1e5-2207a2eae249
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_overview
+    - taxonomy
+_core:
+  default_config_hash: qyget5ncTMKui-Ht5hXWJNeCAGzdyPvalppQVgmm_lc
+id: taxonomy_term.field_overview
+field_name: field_overview
+entity_type: taxonomy_term
+type: overview_filter
+settings:
+  overview: article
+  allow_facets: 1
+  entity_bundle: ''
+module: entity_overview
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

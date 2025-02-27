@@ -1,0 +1,11 @@
+uuid: 55db7ddd-be51-432e-86b6-a9566192ba18
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: TDDunTZsznBk4f9FJJphqZTlP6UOwfhqgY7SZqwSdNY
+name: 'Article categories'
+vid: article_categories
+description: 'Used to group together related articles.'
+weight: 0
+new_revision: false

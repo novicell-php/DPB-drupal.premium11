@@ -1,0 +1,28 @@
+uuid: 6c882443-7ff3-49ac-b463-e98cfcccb0ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.spacer
+    - field.field.block_content.spacer.field_height
+_core:
+  default_config_hash: 24FTdZqfKcihxsyIt9FpRgyWLRDyo615kE5L6W9-PIQ
+id: block_content.spacer.default
+targetEntityType: block_content
+bundle: spacer
+mode: default
+content:
+  field_height:
+    type: value
+    weight: '0'
+    region: content
+    label: omit
+    settings: {  }
+    third_party_settings: {  }
+  label:
+    weight: -100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

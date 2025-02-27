@@ -1,0 +1,12 @@
+uuid: 6e4a7f91-0173-4dfe-b0ac-c9be84641c64
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+_core:
+  default_config_hash: iK-VPSqcotqL_VjTMWMuCVJjsXbiVr6vP3PnElS8gDs
+id: block_content.full_width
+label: 'Full width'
+targetEntityType: block_content
+cache: true

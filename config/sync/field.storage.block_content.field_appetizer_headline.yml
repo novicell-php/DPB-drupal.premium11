@@ -1,0 +1,23 @@
+uuid: 1be025a4-305e-4d92-9475-6ac50bc914be
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+_core:
+  default_config_hash: fcj-8zSMNCZco-VbaeMmEjMqd7eVj1YOOac0-5xFz6c
+id: block_content.field_appetizer_headline
+field_name: field_appetizer_headline
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

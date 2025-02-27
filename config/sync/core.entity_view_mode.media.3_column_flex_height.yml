@@ -1,0 +1,13 @@
+uuid: 781e64c2-1e4d-4f3e-a6fe-7cf05689a92a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: OJfXDA4ucORqdres8bB4aW-RYti8Rg9MOaoyJk5AFuE
+id: media.3_column_flex_height
+label: '3 column - dynamic height'
+description: null
+targetEntityType: media
+cache: true

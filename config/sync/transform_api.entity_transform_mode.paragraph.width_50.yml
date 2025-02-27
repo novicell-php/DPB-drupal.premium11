@@ -1,0 +1,12 @@
+uuid: f60e0839-be16-4d1b-b0a7-0cb099d20c42
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: Pygj9YIE8N5kml-u9sVyngcWXM1fya0gkns67bWoJcA
+id: paragraph.width_50
+label: 'Width 50'
+targetEntityType: paragraph
+cache: true

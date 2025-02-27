@@ -1,0 +1,62 @@
+uuid: 318eb08e-cf47-4b57-9204-62bd08215f4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.full_size_16_9_lg_
+    - image.style.full_size_16_9_md_
+    - image.style.full_size_16_9_sm_
+    - image.style.full_size_16_9_xl_
+    - image.style.full_size_16_9_xs_
+    - image.style.full_size_16_9_xsx2_
+    - image.style.full_size_16_9_xxs_
+    - image.style.full_size_16_9_xxsx2_
+  theme:
+    - premium
+_core:
+  default_config_hash: oMMwHIPlPkWHpPcVXNanfDMOnSlEl0mMITyD8zvyi6o
+id: full_width_16_9
+label: 'Full width (16:9)'
+image_style_mappings:
+  -
+    breakpoint_id: premium.xl
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: full_size_16_9_xl_
+  -
+    breakpoint_id: premium.lg
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: full_size_16_9_lg_
+  -
+    breakpoint_id: premium.md
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: full_size_16_9_md_
+  -
+    breakpoint_id: premium.sm
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: full_size_16_9_sm_
+  -
+    breakpoint_id: premium.xs
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: full_size_16_9_xs_
+  -
+    breakpoint_id: premium.xs
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: full_size_16_9_xsx2_
+  -
+    breakpoint_id: premium.xxs
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: full_size_16_9_xxs_
+  -
+    breakpoint_id: premium.xxs
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: full_size_16_9_xxsx2_
+breakpoint_group: premium
+fallback_image_style: full_size_16_9_xxs_

@@ -1,0 +1,12 @@
+uuid: 14ac136c-e8fa-4115-8eb0-c2321ce3a648
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: eRO0YqEIE6GpEz5JseM2vTBSSrO-WBM-ZYCzNHiY-iA
+id: media.list_view
+label: 'List view'
+targetEntityType: media
+cache: true

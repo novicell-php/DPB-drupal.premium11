@@ -1,0 +1,18 @@
+uuid: 37cc1608-1ee4-4968-89e1-23dbe38aa82a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - search_api_page
+    - system
+_core:
+  default_config_hash: 4R6P6lAZFB8dW4LyVpVdUF-55Gsx0Q6LCqi5qxYaQXA
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'view media'
+  - 'view search api pages'

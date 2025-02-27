@@ -1,0 +1,13 @@
+uuid: 8d907153-723e-4626-a7fc-e7efe247cb0c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: wEk-04HvhL8AZMCYOL_boxCQxZyUwPDaexDmMRa9xcQ
+id: media.backend_teaser
+label: 'Backend Teaser'
+description: null
+targetEntityType: media
+cache: true

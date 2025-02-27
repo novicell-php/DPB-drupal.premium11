@@ -1,0 +1,13 @@
+uuid: f3278f8c-ae0e-446d-b8aa-488f3f7a6b00
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_moderation
+_core:
+  default_config_hash: fHBCa4a5p6bB-T2_s7mLD4y5fNBiGH2Ko1pwNH1Suyw
+id: content_moderation_state.token
+label: Token
+description: null
+targetEntityType: content_moderation_state
+cache: true

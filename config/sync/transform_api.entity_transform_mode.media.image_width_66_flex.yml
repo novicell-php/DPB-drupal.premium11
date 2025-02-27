@@ -1,0 +1,12 @@
+uuid: 93323cdf-8216-4aa2-ad46-05c753000de2
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: GOBiRTNHb07XouBukZgWr9l1ILUW9uEAo8URIlWqcQQ
+id: media.image_width_66_flex
+label: 'Image - Width 66 flex'
+targetEntityType: media
+cache: true

@@ -1,0 +1,35 @@
+uuid: e83373c5-4166-417c-9fba-8ae4e1e6508c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.icon.field_media_category
+    - field.field.media.icon.field_media_icons
+    - media.type.icon
+  module:
+    - media_icons
+_core:
+  default_config_hash: cZ-NlL-h40HbH_VgNMDOi-SQyUd4eVgXV54gVoFw5P8
+id: media.icon.media_library
+targetEntityType: media
+bundle: icon
+mode: media_library
+content:
+  field_media_icons:
+    weight: 0
+    label: hidden
+    settings:
+      height: '180'
+      width: '180'
+    third_party_settings: {  }
+    type: icon_formatter
+    region: content
+hidden:
+  created: true
+  field_media_category: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

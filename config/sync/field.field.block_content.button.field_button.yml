@@ -1,0 +1,25 @@
+uuid: fdc4536b-ad32-41a0-901b-1c2a8f7d28cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.button
+    - field.storage.block_content.field_button
+  module:
+    - styles
+_core:
+  default_config_hash: TqL-wNEiA3_M3jFVdz2rj4_oO4wKgQOA1EDJzSeOlvY
+id: block_content.button.field_button
+field_name: field_button
+entity_type: block_content
+bundle: button
+label: Button
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: '17'
+  title: '2'
+field_type: styles_link_target

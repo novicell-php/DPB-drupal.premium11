@@ -1,0 +1,10 @@
+uuid: 9710b2b4-d8bf-42e3-a583-32f552735e92
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zqrBAjUDrOw6z5HAY4PuzrZ5Z-7-9hlkaqo-ErvrvVQ
+id: article_form
+label: 'Article overview'
+revision: 0
+description: 'A block showing articles with options for filters and pagination.'

@@ -1,0 +1,35 @@
+uuid: b7310923-7859-4e2f-8ee0-c42076b24310
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.article_types.field_overview
+    - taxonomy.vocabulary.article_types
+  module:
+    - entity_overview
+    - text
+_core:
+  default_config_hash: xdmZVJBvGT5wxd1mdRZP16GE4YcX67WFtCxaMMDI1_E
+id: taxonomy_term.article_types.default
+targetEntityType: taxonomy_term
+bundle: article_types
+mode: default
+content:
+  description:
+    type: text_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_overview:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: teaser
+    third_party_settings: {  }
+    type: overview_filter_form
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

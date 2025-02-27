@@ -1,0 +1,12 @@
+uuid: 03c946c7-35d3-4ebc-b3b2-2d91ead18885
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: T0svoCNUCQhllTFyburOj9VubAqQMCWDHnSiNzlAcx4
+id: media.hero_width_33
+label: 'Hero - Width 33'
+targetEntityType: media
+cache: true

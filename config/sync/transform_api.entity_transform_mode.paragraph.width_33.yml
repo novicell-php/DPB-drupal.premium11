@@ -1,0 +1,12 @@
+uuid: 3dd36a0f-72ff-4531-94a2-fb820c59dfdd
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: DBSpqgRy4uv51pK_HUDm_Zix301xulJNEK5Yhhx9zdM
+id: paragraph.width_33
+label: 'Width 33'
+targetEntityType: paragraph
+cache: true

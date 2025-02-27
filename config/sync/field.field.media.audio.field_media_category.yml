@@ -1,0 +1,31 @@
+uuid: da4d9a0a-4df9-456d-a8f9-51297c8a6bcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_category
+    - media.type.audio
+    - taxonomy.vocabulary.media_categories
+_core:
+  default_config_hash: 7-xN0AtEwsvrvD6BcUXE3-UwRKysGPWLXQlTmeMjBPk
+id: media.audio.field_media_category
+field_name: field_media_category
+entity_type: media
+bundle: audio
+label: 'Media category'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      media_categories: media_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

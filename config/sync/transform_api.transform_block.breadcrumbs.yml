@@ -1,0 +1,17 @@
+uuid: 916c1366-89b0-4933-912f-85c11f37cee0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: gxP9wtduxyQGRQLofbgR0JhjWxOgT5DTJ_KRw5ofrkw
+id: breadcrumbs
+region: content
+weight: '-2'
+provider: null
+plugin: breadcrumbs
+settings:
+  id: breadcrumbs
+  label: Breadcrumbs
+  provider: transform_api
+  label_display: null
+visibility: {  }

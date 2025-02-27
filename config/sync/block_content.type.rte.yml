@@ -1,0 +1,10 @@
+uuid: 983ad671-0a90-4767-b2b5-48071a7f83e5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sdbk9La6XQho0osV8n6K2rKy7_qeyN7MERlx39Yqa1I
+id: rte
+label: Text
+revision: 0
+description: 'A block containing an rich text editor.'

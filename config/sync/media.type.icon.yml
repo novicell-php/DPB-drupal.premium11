@@ -1,0 +1,18 @@
+uuid: 33f83b2c-cca3-4a6d-8019-02db250ae426
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_icons
+_core:
+  default_config_hash: '-QXJYNeXvKjBmr2bA62r2a0TCG_DWRVndUdPoj9Cruk'
+id: icon
+label: Icon
+description: 'An icon from a local icon pack.'
+source: media_icons
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_icons
+field_map:
+  icon_id: name

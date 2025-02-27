@@ -1,0 +1,12 @@
+uuid: d9f7278f-da84-4a71-b4e5-87738411ef08
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+_core:
+  default_config_hash: 8HjseCtey-__P1EvJ9A7-2kknPhyESkkxBcaKh2sHwU
+id: block_content.width_33
+label: 'Width 33'
+targetEntityType: block_content
+cache: true

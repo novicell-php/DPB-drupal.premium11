@@ -1,0 +1,11 @@
+uuid: 778d63f1-a85f-4d24-835a-e748eabb6d82
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xhZUsCcoDZt6Q6hpKXNqtBGjdLca-km5lBgZr-EEi_Q
+name: 'Article types'
+vid: article_types
+description: 'The available types of articles.'
+weight: 0
+new_revision: false

@@ -1,0 +1,13 @@
+uuid: 9e6723b2-b046-4983-96df-c869f27a4705
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.backend_hero
+_core:
+  default_config_hash: 17wEbFDfpvXICu74DNyT7q_0gNq20yzeDRnXUqNtBto
+id: backend_hero
+label: 'Backend Hero'
+image_style_mappings: {  }
+breakpoint_group: responsive_image
+fallback_image_style: backend_hero

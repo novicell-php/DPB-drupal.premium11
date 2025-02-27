@@ -1,0 +1,104 @@
+uuid: 977eedbc-06bc-463a-bf29-9dfd1e86af66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.article.body
+    - field.field.node.article.field_article_categories
+    - field.field.node.article.field_article_type
+    - field.field.node.article.field_description
+    - field.field.node.article.field_header
+    - field.field.node.article.field_hide_breadcrumb
+    - field.field.node.article.field_hide_title
+    - field.field.node.article.field_list_date
+    - field.field.node.article.field_list_media
+    - field.field.node.article.field_meta_tags
+    - field.field.node.article.layout_builder__layout
+    - node.type.article
+  module:
+    - datetime
+    - entity_reference_revisions
+    - layout_builder
+    - layout_builder_restrictions
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      whitelisted_blocks: {  }
+      blacklisted_blocks: {  }
+      restricted_categories: {  }
+      allowed_layouts: {  }
+_core:
+  default_config_hash: MPH0xWosBjCbxPv7RhMaPznJBnPAJT06vK8GDR7H2AE
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  field_article_categories:
+    weight: 8
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_article_type:
+    weight: 7
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_header:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_list_date:
+    weight: 4
+    label: hidden
+    settings:
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
+    third_party_settings: {  }
+    type: datetime_time_ago
+    region: content
+  field_list_media:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_hide_breadcrumb: true
+  field_hide_title: true
+  field_meta_tags: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

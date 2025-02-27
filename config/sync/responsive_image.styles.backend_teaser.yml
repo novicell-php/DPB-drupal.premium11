@@ -1,0 +1,13 @@
+uuid: a5201143-1661-4b35-b77a-44a8dde5f6f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.backend_teaser
+_core:
+  default_config_hash: 0JHHA1oo99tJTGlmWRRZ8Ca5lxY3oczUpIhiXleX32c
+id: backend_teaser
+label: 'Backend Teaser'
+image_style_mappings: {  }
+breakpoint_group: responsive_image
+fallback_image_style: backend_teaser

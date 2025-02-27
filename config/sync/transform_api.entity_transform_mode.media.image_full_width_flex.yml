@@ -1,0 +1,12 @@
+uuid: f0d366f9-de3b-49ee-b865-2e449b01d25c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: d_U3j7u5whuEB2VJTLscqPJMNzks5ZcB8VZwASRcDRM
+id: media.image_full_width_flex
+label: 'Image - Full width flex'
+targetEntityType: media
+cache: true

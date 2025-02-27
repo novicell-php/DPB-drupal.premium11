@@ -1,0 +1,21 @@
+uuid: 1c9ed8f0-3fe9-408a-b230-29914a466375
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+_core:
+  default_config_hash: 2n0qGDX2x-GfaYF70_8lWsn74fM9ABbJGbo9Pm5r-3U
+id: block_content.field_appetizer_text
+field_name: field_appetizer_text
+entity_type: block_content
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

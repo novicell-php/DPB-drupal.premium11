@@ -1,0 +1,14 @@
+uuid: d6d8a0e6-dd28-4a4e-9409-72a6b6304f41
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.monitor
+  module:
+    - user
+id: user_remove_role_action.monitor
+label: 'Remove the Monitor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: monitor

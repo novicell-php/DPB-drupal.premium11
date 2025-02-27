@@ -1,0 +1,22 @@
+uuid: 462b73c7-a358-40bc-b0c9-7a01bbc31992
+langcode: en
+status: true
+dependencies:
+  module:
+    - premium_tools
+  theme:
+    - premium
+_core:
+  default_config_hash: VUtTdngmSKCMZWg46HDmYH9wyJIiBkgn5fWDNDY7bJc
+id: languageswitcher
+theme: premium
+region: header
+weight: 0
+provider: null
+plugin: 'improved_language_block:language_interface'
+settings:
+  id: 'improved_language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: premium_tools
+visibility: {  }

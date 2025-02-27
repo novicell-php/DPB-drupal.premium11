@@ -1,0 +1,31 @@
+uuid: eab973a1-8f57-4bec-bf25-90e174d0ed1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.articles
+    - field.field.block_content.articles.field_articles
+  module:
+    - entity_overview_transform
+_core:
+  default_config_hash: IdhL5mQ-x6l1O_BHKGHtGWzJQrVelQOyDwShF_8TU5g
+id: block_content.articles.default
+targetEntityType: block_content
+bundle: articles
+mode: default
+content:
+  field_articles:
+    type: entity_overview_list
+    weight: '0'
+    region: content
+    label: omit
+    settings:
+      transform_mode: teaser
+    third_party_settings: {  }
+  label:
+    weight: -100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

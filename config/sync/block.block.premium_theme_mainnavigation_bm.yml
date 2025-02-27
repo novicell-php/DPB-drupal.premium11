@@ -1,0 +1,27 @@
+uuid: abead004-809a-4d2c-b64d-8dcb1f843fe3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - premium_theme
+_core:
+  default_config_hash: 3KpxCUBrKgv6fxAS-eaYaVehXMHQ7CFMyA3cNKh--VU
+id: premium_theme_mainnavigation_bm
+theme: premium_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

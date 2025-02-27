@@ -1,0 +1,12 @@
+uuid: 41b303a7-abc2-4f52-874b-b1c4ac920ea6
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: mBxmX8nO4x6XkYysQiVia2Oqv3TQWAFcSVaL4V4mkRg
+id: media.image_width_100
+label: 'Image - Width 100'
+targetEntityType: media
+cache: true

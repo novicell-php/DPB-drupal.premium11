@@ -1,0 +1,18 @@
+uuid: 223d0d3d-6bbf-4e03-8767-2890eb1fb1e3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nJoGi-SMlcerqhMitQetp3quI4exl5YN6NJJ_PpPYv8
+name: 2_column_sm_flex_height
+label: '2 column (SM) - dynamic height'
+effects:
+  1c883ebd-44c0-476b-be6f-e0c0fbbbf97f:
+    uuid: 1c883ebd-44c0-476b-be6f-e0c0fbbbf97f
+    id: image_scale
+    weight: 1
+    data:
+      width: 891
+      height: null
+      upscale: true
+pipeline: __default__

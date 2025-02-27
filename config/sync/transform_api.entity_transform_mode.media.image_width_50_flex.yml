@@ -1,0 +1,12 @@
+uuid: 6946b986-f50b-483d-9121-655dd87dc220
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: IyKr4fYMTWp6bRorWDnuDhaXAWaAt9_i1UFqsrfFXpM
+id: media.image_width_50_flex
+label: 'Image - Width 50 flex'
+targetEntityType: media
+cache: true

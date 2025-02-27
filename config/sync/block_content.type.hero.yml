@@ -1,0 +1,10 @@
+uuid: a6ec1a56-eb55-45f6-97bf-6f115aedd661
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nUyRRHGhpXUHeAZ1h4VDnrYg4AlQ7ROgBkv-eIqCoVg
+id: hero
+label: Hero
+revision: 0
+description: 'A block contains a hero.'

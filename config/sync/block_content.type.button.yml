@@ -1,0 +1,10 @@
+uuid: 15b7cf59-a3da-490d-be9c-568f0347a9f8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c9s5-SMg_Iinl-mFselCq-ounnim-OataRS2Xsmqyvg
+id: button
+label: Button
+revision: 0
+description: "A block that contains a button.\t"

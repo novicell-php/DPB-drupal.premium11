@@ -1,0 +1,10 @@
+uuid: 4c1d5a05-6032-46b0-9bcf-c90e1a241d38
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KDyxhO9yYAVcFoZbg8ceVd_pyoc2-LxoDBZL6jw3NPY
+id: quote
+label: Quote
+revision: 0
+description: 'A block contains a quote.'

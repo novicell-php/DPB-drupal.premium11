@@ -1,0 +1,12 @@
+uuid: b0af8734-2546-40b3-aa80-199f5a137267
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: mZw0HVtqnO7a62g7lDIkBOwqZK1wCwFX9MAyTbE9Yko
+id: paragraph.full_width
+label: 'Full width'
+targetEntityType: paragraph
+cache: true

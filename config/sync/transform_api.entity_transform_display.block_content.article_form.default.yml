@@ -1,0 +1,31 @@
+uuid: b79ece9b-0780-4092-83ca-2fd9e2b21e61
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.article_form
+    - field.field.block_content.article_form.field_articles_form
+  module:
+    - entity_overview_transform
+_core:
+  default_config_hash: 2h_mCp1FVnOiHAoQABijf_ozjH7DicYvjtHYTpUpyek
+id: block_content.article_form.default
+targetEntityType: block_content
+bundle: article_form
+mode: default
+content:
+  field_articles_form:
+    type: entity_overview_form
+    weight: '0'
+    region: content
+    label: omit
+    settings:
+      transform_mode: teaser
+    third_party_settings: {  }
+  label:
+    weight: -100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

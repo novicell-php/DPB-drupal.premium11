@@ -1,0 +1,28 @@
+uuid: a183cbbe-6e92-43ed-9858-4d82227a2013
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.code
+    - field.field.block_content.code.field_code_content
+_core:
+  default_config_hash: QOVWxkU9FKRkwVxVrrUEWmBmWiMfDe3EgYInIBzpuC4
+id: block_content.code.default
+targetEntityType: block_content
+bundle: code
+mode: default
+content:
+  field_code_content:
+    type: value
+    weight: '0'
+    region: content
+    label: omit
+    settings: {  }
+    third_party_settings: {  }
+  label:
+    weight: -100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

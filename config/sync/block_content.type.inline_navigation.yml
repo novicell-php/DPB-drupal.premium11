@@ -1,0 +1,10 @@
+uuid: a6f07a50-6ab3-4f47-9da2-735843f67d7c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: q44CE8l_WTQfatB-Dc_pZanJoD9OVQZjHKeH0qUBSzw
+id: inline_navigation
+label: 'Inline Navigation'
+revision: 0
+description: 'A block containing a inline navigation.'

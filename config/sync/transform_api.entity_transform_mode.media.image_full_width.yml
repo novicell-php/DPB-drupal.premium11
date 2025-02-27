@@ -1,0 +1,12 @@
+uuid: 8b33ec4d-e8da-4a48-aee3-64e378a552dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: LDmABX-E3IFaDjNawlRn3xJFFPxSsVZ9m-d4MC1sGHg
+id: media.image_full_width
+label: 'Image - Full width'
+targetEntityType: media
+cache: true

@@ -1,0 +1,22 @@
+uuid: 53e8b9ea-b904-4d7e-a4ca-3e28544a8b0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+  module:
+    - node
+_core:
+  default_config_hash: 0I8OcLoCv7DHWWVr9AoRhTG-0ZJbHVmdeTR94Tqto08
+id: article
+label: Article
+entity_bundles:
+  node:
+    - article
+fields:
+  field_article_categories: checkboxes
+  field_article_type: checkboxes
+engine_id: entity_query
+engine_settings: {  }
+sort_field: field_list_date
+show_total: ''

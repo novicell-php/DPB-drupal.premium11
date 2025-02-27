@@ -1,0 +1,36 @@
+uuid: 148b5873-7463-4b4a-a85a-5310922fe415
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.button
+    - field.field.block_content.button.field_button
+    - field.field.block_content.button.field_button_alignment
+  module:
+    - styles
+_core:
+  default_config_hash: ZOFZ_CpQn2bM1VvaYkqtGMwAQiR11frdsdO_S_9FY90
+id: block_content.button.default
+targetEntityType: block_content
+bundle: button
+mode: default
+content:
+  field_button:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      style: ''
+      target_blank: 0
+    third_party_settings: {  }
+    type: styles_link_target
+    region: content
+  field_button_alignment:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  info: true
+  langcode: true

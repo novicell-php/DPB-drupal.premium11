@@ -1,0 +1,22 @@
+uuid: 2e656c12-ec09-41f7-8818-9c5bc8625320
+langcode: en
+status: true
+dependencies:
+  module:
+    - premium_core
+  theme:
+    - premium_theme
+_core:
+  default_config_hash: K2KRoV4WGa3mWHQndvf6ZS760bX4yFx_AL88Jf68EfU
+id: premium_theme_pageheader
+theme: premium_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: premium_hero_block
+settings:
+  id: premium_hero_block
+  label: Pageheader
+  label_display: '0'
+  provider: premium_core
+visibility: {  }

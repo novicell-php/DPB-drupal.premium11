@@ -1,0 +1,10 @@
+uuid: bb82b562-bde1-40f7-8100-7982149a53e5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6FfEWwuUCdYyZ4XVENT40Og6Ot9RjxzWDlfuk_snMd4
+id: articles
+label: Articles
+revision: 0
+description: 'A block listing a few articles.'

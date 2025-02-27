@@ -1,0 +1,13 @@
+uuid: 7d568481-b189-473f-a9a6-ba91756e054d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 0p3Nm7wVF0jBTge6-oDmhbmbJACU9uifURTJzpitXiA
+id: media.backend_hero
+label: 'Backend Hero'
+description: null
+targetEntityType: media
+cache: true

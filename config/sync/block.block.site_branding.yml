@@ -1,0 +1,25 @@
+uuid: 40ac425e-bc4a-4fc1-9a5a-96e4ee5d678e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - premium
+_core:
+  default_config_hash: 2TnhsNr2DCJYb2IURNAnF1ZDR4C3TAnvmlTcCXsNSXo
+id: site_branding
+theme: premium
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,34 @@
+uuid: 5c9cf415-4ad1-4993-be6a-7f2e4e9af4a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.icon.field_media_category
+    - field.field.media.icon.field_media_icons
+    - media.type.icon
+  module:
+    - media_icons
+_core:
+  default_config_hash: 0IxY6YrVTbti3T4KFbGIhH2bg8GvSW1CtE_BBPHczUw
+id: media.icon.default
+targetEntityType: media
+bundle: icon
+mode: default
+content:
+  field_media_icons:
+    weight: 0
+    label: hidden
+    settings:
+      height: 100%
+      width: 100%
+    third_party_settings: {  }
+    type: icon_formatter
+    region: content
+hidden:
+  created: true
+  field_media_category: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

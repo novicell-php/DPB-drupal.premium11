@@ -1,0 +1,16 @@
+uuid: 03085933-9803-403e-9a35-e21aa1f60a31
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.divider
+_core:
+  default_config_hash: TFJ538IGJAWyWMbMIOTgPcojyteFga8qqCOCc-F21oo
+id: block_content.divider.default
+targetEntityType: block_content
+bundle: divider
+mode: default
+content: {  }
+hidden:
+  info: true
+  langcode: true

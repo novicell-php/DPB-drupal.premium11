@@ -1,0 +1,22 @@
+uuid: 2d664516-8f01-4a8a-af66-e646a22d7c96
+langcode: en
+status: true
+dependencies:
+  module:
+    - premium_tools
+  theme:
+    - premium_theme
+_core:
+  default_config_hash: VUtTdngmSKCMZWg46HDmYH9wyJIiBkgn5fWDNDY7bJc
+id: premium_theme_languageswitcher
+theme: premium_theme
+region: header
+weight: 0
+provider: null
+plugin: 'improved_language_block:language_interface'
+settings:
+  id: 'improved_language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: premium_tools
+visibility: {  }

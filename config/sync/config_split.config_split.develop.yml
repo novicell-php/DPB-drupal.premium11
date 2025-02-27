@@ -1,0 +1,24 @@
+uuid: 61992171-123b-4327-b262-06fef1e51fe9
+langcode: en
+status: false
+dependencies: {  }
+_core:
+  default_config_hash: 6MV3sUZDz-MZd1IdCzIes3CqpUf6EFft1WFwkY4nIfU
+id: develop
+label: Develop
+description: ''
+weight: 0
+stackable: false
+storage: null
+folder: ../config/develop
+module:
+  admin_toolbar_tools: 0
+  devel: 0
+  devel_generate: 0
+  update: 0
+  upgrade_status: 0
+  webform_devel: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }
+no_patching: false

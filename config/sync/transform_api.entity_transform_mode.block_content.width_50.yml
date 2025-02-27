@@ -1,0 +1,12 @@
+uuid: 6e420e5a-4b73-4fd2-acda-9166d64a1bb5
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+_core:
+  default_config_hash: nDA5VyYJXRCY9Ah5m_Lb35f6kqRbId2jkolQJ85l3ow
+id: block_content.width_50
+label: 'Width 50'
+targetEntityType: block_content
+cache: true

@@ -1,0 +1,30 @@
+uuid: f6462a94-828e-47f0-8887-eaefed3b61c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.article_form
+    - field.field.block_content.article_form.field_articles_form
+  module:
+    - entity_overview
+_core:
+  default_config_hash: 2RmdGrvxL17d6y-8Yhm-KUMqzp2QJ53aeh2SVA-qVrM
+id: block_content.article_form.default
+targetEntityType: block_content
+bundle: article_form
+mode: default
+content:
+  field_articles_form:
+    type: overview_filter_widget
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  translation:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  info: true
+  langcode: true

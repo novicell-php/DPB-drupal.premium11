@@ -1,0 +1,29 @@
+uuid: 2df6fe53-fb1f-4bd7-a9bd-ddcb9800dffd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.field.block_content.hero.field_hero
+_core:
+  default_config_hash: JIDuNR4L6pBgvXPHc0lHsfhSWYFRmlamxQdeJ2yJymA
+id: block_content.hero.default
+targetEntityType: block_content
+bundle: hero
+mode: default
+content:
+  field_hero:
+    type: entity_transform
+    weight: '0'
+    region: content
+    label: omit
+    settings:
+      transform_mode: default
+    third_party_settings: {  }
+  label:
+    weight: -100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

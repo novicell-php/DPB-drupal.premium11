@@ -1,0 +1,72 @@
+uuid: c8c4284d-fcbd-4a18-9d4e-a21399a7abbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.inline_hero.field_background
+    - field.field.paragraph.inline_hero.field_cta
+    - field.field.paragraph.inline_hero.field_overlay
+    - field.field.paragraph.inline_hero.field_text
+    - field.field.paragraph.inline_hero.field_text_color
+    - field.field.paragraph.inline_hero.field_text_position
+    - field.field.paragraph.inline_hero.field_title
+    - paragraphs.paragraphs_type.inline_hero
+  module:
+    - styles
+    - text
+_core:
+  default_config_hash: T8NL_mLHSHPsGPoO-kjs6FswwHZqIpxIp4SSnqA63hA
+id: paragraph.inline_hero.default
+targetEntityType: paragraph
+bundle: inline_hero
+mode: default
+content:
+  field_background:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_cta:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: '80'
+      url_only: ''
+      url_plain: ''
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: styles_link_target
+    region: content
+  field_overlay:
+    weight: 2
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_text:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_text_position:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: styles_class
+    region: content
+hidden:
+  field_text_color: true
+  field_title: true
+  search_api_excerpt: true

@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: fJg13zzILdXsi1A5HjnS4Iob1cNHs6Od6fuXbe2ijLM
+regions:
+  content: Content
+default_region: content
+collapse_regions: false

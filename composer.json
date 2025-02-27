@@ -73,9 +73,12 @@
         "drupal/webform": "^6.3@beta",
         "drupal/webp": "^1.0@RC",
         "drush/drush": "^13",
+        "novicell/drupal-premium-theme": "^1.0",
         "novicell/dynamic_key_value": "^1.0",
         "novicell/media_icons": "^1.0",
+        "novicell/premium_articles": "^3.0",
         "novicell/premium_core": "^1.0",
+        "novicell/premium_headless": "^2.0",
         "novicell/premium_profile": "^11.0",
         "novicell/premium_search": "^1.0",
         "novicell/premium_tools": "^1.0",
@@ -83,9 +86,7 @@
         "novicell/styles": "^1.0",
         "oomphinc/composer-installers-extender": "^2.0",
         "vlucas/phpdotenv": "^5.3",
-        "wikimedia/composer-merge-plugin": "^2.0",
-        "novicell/drupal-premium-theme": "^1.0",
-        "novicell/premium_articles": "^3.0"
+        "wikimedia/composer-merge-plugin": "^2.0"
     },
     "require-dev": {
         "drupal/devel": "^5.0",

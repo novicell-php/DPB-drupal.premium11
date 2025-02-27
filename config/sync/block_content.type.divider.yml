@@ -1,0 +1,10 @@
+uuid: 223be6f3-883c-4cc7-8af8-7e86ac373e4d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rHj0msK71uw3IYZP3RjHcfUi6SxNzHyYZ3givdkhsn8
+id: divider
+label: Divider
+revision: 0
+description: 'A block that contains an divider'

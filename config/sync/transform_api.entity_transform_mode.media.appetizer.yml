@@ -1,0 +1,12 @@
+uuid: 31f3dda9-578f-438b-83de-e8d4ac0df7aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: zjmVAbs4AtTww2eSwWTHLtxIy4Y_D9vfnYBk-lIWmS8
+id: media.appetizer
+label: Appetizer
+targetEntityType: media
+cache: true

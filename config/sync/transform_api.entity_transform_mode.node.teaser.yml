@@ -1,0 +1,12 @@
+uuid: bed77ab5-290a-45fb-89af-323e2de18094
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: w_P1Can0RQC-owK7C0RVQb9SFP_8-QirFTmAPOjori0
+id: node.teaser
+label: Teaser
+targetEntityType: node
+cache: true

@@ -1,0 +1,12 @@
+uuid: 7a6a9980-1269-41ae-8c73-cd462385cff5
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: dRQbVCSZ2ckavv6UbWmq4Cfj_7UU08dQURP0YOTnvp0
+id: media.hero_width_66
+label: 'Hero - Width 66'
+targetEntityType: media
+cache: true

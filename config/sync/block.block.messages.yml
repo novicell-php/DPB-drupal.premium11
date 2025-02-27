@@ -1,0 +1,22 @@
+uuid: 7473f5d7-ea10-4181-b2d8-09e57f23e50f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - premium
+_core:
+  default_config_hash: Mu1sa4Wlz8FtuHE4El1hhPdhhG2svg93_sJiko-2dpI
+id: messages
+theme: premium
+region: preheader
+weight: -2
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

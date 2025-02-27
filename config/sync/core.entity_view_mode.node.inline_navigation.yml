@@ -1,0 +1,13 @@
+uuid: c5bdf251-48f8-49b6-9643-60e143c5402e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 0h2uuJNaCDa2xDVxP37hvBdAbpls_RLu7quvkv1_QnE
+id: node.inline_navigation
+label: 'Inline navigation'
+description: null
+targetEntityType: node
+cache: true

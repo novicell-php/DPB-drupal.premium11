@@ -1,0 +1,14 @@
+uuid: 42809d64-3df3-4555-bcf1-cc20e3179802
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5fYQaGTVIkL7svGQnBoIu2PliuID4IfKuyWFmkqQgdE
+id: node
+label: Content
+tags:
+  description: '[node:field_description:value]'
+  image_src: '[node:field_list_media:entity:field_media_image]'
+  content_language: '[node:langcode]'
+  title: '[node:title] | [site:name]'
+  canonical_url: '[node:url]'

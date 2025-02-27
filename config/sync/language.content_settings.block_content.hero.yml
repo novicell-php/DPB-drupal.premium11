@@ -1,0 +1,13 @@
+uuid: 65a5b6d0-9e95-4b84-ae4a-111708899f4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+_core:
+  default_config_hash: 5iQ1RMzSq6Cp1SlEXkzwi45kpgbXi4jULEQZQsIieSQ
+id: block_content.hero
+target_entity_type_id: block_content
+target_bundle: hero
+default_langcode: site_default
+language_alterable: false
