@@ -8,15 +8,15 @@ runtime:
     - apcu
 variables:
   php:
-    memory_limit: 512M
+    memory_limit: 256M
   env:
     N_PREFIX: /app/.global
 dependencies:
   php:
     composer/composer: "^2.1"
-disk: 2048
+disk: 4096
 resources:
-    base_memory: 512
+    base_memory: 256
     memory_ratio: 256
 mounts:
   "/webroot/sites/drupal.dk/files": "shared:files/files"
