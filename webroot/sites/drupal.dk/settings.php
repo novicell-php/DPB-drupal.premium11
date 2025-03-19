@@ -90,7 +90,7 @@
  */
 $databases = [];
 $databases['default']['default'] = array (
-  'database' => getenv('DB_SCHEMA'),
+  'database' => getenv('DB_NAME'),
   'username' => getenv('DB_USER'),
   'password' => getenv('DB_PASS'),
   'prefix' => '',
