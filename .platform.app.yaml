@@ -58,8 +58,8 @@ web:
 hooks:
   deploy: |
     set -e
-    mkdir -p /app/webroot/sites/drupal.dk/files/translations
-    chmod -R 755 /app/webroot/sites/drupal.dk/files/translations
+    mkdir -p /app/webroot/sites/premium.drupal.dk/files/translations
+    chmod -R 755 /app/webroot/sites/premium.drupal.dk/files/translations
     cd /app/webroot
     /app/vendor/bin/drush -y sset system.maintenance_mode 1 --input-format=integer
     /app/vendor/bin/drush -y cache-rebuild
