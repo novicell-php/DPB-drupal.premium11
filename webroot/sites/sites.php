@@ -56,8 +56,8 @@
  * @see https://www.drupal.org/documentation/install/multi-site
  */
 $sites['premium.localhost'] = 'premium.drupal.dk';
-$sites['staging.premium.premium.drupal.dk'] = 'premium.drupal.dk';
-$sites['prod.premium.premium.drupal.dk'] = 'premium.drupal.dk';
+$sites['staging.premium.drupal.dk'] = 'premium.drupal.dk';
+$sites['prod.premium.drupal.dk'] = 'premium.drupal.dk';
 
 if (file_exists(__DIR__ . '/sites.local.php')) {
   include __DIR__ . '/sites.local.php';
