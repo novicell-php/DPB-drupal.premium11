@@ -1,0 +1,23 @@
+uuid: b93350ec-2cf7-4617-83ed-bd9bed2ed010
+langcode: en
+status: true
+dependencies: {  }
+id: content
+label: Content
+entity_bundles: {  }
+fields:
+  text: search
+  owner: entity_autocomplete
+  type: checkboxes
+engine_id: search_api
+engine_settings:
+  notice: ''
+  index: content
+  title_field: title
+  owner_field: uid
+  fulltext_fields:
+    rendered_item: rendered_item
+    field_description: 0
+    title: 0
+sort_field: created
+show_total: filtered

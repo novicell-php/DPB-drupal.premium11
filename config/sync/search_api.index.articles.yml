@@ -1,0 +1,94 @@
+uuid: fcd3a139-4185-4f05-996d-6d16e931cd35
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.storage.node.body
+    - field.storage.node.field_article_categories
+    - field.storage.node.field_article_type
+    - field.storage.node.field_list_date
+    - search_api.server.database
+  module:
+    - node
+id: articles
+name: Articles
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  field_article_categories:
+    label: Categories
+    datasource_id: 'entity:node'
+    property_path: field_article_categories
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_article_categories
+  field_article_type:
+    label: Type
+    datasource_id: 'entity:node'
+    property_path: field_article_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_article_type
+  field_list_date:
+    label: 'List date'
+    datasource_id: 'entity:node'
+    property_path: field_list_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_list_date
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        - anonymous
+      view_mode:
+        'entity:node':
+          ':default': full
+          article: ':default'
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - article
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+server: database

@@ -64,7 +64,7 @@ field_settings:
     type: text
     configuration:
       roles:
-        anonymous: anonymous
+        - anonymous
       view_mode:
         'entity:node':
           page: full
@@ -122,6 +122,9 @@ processor_settings:
   entity_status: {  }
   hierarchy_ancestors: {  }
   html_filter:
+    weights:
+      preprocess_index: -3
+      preprocess_query: -6
     all_fields: false
     fields:
       - rendered_item
@@ -133,21 +136,21 @@ processor_settings:
       h2: 3
       h3: 2
       strong: 2
-    weights:
-      preprocess_index: -3
-      preprocess_query: -6
   ignorecase:
+    weights:
+      preprocess_index: -5
+      preprocess_query: -8
     all_fields: false
     fields:
       - field_description
       - rendered_item
       - title
-    weights:
-      preprocess_index: -5
-      preprocess_query: -8
   language_with_fallback: {  }
   rendered_item: {  }
   stopwords:
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
     all_fields: false
     fields:
       - field_description
@@ -189,28 +192,25 @@ processor_settings:
       - was
       - will
       - with
-    weights:
-      preprocess_index: -10
-      preprocess_query: -10
   tokenizer:
+    weights:
+      preprocess_index: -2
+      preprocess_query: -5
     all_fields: false
     fields:
       - field_description
       - rendered_item
       - title
-    ignored: ._-
     spaces: ''
+    ignored: ._-
     overlap_cjk: 1
     minimum_word_size: '3'
-    weights:
-      preprocess_index: -2
-      preprocess_query: -5
 tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: true
   cron_limit: 50
   delete_on_fail: true
+  index_directly: true
   track_changes_in_references: true
 server: database

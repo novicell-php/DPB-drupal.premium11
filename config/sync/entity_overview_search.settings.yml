@@ -1,0 +1,17 @@
+overview: content
+filter:
+  overview: content
+  fields:
+    text: ''
+    owner: ''
+    type: {  }
+  facets:
+    - sort
+    - text
+    - owner
+  sort: relevance
+  count: 10
+  pagination: false
+  page: 0
+  show_total: filtered
+  view_mode: teaser
