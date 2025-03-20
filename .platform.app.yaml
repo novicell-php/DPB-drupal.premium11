@@ -53,7 +53,7 @@ web:
       allow: true
       expires: 1y
       passthru: /index.php
-      root: webroot/sites/drupal.dk/files
+      root: webroot/sites/premium.drupal.dk/files
       scripts: false
 hooks:
   deploy: |

@@ -55,10 +55,9 @@
  * @see \Drupal\Core\DrupalKernel::getSitePath()
  * @see https://www.drupal.org/documentation/install/multi-site
  */
-$sites['drupal.dk'] = 'drupal.dk';
-$sites['drupal.localhost'] = 'drupal.dk';
-$sites['staging.drupal.drupal.dk'] = 'drupal.dk';
-$sites['prod.drupal.drupal.dk'] = 'drupal.dk';
+$sites['premium.localhost'] = 'premium.drupal.dk';
+$sites['staging.premium.premium.drupal.dk'] = 'premium.drupal.dk';
+$sites['prod.premium.premium.drupal.dk'] = 'premium.drupal.dk';
 
 if (file_exists(__DIR__ . '/sites.local.php')) {
   include __DIR__ . '/sites.local.php';

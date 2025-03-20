@@ -1,3 +1,3 @@
 <?php
 
-$options['uri'] = 'drupal.dk';
+$options['uri'] = 'premium.drupal.dk';
