@@ -56,6 +56,8 @@ web:
       root: webroot/sites/premium.drupal.dk/files
       scripts: false
 hooks:
+  build: |
+    cd webroot/sites/premium.drupal.dk/themes/custom/premium && npm ci && npm run build:prod
   deploy: |
     set -e
     mkdir -p /app/webroot/sites/premium.drupal.dk/files/translations
