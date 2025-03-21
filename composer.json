@@ -57,7 +57,7 @@
         "drupal/layout_builder_restrictions": "^3.0",
         "drupal/linkit": "^7.0",
         "drupal/metatag": "^2.0",
-        "drupal/noreferrer": "^1.0",
+        "drupal/noreferrer": "^3.0",
         "drupal/paragraphs": "^1.0",
         "drupal/paragraphs_asymmetric_translation_widgets": "^1.0",
         "drupal/pathauto": "^1.0",
