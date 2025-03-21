@@ -19,8 +19,8 @@ resources:
     base_memory: 256
     memory_ratio: 256
 mounts:
-  "/webroot/sites/drupal.dk/files": "shared:files/files"
-  "/webroot/sites/drupal.dk/files/translations": "shared:files/translations"
+  "/webroot/sites/premium.drupal.dk/files": "shared:files/files"
+  "/webroot/sites/premium.drupal.dk/files/translations": "shared:files/translations"
   "/tmp": "shared:files/tmp"
   "/private": "shared:files/private"
   "/.drush": "shared:files/.drush"
@@ -57,7 +57,7 @@ web:
       scripts: false
 hooks:
   build: |
-    cd webroot/sites/premium.drupal.dk/themes/custom/premium && npm ci && npm run build:prod
+    cd /app/webroot/sites/premium.drupal.dk/themes/custom/premium && npm ci && npm run build:prod
   deploy: |
     set -e
     mkdir -p /app/webroot/sites/premium.drupal.dk/files/translations
