@@ -8,7 +8,6 @@ dependencies:
     - search_api.server.database
   module:
     - node
-    - premium_search
     - user
 _core:
   default_config_hash: P1uTz8NXfuDp0pJuybTDywGXy8DfwHbwbxM8ThIWVrw
@@ -119,8 +118,9 @@ processor_settings:
   content_access:
     weights:
       preprocess_query: -4
+  custom_value: {  }
   entity_status: {  }
-  hierarchy_ancestors: {  }
+  entity_type: {  }
   html_filter:
     weights:
       preprocess_index: -3

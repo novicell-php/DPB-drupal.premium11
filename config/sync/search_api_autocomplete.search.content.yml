@@ -1,0 +1,36 @@
+uuid: b4d185d9-e1e6-423c-ab23-492d49a6f670
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_overview.overview.content
+    - search_api.index.content
+  module:
+    - entity_overview_search_api
+id: content
+label: Content
+index_id: content
+suggester_settings:
+  live_results:
+    fields: {  }
+    highlight:
+      enabled: false
+      field: ''
+    suggest_keys: false
+    view_modes:
+      'entity:node':
+        article: ''
+        page: ''
+suggester_weights:
+  live_results: 0
+suggester_limits:
+  live_results: 3
+search_settings:
+  'entity_overview:content': {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  delay: null
+  submit_button_selector: ':submit'
+  autosubmit: true
