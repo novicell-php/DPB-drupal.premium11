@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.hero
     - core.entity_view_mode.node.full
     - field.field.node.page.body
     - field.field.node.page.field_description
@@ -16,14 +17,59 @@ dependencies:
   module:
     - layout_builder
     - layout_builder_restrictions
+    - premium_core
+    - premium_theme_helper
     - user
 third_party_settings:
   layout_builder:
     enabled: true
     allow_custom: true
+    sections:
+      -
+        layout_id: layout_hero_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: ''
+          color_theme: {  }
+          column_spacing_top: section--spacing-top-none
+          column_spacing_bottom: section--spacing-bottom-none
+          column_width: section--width-full
+        components:
+          f0840a9e-c299-445d-95cb-1039cf7ea356:
+            uuid: f0840a9e-c299-445d-95cb-1039cf7ea356
+            region: content
+            configuration:
+              id: 'inline_block:hero'
+              label: 'Inline block'
+              label_display: ''
+              provider: layout_builder
+              context_mapping: {  }
+              view_mode: full
+              block_id: 1
+              block_revision_id: 1
+              block_serialized: null
+            weight: 0
+            additional: {  }
+          0cf2e503-e9da-4630-930d-2b7219b96e2d:
+            uuid: 0cf2e503-e9da-4630-930d-2b7219b96e2d
+            region: content
+            configuration:
+              id: premium_breadcrumb_block
+              label: Breadcrumbs
+              label_display: '0'
+              provider: premium_core
+              context_mapping: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings:
+          layout_builder_lock:
+            lock:
+              6: 6
+              8: 8
+            regions: {  }
   layout_builder_restrictions:
     allowed_block_categories:
-      - 'Chaos Tools'
       - 'Content fields'
       - 'Custom block types'
       - Devel
@@ -42,6 +88,11 @@ third_party_settings:
         - layout_onecol
         - layout_twocol_section
         - layout_threecol_section
+        - layout_hero_section
+      denylisted_blocks: {  }
+      allowlisted_blocks:
+        Premium:
+          - premium_breadcrumb_block
       restricted_categories:
         - Devel
       whitelisted_blocks:
@@ -61,6 +112,28 @@ third_party_settings:
           - basic
         'Inline blocks':
           - 'inline_block:basic'
+    entity_view_mode_restriction_by_region:
+      allowed_layouts:
+        - layout_onecol
+        - layout_twocol_section
+        - layout_threecol_section
+        - layout_hero_section
+      allowlisted_blocks:
+        layout_hero_section:
+          all_regions:
+            'Inline blocks':
+              - 'inline_block:hero'
+      denylisted_blocks:
+        layout_threecol_section:
+          all_regions:
+            'Inline blocks':
+              - 'inline_block:appetizer'
+              - 'inline_block:hero'
+        layout_twocol_section:
+          all_regions:
+            'Inline blocks':
+              - 'inline_block:appetizer'
+              - 'inline_block:hero'
 _core:
   default_config_hash: 3gEG_f13mhXS_39_cFYNgEywgm3tCe7wzoDSIuoe18U
 id: node.page.full

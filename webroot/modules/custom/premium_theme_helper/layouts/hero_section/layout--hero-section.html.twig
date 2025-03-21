@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a one-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set classes = [
+  'layout',
+  'layout--hero_section',
+  'section'
+] %}
+
+<section {{ attributes.addClass(classes) }}>
+  {% if header and header is not empty %}
+  <div class="layout-builder__section--header">
+    {{ header }}
+  </div>
+  {% endif %}
+  <div {{ region_attributes.content.addClass(['layout__region', 'layout__region--first']) }}>
+    {{ content.content }}
+  </div>
+</section>

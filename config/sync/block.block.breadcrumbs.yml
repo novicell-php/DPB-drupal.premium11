@@ -1,6 +1,6 @@
 uuid: 30836f6d-454d-430d-9f6a-3141959e080d
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - premium_core

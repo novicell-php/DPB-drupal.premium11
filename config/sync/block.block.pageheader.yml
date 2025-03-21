@@ -1,6 +1,6 @@
 uuid: f1486446-5c88-4cd2-9ab2-40c0dcad9662
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - premium_core
