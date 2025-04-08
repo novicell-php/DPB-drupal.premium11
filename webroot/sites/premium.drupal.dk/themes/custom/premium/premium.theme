@@ -1,2 +1,43 @@
 <?php
 
+use Drupal\Core\Entity\EntityInterface;
+
+function premium_preprocess_block__inline_block__page_title(array &$variables) {
+  $route_match = \Drupal::routeMatch();
+  $object = $route_match->getRouteObject();
+  $title = '';
+  if ($object) {
+    if (!empty($object->getOptions()['parameters'])) {
+      foreach ($object->getOptions()['parameters'] as $option) {
+        if (isset($option['type']) && strpos($option['type'], 'entity:') === 0) {
+          $entity_type_id = substr($option['type'], strlen('entity:'));
+          $object = $route_match->getParameter($entity_type_id);
+        }
+      }
+    }
+    if ($object instanceof EntityInterface) {
+      $title = $object->label();
+    } else {
+      /** @var \Drupal\Core\Controller\TitleResolverInterface $titleResolver */
+      $titleResolver = \Drupal::service('title_resolver');
+      $title = $titleResolver->getTitle(\Drupal::request(), $object);
+    }
+  }
+  $variables['title'] = $title;
+}
+
+function premium_preprocess_layout(array &$variables) {
+  /** @var \Drupal\Core\Layout\LayoutDefinition $layout */
+  $layout = $variables['layout'];
+  if ($layout->id() == 'layout_hero_section') {
+    unset($variables['header']['remove']);
+    if ($variables['settings']['hide_breadcrumbs'] != TRUE) {
+      dvr($variables);
+      /** @var \Drupal\Core\Breadcrumb\BreadcrumbManager $breadcrumbManager */
+      $breadcrumbManager = \Drupal::service('breadcrumb');
+      /** @var \Drupal\Core\Routing\RouteMatchInterface $routeMatch */
+      $routeMatch = \Drupal::service('current_route_match');
+      $variables['breadcrumbs'] = $breadcrumbManager->build($routeMatch)->toRenderable();
+    }
+  }
+}

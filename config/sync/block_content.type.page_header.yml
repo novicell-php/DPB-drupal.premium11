@@ -1,0 +1,8 @@
+uuid: 2c316e54-fa6c-4922-bdb2-1bccf86bea18
+langcode: en
+status: true
+dependencies: {  }
+id: page_header
+label: 'Page header'
+revision: false
+description: 'A block that contains the options for the page header.'

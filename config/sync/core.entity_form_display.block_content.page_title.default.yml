@@ -1,0 +1,27 @@
+uuid: 3f60e398-2a67-401e-b366-48af4ec56a98
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.page_title
+id: block_content.page_title.default
+targetEntityType: block_content
+bundle: page_title
+mode: default
+content:
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

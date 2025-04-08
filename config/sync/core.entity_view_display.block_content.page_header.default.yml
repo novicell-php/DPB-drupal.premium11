@@ -1,0 +1,26 @@
+uuid: c9cb37e5-1d71-43d7-9438-6f1180e84f28
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.page_header
+    - field.field.block_content.page_header.field_hero
+  module:
+    - entity_reference_revisions
+id: block_content.page_header.default
+targetEntityType: block_content
+bundle: page_header
+mode: default
+content:
+  field_hero:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
