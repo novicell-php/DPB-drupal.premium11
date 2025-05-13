@@ -34,6 +34,7 @@ third_party_settings:
           color_theme: {  }
           column_spacing_top: section--spacing-top-none
           column_spacing_bottom: section--spacing-bottom-none
+          hide_breadcrumbs: false
           column_width: section--width-full
         components:
           f0840a9e-c299-445d-95cb-1039cf7ea356:
@@ -134,6 +135,13 @@ third_party_settings:
             'Inline blocks':
               - 'inline_block:appetizer'
               - 'inline_block:hero'
+    unique_section_restriction:
+      unique_layouts:
+        - layout_hero_section
+    singular_block_region_restriction:
+      singular_regions:
+        layout_hero_section:
+          - content
 _core:
   default_config_hash: 3gEG_f13mhXS_39_cFYNgEywgm3tCe7wzoDSIuoe18U
 id: node.page.full

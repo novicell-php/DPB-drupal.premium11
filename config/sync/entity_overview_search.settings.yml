@@ -9,7 +9,7 @@ filter:
     - sort
     - text
   sort: relevance
-  count: 10
+  count: 20
   pagination: false
   page: 0
   show_total: filtered

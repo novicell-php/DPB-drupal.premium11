@@ -30,9 +30,7 @@ function premium_preprocess_layout(array &$variables) {
   /** @var \Drupal\Core\Layout\LayoutDefinition $layout */
   $layout = $variables['layout'];
   if ($layout->id() == 'layout_hero_section') {
-    unset($variables['header']['remove']);
     if ($variables['settings']['hide_breadcrumbs'] != TRUE) {
-      dvr($variables);
       /** @var \Drupal\Core\Breadcrumb\BreadcrumbManager $breadcrumbManager */
       $breadcrumbManager = \Drupal::service('breadcrumb');
       /** @var \Drupal\Core\Routing\RouteMatchInterface $routeMatch */

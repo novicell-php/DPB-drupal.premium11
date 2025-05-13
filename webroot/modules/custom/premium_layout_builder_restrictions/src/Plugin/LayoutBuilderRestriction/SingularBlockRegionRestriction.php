@@ -7,6 +7,7 @@ use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Database\Connection;
 use Drupal\layout_builder\OverridesSectionStorageInterface;
 use Drupal\layout_builder\Section;
+use Drupal\layout_builder\SectionStorageInterface;
 use Drupal\layout_builder_restrictions\Plugin\LayoutBuilderRestrictionBase;
 use Drupal\layout_builder_restrictions\Traits\PluginHelperTrait;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -15,12 +16,12 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * Controls behavior of the per-domain access plugin.
  *
  * @LayoutBuilderRestriction(
- *   id = "unique_section_restriction",
- *   title = @Translation("Unique section"),
- *   description = @Translation("Restrict layouts to be only one per entity"),
+ *   id = "singular_block_region_restriction",
+ *   title = @Translation("Singular block region"),
+ *   description = @Translation("Restrict regions to only contain one block"),
  * )
  */
-class UniqueSectionRestriction extends LayoutBuilderRestrictionBase {
+class SingularBlockRegionRestriction extends LayoutBuilderRestrictionBase {
 
   use PluginHelperTrait;
 
@@ -72,34 +73,51 @@ class UniqueSectionRestriction extends LayoutBuilderRestrictionBase {
       $container->get('database'),
     );
   }
-
   /**
    * {@inheritdoc}
    */
-  public function alterSectionDefinitions(array $definitions, array $context) {
-    // Respect restrictions on allowed layouts specified by section storage.
+  public function alterBlockDefinitions(array $definitions, array $context) {
+    // If this method is being called by any action other than 'Add block',
+    // then do nothing.
+    if (!isset($context['delta'])) {
+      return $definitions;
+    }
+    // Respect restrictions on allowed blocks specified by the section storage.
     if (isset($context['section_storage'])) {
-      $section_storage = $context['section_storage'];
-      // Respect restrictions on unique layouts specified by section storage.
       $default = $context['section_storage'] instanceof OverridesSectionStorageInterface ? $context['section_storage']->getDefaultSectionStorage() : $context['section_storage'];
       if ($default instanceof ThirdPartySettingsInterface) {
         $third_party_settings = $default->getThirdPartySetting('layout_builder_restrictions', $this->getPluginId(), []);
-        $unique_layouts = (isset($third_party_settings['unique_layouts'])) ? $third_party_settings['unique_layouts'] : [];
-        // Filter blocks from entity-specific SectionStorage (i.e., UI).
-        if (!empty($unique_layouts)) {
-          $layout_counts = [];
-          foreach ($unique_layouts as $unique_layout) {
-            $layout_counts[$unique_layout] = 0;
-          }
-          /** @var Section $section */
-          foreach ($section_storage->getSections() as $section) {
-            if (in_array($section->getLayoutId(), $unique_layouts)) {
-              unset($definitions[$section->getLayoutId()]);
-            }
+        if (empty($third_party_settings)) {
+          // This entity has no restrictions. Look no further.
+          return $definitions;
+        }
+
+        $layout_id = $context['section_storage']->getSection($context['delta'])->getLayoutId();
+        $region = $context['region'];
+        $singular_regions = (isset($third_party_settings['singular_regions'])) ? $third_party_settings['singular_regions'] : [];
+        if (array_key_exists($layout_id, $singular_regions) && in_array($region, $singular_regions[$layout_id])) {
+          if (count($context['section_storage']->getSection($context['delta'])->getComponentsByRegion($region)) > 0) {
+            return [];
           }
         }
       }
     }
     return $definitions;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function inlineBlocksAllowedinContext(SectionStorageInterface $section_storage, $delta, $region) {
+    $view_display = $this->getValuefromSectionStorage([$section_storage], 'view_display');
+    $third_party_settings = $view_display->getThirdPartySetting('layout_builder_restrictions', $this->getPluginId(), []);
+    $singular_regions = (isset($third_party_settings['singular_regions'])) ? $third_party_settings['singular_regions'] : [];
+    $layout_id = $section_storage->getSection($delta)->getLayoutId();
+    if (array_key_exists($layout_id, $singular_regions) && in_array($region, $singular_regions[$layout_id])) {
+      if (count($section_storage->getSection($delta)->getComponentsByRegion($region)) > 0) {
+        return [];
+      }
+    }
+    return $this->getInlineBlockPlugins();
   }
 }

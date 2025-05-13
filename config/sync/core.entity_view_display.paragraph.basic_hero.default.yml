@@ -24,22 +24,22 @@ mode: default
 content:
   field_background:
     type: entity_reference_entity_view
-    weight: 0
     label: hidden
     settings:
       view_mode: hero
       link: false
     third_party_settings: {  }
+    weight: 0
     region: content
   field_color_theme:
-    weight: 4
+    type: styles_class
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: styles_class
+    weight: 4
     region: content
   field_cta:
-    weight: 3
+    type: styles_link_target
     label: hidden
     settings:
       trim_length: '80'
@@ -48,21 +48,21 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: styles_link_target
+    weight: 3
     region: content
   field_text:
-    weight: 2
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: content
   field_text_position:
-    weight: 1
+    type: styles_class
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: styles_class
+    weight: 1
     region: content
 hidden:
   field_link: true

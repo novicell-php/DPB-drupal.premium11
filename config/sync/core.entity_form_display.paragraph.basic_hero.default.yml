@@ -26,47 +26,47 @@ content:
   field_background:
     type: media_library_widget
     weight: 1
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
   field_color_theme:
+    type: styles
     weight: 6
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: styles
-    region: content
   field_cta:
+    type: styles_link_target
     weight: 4
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
       style: ''
       target_blank: 0
     third_party_settings: {  }
-    type: styles_link_target
-    region: content
   field_overlay:
+    type: boolean_checkbox
     weight: 2
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_text:
+    type: text_textarea
     weight: 0
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_text_position:
+    type: styles
     weight: 5
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: styles
-    region: content
   translation:
     weight: 3
     region: content

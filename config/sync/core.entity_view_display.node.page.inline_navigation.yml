@@ -19,14 +19,14 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
   layout_builder_restrictions:
     allowed_block_categories: {  }
     entity_view_mode_restriction:
+      allowed_layouts: {  }
       whitelisted_blocks: {  }
       blacklisted_blocks: {  }
-      allowed_layouts: {  }
 _core:
   default_config_hash: Q0MPjj49JwMUzaiklVzlpg33E6PLpcbtk-TMcNiGP7I
 id: node.page.inline_navigation
@@ -36,20 +36,20 @@ mode: inline_navigation
 content:
   field_description:
     type: basic_string
-    weight: 0
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_list_media:
     type: entity_reference_entity_view
-    weight: 1
-    region: content
     label: hidden
     settings:
       view_mode: inline_navigation
       link: false
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   body: true
   content_moderation_control: true
