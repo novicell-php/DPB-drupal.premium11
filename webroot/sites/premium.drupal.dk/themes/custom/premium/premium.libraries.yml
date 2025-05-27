@@ -7,7 +7,6 @@ master:
       dist/components/css/base/base.css: {}
       dist/components/css/base/fonts.css: {}
       dist/components/css/base/helpers.css: {}
-      dist/components/css/base/modal.css: {}
       dist/components/css/base/typography.css: { }
       dist/components/css/base/form-styling.css: { }
       dist/components/css/base/pager.css: { }

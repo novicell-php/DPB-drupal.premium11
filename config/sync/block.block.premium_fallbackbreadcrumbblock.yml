@@ -1,0 +1,20 @@
+uuid: c666f468-eef0-4575-8fec-5b6cf1a9675a
+langcode: en
+status: true
+dependencies:
+  module:
+    - premium_core
+  theme:
+    - premium
+id: premium_fallbackbreadcrumbblock
+theme: premium
+region: breadcrumb
+weight: 0
+provider: null
+plugin: fallback_breadcrumb_block
+settings:
+  id: fallback_breadcrumb_block
+  label: 'Fallback breadcrumb block'
+  label_display: '0'
+  provider: premium_core
+visibility: {  }
