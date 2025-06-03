@@ -18,7 +18,7 @@ dependencies:
     - layout_builder
     - layout_builder_restrictions
     - premium_core
-    - premium_theme_helper
+    - premium_layout_builder_restrictions
     - user
 third_party_settings:
   layout_builder:
@@ -90,12 +90,22 @@ third_party_settings:
         - layout_twocol_section
         - layout_threecol_section
         - layout_hero_section
-      denylisted_blocks: {  }
-      allowlisted_blocks:
-        Premium:
-          - premium_breadcrumb_block
+      denylisted_blocks:
+        'Inline blocks':
+          - 'inline_block:basic'
+      allowlisted_blocks: {  }
       restricted_categories:
+        - 'Content fields'
         - Devel
+        - Forms
+        - Help
+        - 'Lists (Views)'
+        - Menus
+        - Premium
+        - System
+        - User
+        - Webform
+        - core
       whitelisted_blocks:
         'Chaos Tools': {  }
         'Content fields': {  }
