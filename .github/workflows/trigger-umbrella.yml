@@ -15,7 +15,7 @@ jobs:
         run: |
           # Define the repository we are pushing to
           repo_owner="novicell-php"
-          repo_name="DPB-drupal.premium11"
+          repo_name="DPB-drupal.premium11.platform"
 
           # Define the event type
           event_type="update-submodule"
