@@ -83,6 +83,7 @@
         "novicell/premium_articles": "^3.0",
         "novicell/premium_core": "^1.0",
         "novicell/premium_headless": "^2.0",
+        "novicell/premium_headless_theme": "^1.1",
         "novicell/premium_profile": "^11.0",
         "novicell/premium_search": "^1.0",
         "novicell/premium_tools": "^1.0",
