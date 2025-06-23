@@ -1,8 +1,0 @@
-uuid: 834e6918-8fd3-48ad-aa16-ac28d8385c7e
-langcode: en
-status: true
-dependencies: {  }
-id: page_title
-label: 'Page title'
-revision: false
-description: 'A block for hero sections that displays the page title.'

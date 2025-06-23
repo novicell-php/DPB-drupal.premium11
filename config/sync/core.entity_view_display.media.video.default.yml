@@ -27,6 +27,7 @@ content:
       autoplay: false
       loop: false
       multiple_file_display_type: tags
+      playsinline: false
     third_party_settings: {  }
     region: content
 hidden:

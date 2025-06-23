@@ -139,6 +139,7 @@ display:
               responsive: priority-low
           default: wid
           empty_table: false
+          class: ''
       row:
         type: fields
       fields:
@@ -579,8 +580,6 @@ display:
             multiple: true
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
             reduce: false
             operator_limit_selection: false
             operator_list: {  }
@@ -620,8 +619,6 @@ display:
             multiple: true
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
             reduce: false
             operator_limit_selection: false
             operator_list: {  }
