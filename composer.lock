@@ -6366,10 +6366,10 @@
         },
         {
             "name": "novicell/premium_articles",
-            "version": "3.2.1",
+            "version": "3.2.5",
             "dist": {
                 "type": "zip",
-                "url": "https://packages.drupal.dk/php/~/up/ver_1ZXVOT/novicellpremium_articles-3-2-1.zip"
+                "url": "https://packages.drupal.dk/php/~/up/ver_1ziuQ9/novicellpremium_articles-3-2-5.zip"
             },
             "require": {
                 "drupal/field_group": "^3.0",
@@ -6473,10 +6473,10 @@
         },
         {
             "name": "novicell/premium_tools",
-            "version": "1.3.7",
+            "version": "1.3.8",
             "dist": {
                 "type": "zip",
-                "url": "https://packages.drupal.dk/php/~/up/ver_1DO24b/novicellpremium_tools-1-3-7.zip"
+                "url": "https://packages.drupal.dk/php/~/up/ver_1KmWGx/novicellpremium_tools-1-3-8.zip"
             },
             "type": "drupal-module",
             "license": [
