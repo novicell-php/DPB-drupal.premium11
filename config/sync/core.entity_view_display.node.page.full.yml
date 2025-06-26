@@ -3,13 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.hero
     - core.entity_view_mode.node.full
     - field.field.node.page.body
     - field.field.node.page.field_description
-    - field.field.node.page.field_header
-    - field.field.node.page.field_hide_breadcrumb
-    - field.field.node.page.field_hide_title
     - field.field.node.page.field_list_media
     - field.field.node.page.field_meta_tags
     - field.field.node.page.layout_builder__layout
@@ -17,8 +13,6 @@ dependencies:
   module:
     - layout_builder
     - layout_builder_restrictions
-    - premium_core
-    - premium_layout_builder_restrictions
     - user
 third_party_settings:
   layout_builder:
@@ -119,9 +113,6 @@ hidden:
   body: true
   content_moderation_control: true
   field_description: true
-  field_header: true
-  field_hide_breadcrumb: true
-  field_hide_title: true
   field_list_media: true
   field_meta_tags: true
   langcode: true

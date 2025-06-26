@@ -7,9 +7,6 @@ dependencies:
     - field.field.node.article.field_article_categories
     - field.field.node.article.field_article_type
     - field.field.node.article.field_description
-    - field.field.node.article.field_header
-    - field.field.node.article.field_hide_breadcrumb
-    - field.field.node.article.field_hide_title
     - field.field.node.article.field_list_date
     - field.field.node.article.field_list_media
     - field.field.node.article.field_meta_tags
@@ -32,28 +29,6 @@ content:
   field_description:
     type: value
     weight: '0'
-    region: content
-    label: omit
-    settings: {  }
-    third_party_settings: {  }
-  field_header:
-    type: entity_transform
-    weight: '3'
-    region: content
-    label: omit
-    settings:
-      transform_mode: default
-    third_party_settings: {  }
-  field_hide_breadcrumb:
-    type: boolean
-    weight: '1'
-    region: content
-    label: omit
-    settings: {  }
-    third_party_settings: {  }
-  field_hide_title:
-    type: boolean
-    weight: '2'
     region: content
     label: omit
     settings: {  }
