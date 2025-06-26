@@ -79,6 +79,7 @@
         "drush/drush": "^13",
         "novicell/drupal-premium-theme": "^2.0",
         "novicell/dynamic_key_value": "^1.0",
+        "novicell/image_style_generator": "^1.1",
         "novicell/media_icons": "^1.0",
         "novicell/premium_articles": "^3.0",
         "novicell/premium_core": "^1.0",
