@@ -2,3 +2,8 @@ show_article_type: 1
 show_article_categories: 1
 show_list_date: 1
 list_date_format: long
+show_title: 0
+show_description: 0
+show_user_profile: 1
+user_viewmode: compact
+user_view_mode: compact
