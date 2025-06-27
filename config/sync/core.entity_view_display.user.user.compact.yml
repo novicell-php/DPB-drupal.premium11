@@ -4,10 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_title
     - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - responsive_image.styles.list_view
   module:
-    - image
+    - responsive_image
     - user
 _core:
   default_config_hash: AvFV3vu99Tqfd2UgOZ7FZZs2mJLvlLhSsJpR7GVJkPE
@@ -16,14 +17,24 @@ targetEntityType: user
 bundle: user
 mode: compact
 content:
-  user_picture:
-    type: image
-    weight: 0
-    settings:
-      image_style: thumbnail
-      image_link: content
-    third_party_settings: {  }
+  field_title:
+    type: string
     label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  user_picture:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: list_view
+      image_link: content
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   langcode: true

@@ -1,45 +1,46 @@
-uuid: 116bcc2c-7144-49e3-a9de-cf8bd37279d7
+uuid: 6a047353-b7de-4359-940c-64404df951c2
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.user.user.field_title
     - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - responsive_image.styles.list_view
   module:
-    - image
+    - transform_api_responsive_image
     - user
-_core:
-  default_config_hash: 07gc2gh6oNbbsZLTuvecYEOTecp6bTTr2Z8zKJ7CLJk
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
 content:
   field_title:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 1
+    type: value
+    weight: '1'
     region: content
-  member_for:
+    label: omit
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+  label:
+    weight: '0'
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  url:
+    weight: '3'
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
-    type: image
-    label: hidden
+    type: responsive_image
+    weight: '2'
+    region: content
+    label: omit
     settings:
-      image_link: content
-      image_style: thumbnail
+      responsive_image_style: list_view
+      image_link: ''
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 0
-    region: content
 hidden:
   langcode: true
-  search_api_excerpt: true
