@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.hero
     - core.entity_view_mode.node.full
     - field.field.node.article.body
     - field.field.node.article.field_article_categories
@@ -17,7 +18,8 @@ dependencies:
     - datetime
     - layout_builder
     - layout_builder_restrictions
-    - layout_discovery
+    - premium_articles_layout
+    - premium_layout_builder_restrictions
     - user
 third_party_settings:
   layout_builder:
@@ -25,25 +27,45 @@ third_party_settings:
     allow_custom: true
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: layout_hero_section
         layout_settings:
           label: ''
-          column_widths: null
-          color_theme: null
-          column_spacing_top: section--spacing-top-medium
-          column_spacing_bottom: section--spacing-bottom-medium
-          column_width: section--width-normal
+          context_mapping: {  }
+          column_widths: ''
+          color_theme: {  }
+          column_spacing_top: section--spacing-top-none
+          column_spacing_bottom: section--spacing-bottom-none
+          hide_breadcrumbs: false
+          column_width: section--width-full
         components:
-          c14521e2-10fb-4f4c-b6e0-2da5ef429869:
-            uuid: c14521e2-10fb-4f4c-b6e0-2da5ef429869
+          f335daf6-869b-47f9-bc95-33632c25930c:
+            uuid: f335daf6-869b-47f9-bc95-33632c25930c
             region: content
             configuration:
-              id: 'extra_field_block:node:article:content_moderation_control'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
+              id: 'inline_block:hero'
+              label: 'Inline block'
+              label_display: ''
+              provider: layout_builder
+              context_mapping: {  }
+              view_mode: full
+              block_id: 8
+              block_revision_id: 8
+              block_serialized: null
             weight: 0
             additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_article_sidebar_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: ''
+          color_theme: {  }
+          column_spacing_top: section--spacing-top-none
+          column_spacing_bottom: section--spacing-bottom-none
+          hide_breadcrumbs: false
+          column_width: section--width-full
+        components: {  }
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_block_categories:
