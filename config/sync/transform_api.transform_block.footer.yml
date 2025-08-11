@@ -1,0 +1,20 @@
+uuid: ea88400d-a094-44f2-98a1-0bc6773e9a21
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+id: footer
+region: footer
+weight: '0'
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  provider: transform_api
+  level: '1'
+  depth: '0'
+  expand_all_items: 0
+  label_display: null
+visibility: {  }
