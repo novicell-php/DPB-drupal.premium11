@@ -1,0 +1,17 @@
+uuid: 544df558-d3be-4bdb-9f96-2a0c72279331
+langcode: en
+status: true
+dependencies:
+  module:
+    - announcement
+id: announcements
+region: header
+weight: '-2'
+provider: null
+plugin: announcement
+settings:
+  id: announcement
+  label: Announcements
+  provider: announcement
+  label_display: null
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 76134960-3f2d-4f95-a71a-170642e00a00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.announcement.body
+  module:
+    - announcement
+    - text
+_core:
+  default_config_hash: Igb8Jk8YX_5cF4ZAS3aKN43k8XT_UYQCeezYlhHTtGA
+id: announcement.announcement.body
+field_name: body
+entity_type: announcement
+bundle: announcement
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

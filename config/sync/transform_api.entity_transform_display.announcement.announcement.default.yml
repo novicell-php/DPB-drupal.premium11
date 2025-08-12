@@ -1,0 +1,29 @@
+uuid: d6722a68-fa59-42ac-93f2-df554a51aac3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.announcement.announcement.body
+  module:
+    - announcement
+id: announcement.announcement.default
+targetEntityType: announcement
+bundle: announcement
+mode: default
+content:
+  body:
+    type: plain_text
+    weight: '1'
+    region: content
+    label: omit
+    settings:
+      text_length: 0
+    third_party_settings: {  }
+  label:
+    weight: '0'
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  url: true
