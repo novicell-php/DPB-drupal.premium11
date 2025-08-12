@@ -1,0 +1,21 @@
+uuid: fbdbd350-508f-4a5b-a37d-f137aec469c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - announcement
+    - text
+_core:
+  default_config_hash: 94PqqpILA-1srJNHlDnRS97Tk7omu0WTC_Tli8ObHD4
+id: announcement.body
+field_name: body
+entity_type: announcement
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -59,3 +59,5 @@ cloneable_entities:
   - entity_transform_mode
   - entity_transform_display
   - transform_block
+  - workspace
+  - announcement
