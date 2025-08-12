@@ -1,0 +1,13 @@
+<?php
+
+use Drupal\transform_api\Transform\EntityTransform;
+
+function premium_demo_node_transform_alter(&$transform) {
+  /** @var \Drupal\node\Entity\Node $node */
+  $node = $transform['#node'];
+  if ($node->bundle() == 'article' && $transform['transform_mode'] == 'full') {
+    $transform['owner'] = new EntityTransform($node->getOwner(), 'compact');
+  }
+
+  \Drupal::messenger()->addStatus('Test status');
+}

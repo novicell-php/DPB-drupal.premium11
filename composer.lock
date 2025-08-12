@@ -7,21 +7,6 @@
     "content-hash": "014e6ef529162711f5c663a524c15c6f",
     "packages": [
         {
-            "name": "algolia/places",
-            "version": "1.19.0",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/places.js/-/places.js-1.19.0.tgz"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "algolia.places"
-            },
-            "license": [
-                "MIT"
-            ]
-        },
-        {
             "name": "asm89/stack-cors",
             "version": "v2.3.0",
             "source": {
@@ -4607,17 +4592,17 @@
         },
         {
             "name": "drupal/transform_api",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/transform_api.git",
-                "reference": "2.1.0"
+                "reference": "2.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/transform_api-2.1.0.zip",
-                "reference": "2.1.0",
-                "shasum": "2d0c18e69967bf9759281c7074869ec0327de1f8"
+                "url": "https://ftp.drupal.org/files/projects/transform_api-2.1.1.zip",
+                "reference": "2.1.1",
+                "shasum": "9a88d6f6791de75a5b5316da5099d066b8eb7f86"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11",
@@ -4631,8 +4616,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.0",
-                    "datestamp": "1754916597",
+                    "version": "2.1.1",
+                    "datestamp": "1754998783",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5670,21 +5655,6 @@
             ]
         },
         {
-            "name": "jquery/geocomplete",
-            "version": "1.7.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/ubilabs/geocomplete/archive/refs/tags/1.7.0.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "jquery.geocomplete"
-            },
-            "license": [
-                "MIT"
-            ]
-        },
-        {
             "name": "jquery/hotkeys",
             "version": "0.2.0",
             "dist": {
@@ -5694,21 +5664,6 @@
             "type": "drupal-library",
             "extra": {
                 "installer-name": "jquery.hotkeys"
-            },
-            "license": [
-                "MIT"
-            ]
-        },
-        {
-            "name": "jquery/icheck",
-            "version": "1.0.2 ",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/drgullin/icheck/zipball/8a6eb37bd7dab1e843c1b630c91c6398ff409d05"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "jquery.icheck"
             },
             "license": [
                 "MIT"
@@ -5814,21 +5769,6 @@
             "type": "drupal-library",
             "extra": {
                 "installer-name": "jquery.timepicker"
-            },
-            "license": [
-                "MIT"
-            ]
-        },
-        {
-            "name": "jquery/toggles",
-            "version": "4.0.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/simontabor/jquery-toggles/archive/refs/tags/v4.0.0.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "jquery.toggles"
             },
             "license": [
                 "MIT"
