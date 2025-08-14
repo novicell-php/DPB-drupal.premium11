@@ -1,0 +1,20 @@
+uuid: 13c4cc80-13ad-4462-8879-a2927e28a544
+langcode: en
+status: true
+dependencies:
+  module:
+    - announcement
+  theme:
+    - premium
+id: premium_announcements
+theme: premium
+region: preheader
+weight: 0
+provider: null
+plugin: announcement_block
+settings:
+  id: announcement_block
+  label: Announcements
+  label_display: '0'
+  provider: announcement
+visibility: {  }
