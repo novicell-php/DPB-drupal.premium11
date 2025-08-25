@@ -4536,17 +4536,17 @@
         },
         {
             "name": "drupal/transform_api",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/transform_api.git",
-                "reference": "2.1.1"
+                "reference": "2.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/transform_api-2.1.1.zip",
-                "reference": "2.1.1",
-                "shasum": "9a88d6f6791de75a5b5316da5099d066b8eb7f86"
+                "url": "https://ftp.drupal.org/files/projects/transform_api-2.1.2.zip",
+                "reference": "2.1.2",
+                "shasum": "a261298ae3efc179998454326a91a3a0d0538086"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11",
@@ -4560,8 +4560,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.1",
-                    "datestamp": "1754998783",
+                    "version": "2.1.2",
+                    "datestamp": "1756126643",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6413,16 +6413,16 @@
         },
         {
             "name": "novicell/premium_headless",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/novicell-drupal/premium_headless.git",
-                "reference": "c4a4e95873ab33ef6548402f00b150e9f19f4c18"
+                "reference": "0ef5eee53e702a2d25674b434e97912fcb561c81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/novicell-drupal/premium_headless/zipball/c4a4e95873ab33ef6548402f00b150e9f19f4c18",
-                "reference": "c4a4e95873ab33ef6548402f00b150e9f19f4c18",
+                "url": "https://api.github.com/repos/novicell-drupal/premium_headless/zipball/0ef5eee53e702a2d25674b434e97912fcb561c81",
+                "reference": "0ef5eee53e702a2d25674b434e97912fcb561c81",
                 "shasum": ""
             },
             "require": {
@@ -6440,9 +6440,9 @@
             ],
             "support": {
                 "issues": "https://github.com/novicell-drupal/premium_headless/issues",
-                "source": "https://github.com/novicell-drupal/premium_headless/tree/2.1.0"
+                "source": "https://github.com/novicell-drupal/premium_headless/tree/2.1.1"
             },
-            "time": "2025-03-24T13:25:49+00:00"
+            "time": "2025-08-25T12:48:29+00:00"
         },
         {
             "name": "novicell/premium_headless_theme",
