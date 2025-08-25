@@ -4536,17 +4536,17 @@
         },
         {
             "name": "drupal/transform_api",
-            "version": "2.1.2",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/transform_api.git",
-                "reference": "2.1.2"
+                "reference": "2.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/transform_api-2.1.2.zip",
-                "reference": "2.1.2",
-                "shasum": "a261298ae3efc179998454326a91a3a0d0538086"
+                "url": "https://ftp.drupal.org/files/projects/transform_api-2.1.3.zip",
+                "reference": "2.1.3",
+                "shasum": "76954c5f33c1608fb7143cb4575349674ad49241"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11",
@@ -4560,8 +4560,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.2",
-                    "datestamp": "1756126643",
+                    "version": "2.1.3",
+                    "datestamp": "1756128961",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
