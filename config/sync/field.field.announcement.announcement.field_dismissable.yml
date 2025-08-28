@@ -1,0 +1,22 @@
+uuid: 426d79fb-239c-46fa-a38f-2387488a1980
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.announcement.field_dismissable
+  module:
+    - announcement
+id: announcement.announcement.field_dismissable
+field_name: field_dismissable
+entity_type: announcement
+bundle: announcement
+label: Dismissable
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

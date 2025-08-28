@@ -1,0 +1,18 @@
+uuid: 79f24b32-05d7-4fc3-9678-8d554257aae0
+langcode: en
+status: true
+dependencies:
+  module:
+    - announcement
+id: announcement.field_dismissable
+field_name: field_dismissable
+entity_type: announcement
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

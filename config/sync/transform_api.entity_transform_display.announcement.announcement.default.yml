@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.announcement.announcement.body
+    - field.field.announcement.announcement.field_dismissable
   module:
     - announcement
 id: announcement.announcement.default
@@ -18,6 +19,13 @@ content:
     label: omit
     settings:
       text_length: 0
+    third_party_settings: {  }
+  field_dismissable:
+    type: boolean
+    weight: '2'
+    region: content
+    label: omit
+    settings: {  }
     third_party_settings: {  }
   label:
     weight: '0'

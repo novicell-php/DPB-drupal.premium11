@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.announcement.announcement.body
+    - field.field.announcement.announcement.field_dismissable
   module:
     - announcement
     - datetime
@@ -21,8 +22,9 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
 hidden:
+  field_dismissable: true
   langcode: true
   search_api_excerpt: true
