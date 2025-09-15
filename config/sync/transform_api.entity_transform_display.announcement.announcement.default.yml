@@ -13,12 +13,11 @@ bundle: announcement
 mode: default
 content:
   body:
-    type: plain_text
+    type: text_format
     weight: '1'
     region: content
     label: omit
-    settings:
-      text_length: 0
+    settings: {  }
     third_party_settings: {  }
   field_dismissable:
     type: boolean

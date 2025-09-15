@@ -1,0 +1,22 @@
+uuid: 737a11a6-660f-4049-9572-3f9206b812d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - color_field
+    - taxonomy
+_core:
+  default_config_hash: PA_IY8X2dj-iIInYmkXU9T2uljHhPF-we-Jv3vNV-FQ
+id: taxonomy_term.field_text_color
+field_name: field_text_color
+entity_type: taxonomy_term
+type: color_field_type
+settings:
+  format: '#HEXHEX'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

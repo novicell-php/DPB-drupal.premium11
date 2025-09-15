@@ -1,0 +1,31 @@
+uuid: bb6b3d45-3be1-4aa1-b18a-4c51a743ba4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.calendar
+    - field.storage.block_content.field_event_types
+    - taxonomy.vocabulary.event_types
+_core:
+  default_config_hash: jbYV38pSvZjQx9rjl-afGNdFxoHhqt9fRM2379X-PqM
+id: block_content.calendar.field_event_types
+field_name: field_event_types
+entity_type: block_content
+bundle: calendar
+label: 'Event types'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_types: event_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

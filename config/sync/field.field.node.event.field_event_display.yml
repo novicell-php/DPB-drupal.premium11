@@ -1,0 +1,25 @@
+uuid: 3a94aa08-7520-4c60-905a-2dc914d92d4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_display
+    - node.type.event
+  module:
+    - styles
+_core:
+  default_config_hash: 9oXC_HniRQ1CQu6EMyek6x3uNTctz28nDlUAHoGVfvM
+id: node.event.field_event_display
+field_name: field_event_display
+entity_type: node
+bundle: event
+label: Display
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: event--auto
+default_value_callback: ''
+settings: {  }
+field_type: styles

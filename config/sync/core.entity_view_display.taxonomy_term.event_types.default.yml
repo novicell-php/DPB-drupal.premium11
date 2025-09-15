@@ -1,0 +1,46 @@
+uuid: cceb6b93-2bef-4327-9082-6cf7a634ded9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.event_types.field_background_color
+    - field.field.taxonomy_term.event_types.field_text_color
+    - taxonomy.vocabulary.event_types
+  module:
+    - color_field
+    - text
+_core:
+  default_config_hash: N1hoSPeQ7KV0PddtHMquqISHK6V0TlpLcwXW3hEMtCs
+id: taxonomy_term.event_types.default
+targetEntityType: taxonomy_term
+bundle: event_types
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_background_color:
+    type: color_field_formatter_text
+    label: above
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_text_color:
+    type: color_field_formatter_text
+    label: above
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

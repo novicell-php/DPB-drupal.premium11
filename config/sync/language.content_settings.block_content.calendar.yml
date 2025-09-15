@@ -1,0 +1,13 @@
+uuid: 983db4ab-d29f-4f83-9929-4aee7585c5c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.calendar
+_core:
+  default_config_hash: otDONij_Th9AEMQ-8Fa1ZvDKa4VsVgQSbQkceKfwT4Y
+id: block_content.calendar
+target_entity_type_id: block_content
+target_bundle: calendar
+default_langcode: site_default
+language_alterable: false

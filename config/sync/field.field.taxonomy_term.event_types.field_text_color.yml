@@ -1,0 +1,24 @@
+uuid: 51986177-aa4a-4e57-a151-bd13f4da5767
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_text_color
+    - taxonomy.vocabulary.event_types
+  module:
+    - color_field
+_core:
+  default_config_hash: tTyVkfjnSF35OEmEXzvcQIn0IcZ9JO85WiMwQ1rkXCw
+id: taxonomy_term.event_types.field_text_color
+field_name: field_text_color
+entity_type: taxonomy_term
+bundle: event_types
+label: 'Text color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

@@ -61,3 +61,4 @@ cloneable_entities:
   - transform_block
   - workspace
   - announcement
+  - date_recur_interpreter

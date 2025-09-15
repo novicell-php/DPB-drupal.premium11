@@ -1,0 +1,21 @@
+uuid: 6c632864-51a3-459b-b6ab-008b1f14befc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.event
+_core:
+  default_config_hash: uPrLjjKb3eYgNuEatJbUuhe5EYm9nIZ8c1SVEIBbo6M
+id: node.event.field_description
+field_name: field_description
+entity_type: node
+bundle: event
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
