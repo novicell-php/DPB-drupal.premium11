@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7a7b58eac1a161a6780aede9dbf14c1c",
+    "content-hash": "9d18d691fb90b5e3647f8d0180113e81",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6605,7 +6605,7 @@
         },
         {
             "name": "novicell/premium_calendar",
-            "version": "1.x-dev",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/novicell-drupal/premium_calendar.git",
@@ -6626,7 +6626,6 @@
                 "novicell/styles": "^1.2",
                 "php": ">=8.2"
             },
-            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -12026,8 +12025,7 @@
         "drupal/components": 10,
         "drupal/entity_clone": 10,
         "drupal/entity_usage": 10,
-        "drupal/webp": 5,
-        "novicell/premium_calendar": 20
+        "drupal/webp": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -78,7 +78,7 @@
         "novicell/image_style_generator": "^1.1",
         "novicell/media_icons": "^1.0",
         "novicell/premium_articles": "^3.0",
-        "novicell/premium_calendar": "^1.x-dev",
+        "novicell/premium_calendar": "^1.0",
         "novicell/premium_core": "^1.0",
         "novicell/premium_headless": "^2.0",
         "novicell/premium_headless_theme": "^1.1",
