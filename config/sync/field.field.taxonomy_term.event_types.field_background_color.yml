@@ -1,0 +1,24 @@
+uuid: fe017609-e8d8-481a-8e3c-416a923c0fb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_background_color
+    - taxonomy.vocabulary.event_types
+  module:
+    - color_field
+_core:
+  default_config_hash: Fp0P2wk9LFb5GGWOCSP4QehaCqZ07YUGfN-4MBG0yRg
+id: taxonomy_term.event_types.field_background_color
+field_name: field_background_color
+entity_type: taxonomy_term
+bundle: event_types
+label: 'Background color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

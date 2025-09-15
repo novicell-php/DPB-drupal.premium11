@@ -1,0 +1,20 @@
+uuid: ef10e403-392a-4bcd-83f5-f9a458d6554e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.calendar
+    - field.field.block_content.calendar.field_display
+    - field.field.block_content.calendar.field_event_types
+_core:
+  default_config_hash: HHkDqMRaCdTugy-7L52lBpYKBya8UjOWmSewNEli2Ig
+id: block_content.calendar.default
+targetEntityType: block_content
+bundle: calendar
+mode: default
+content: {  }
+hidden:
+  field_display: true
+  field_event_types: true
+  langcode: true
+  search_api_excerpt: true

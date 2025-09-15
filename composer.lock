@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4c2ffc473e8d5b2eaa1d9811d6319ab",
+    "content-hash": "7a7b58eac1a161a6780aede9dbf14c1c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2254,6 +2254,128 @@
             }
         },
         {
+            "name": "drupal/date_recur",
+            "version": "3.9.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/date_recur.git",
+                "reference": "3.9.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/date_recur-3.9.3.zip",
+                "reference": "3.9.3",
+                "shasum": "a8e6c1e806da5c689b3b1cda3a9346f91d15b0ac"
+            },
+            "require": {
+                "drupal/core": "^11",
+                "php": ">=8.3",
+                "rlanvin/php-rrule": "^2"
+            },
+            "require-dev": {
+                "drupal/token": "^1.5",
+                "mockery/mockery": "^1.5",
+                "phpstan/phpstan": "^1.11",
+                "phpstan/phpstan-deprecation-rules": "*",
+                "phpstan/phpstan-phpunit": "^1.4",
+                "phpstan/phpstan-strict-rules": "^1@stable",
+                "previousnext/coding-standard": "^1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.9.3",
+                    "datestamp": "1739360446",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "dpi",
+                    "homepage": "https://www.drupal.org/user/81431"
+                },
+                {
+                    "name": "Frando",
+                    "homepage": "https://www.drupal.org/user/21850"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                }
+            ],
+            "description": "Recurring Dates Field",
+            "homepage": "https://www.drupal.org/project/date_recur",
+            "support": {
+                "source": "http://cgit.drupalcode.org/date_recur",
+                "issues": "https://www.drupal.org/project/issues/date_recur"
+            }
+        },
+        {
+            "name": "drupal/date_recur_modular",
+            "version": "3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/date_recur_modular.git",
+                "reference": "3.3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/date_recur_modular-3.3.0.zip",
+                "reference": "3.3.0",
+                "shasum": "86eac33f2cd1677e37b0a1ddf33a24d62441bf70"
+            },
+            "require": {
+                "drupal/core": ">=11",
+                "drupal/date_recur": "^3.9",
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "drupal/token": "^1.5",
+                "phpstan/phpstan": "^1.11",
+                "phpstan/phpstan-deprecation-rules": "*",
+                "phpstan/phpstan-phpunit": "^1.4",
+                "phpstan/phpstan-strict-rules": "^1@stable",
+                "previousnext/coding-standard": "^1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.3.0",
+                    "datestamp": "1730875016",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dpi",
+                    "homepage": "https://www.drupal.org/user/81431"
+                }
+            ],
+            "description": "Recurring Date Fields Modular Widgets",
+            "homepage": "https://www.drupal.org/project/date_recur_modular",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/date_recur_modular",
+                "issues": "https://www.drupal.org/project/issues/date_recur_modular"
+            }
+        },
+        {
             "name": "drupal/dynamic_entity_reference",
             "version": "3.2.1",
             "source": {
@@ -2705,6 +2827,110 @@
                 "issues": "https://drupal.org/project/issues/focal_point",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             }
+        },
+        {
+            "name": "drupal/fullcalendar",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fullcalendar.git",
+                "reference": "3.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fullcalendar-3.0.3.zip",
+                "reference": "3.0.3",
+                "shasum": "6539bda23613198760407a7b03da7f2950a80cd6"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11",
+                "drupal/fullcalendar_io": "^6.1",
+                "php": ">=8.2"
+            },
+            "require-dev": {
+                "drupal/date_recur": "^3.7",
+                "drupal/smart_date": "^4.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.3",
+                    "datestamp": "1749323250",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "aspilicious",
+                    "homepage": "https://www.drupal.org/user/172527"
+                },
+                {
+                    "name": "dakala",
+                    "homepage": "https://www.drupal.org/user/53175"
+                },
+                {
+                    "name": "hefox",
+                    "homepage": "https://www.drupal.org/user/426416"
+                },
+                {
+                    "name": "jurgenhaas",
+                    "homepage": "https://www.drupal.org/user/168924"
+                },
+                {
+                    "name": "mandclu",
+                    "homepage": "https://www.drupal.org/user/52136"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                },
+                {
+                    "name": "tstoeckler",
+                    "homepage": "https://www.drupal.org/user/107158"
+                }
+            ],
+            "description": "Integrates the Fullcalendar Library from https://fullcalendar.io",
+            "homepage": "https://www.drupal.org/project/fullcalendar",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/fullcalendar",
+                "issues": "https://www.drupal.org/project/issues/fullcalendar"
+            }
+        },
+        {
+            "name": "drupal/fullcalendar_io",
+            "version": "6.1.19",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fullcalendar_io.git",
+                "reference": "86acbc990edefbc141875cd2c27abd08f58d665c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://git.drupalcode.org/api/v4/projects/project%2Ffullcalendar_io/repository/archive.zip?sha=86acbc990edefbc141875cd2c27abd08f58d665c",
+                "reference": "86acbc990edefbc141875cd2c27abd08f58d665c",
+                "shasum": ""
+            },
+            "type": "drupal-library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "TBD",
+            "homepage": "https://fullcalendar.io/",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fullcalendar_io/-/tree/6.1.19"
+            },
+            "time": "2025-08-11T15:43:22+00:00"
         },
         {
             "name": "drupal/gin",
@@ -6378,17 +6604,57 @@
             "time": "2025-07-31T13:05:12+00:00"
         },
         {
-            "name": "novicell/premium_core",
-            "version": "1.3.3",
+            "name": "novicell/premium_calendar",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/novicell-drupal/premium_core.git",
-                "reference": "639f96bd6ca372de7d31f609a1e006911abf12a2"
+                "url": "https://github.com/novicell-drupal/premium_calendar.git",
+                "reference": "7403d72fb0b0c6cc0562a160cca281e11d8e6795"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/novicell-drupal/premium_core/zipball/639f96bd6ca372de7d31f609a1e006911abf12a2",
-                "reference": "639f96bd6ca372de7d31f609a1e006911abf12a2",
+                "url": "https://api.github.com/repos/novicell-drupal/premium_calendar/zipball/7403d72fb0b0c6cc0562a160cca281e11d8e6795",
+                "reference": "7403d72fb0b0c6cc0562a160cca281e11d8e6795",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/color_field": "^3.0",
+                "drupal/date_recur": "^3.8",
+                "drupal/date_recur_modular": "^3.3",
+                "drupal/fullcalendar": "^3.0",
+                "novicell/premium_tools": "^1.0",
+                "novicell/styles": "^1.2",
+                "php": ">=8.2"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Adds an Event content type and a Calendar layout block.",
+            "homepage": "https://www.drupal.org/project/premium_calendar",
+            "keywords": [
+                "drupal"
+            ],
+            "support": {
+                "issues": "https://www.drupal.org/project/issues/premium_calendar",
+                "source": "https://git.drupalcode.org/project/premium_calendar"
+            },
+            "time": "2025-09-15T10:46:39+00:00"
+        },
+        {
+            "name": "novicell/premium_core",
+            "version": "1.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/novicell-drupal/premium_core.git",
+                "reference": "6c81ceb2fd0a0f875482d67f9c780da4d7567a22"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/novicell-drupal/premium_core/zipball/6c81ceb2fd0a0f875482d67f9c780da4d7567a22",
+                "reference": "6c81ceb2fd0a0f875482d67f9c780da4d7567a22",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -6403,9 +6669,9 @@
             ],
             "support": {
                 "issues": "https://github.com/novicell-drupal/premium_core/issues",
-                "source": "https://github.com/novicell-drupal/premium_core/tree/1.3.3"
+                "source": "https://github.com/novicell-drupal/premium_core/tree/1.3.4"
             },
-            "time": "2025-06-27T11:17:33+00:00"
+            "time": "2025-09-15T08:57:50+00:00"
         },
         {
             "name": "novicell/premium_headless",
@@ -6589,16 +6855,16 @@
         },
         {
             "name": "novicell/styles",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/novicell-drupal/styles.git",
-                "reference": "91540ed91a404b77739e9fdddf1881673fc1d4da"
+                "reference": "fa49776c688fca0a6ead06e9303540adf4de8246"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/novicell-drupal/styles/zipball/91540ed91a404b77739e9fdddf1881673fc1d4da",
-                "reference": "91540ed91a404b77739e9fdddf1881673fc1d4da",
+                "url": "https://api.github.com/repos/novicell-drupal/styles/zipball/fa49776c688fca0a6ead06e9303540adf4de8246",
+                "reference": "fa49776c688fca0a6ead06e9303540adf4de8246",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -6613,9 +6879,9 @@
             ],
             "support": {
                 "issues": "https://github.com/novicell-drupal/styles/issues",
-                "source": "https://github.com/novicell-drupal/styles/tree/1.2.0"
+                "source": "https://github.com/novicell-drupal/styles/tree/1.2.1"
             },
-            "time": "2025-06-05T05:44:17+00:00"
+            "time": "2025-09-15T09:01:47+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -7792,6 +8058,55 @@
                 "source": "https://github.com/revoltphp/event-loop/tree/v1.0.7"
             },
             "time": "2025-01-25T19:27:39+00:00"
+        },
+        {
+            "name": "rlanvin/php-rrule",
+            "version": "v2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rlanvin/php-rrule.git",
+                "reference": "2a389a9fa67dda58bc5a569a3264555152db3c49"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rlanvin/php-rrule/zipball/2a389a9fa67dda58bc5a569a3264555152db3c49",
+                "reference": "2a389a9fa67dda58bc5a569a3264555152db3c49",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "@stable",
+                "phpunit/phpunit": "^5.7|^6.5|^8.0"
+            },
+            "suggest": {
+                "ext-intl": "Intl extension is needed for humanReadable()"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RRule\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Lightweight and fast recurrence rules for PHP (RFC 5545)",
+            "homepage": "https://github.com/rlanvin/php-rrule",
+            "keywords": [
+                "date",
+                "ical",
+                "recurrence",
+                "recurring",
+                "rrule"
+            ],
+            "support": {
+                "issues": "https://github.com/rlanvin/php-rrule/issues",
+                "source": "https://github.com/rlanvin/php-rrule/tree/v2.6.0"
+            },
+            "time": "2025-04-25T07:40:09+00:00"
         },
         {
             "name": "sebastian/diff",
@@ -11711,7 +12026,8 @@
         "drupal/components": 10,
         "drupal/entity_clone": 10,
         "drupal/entity_usage": 10,
-        "drupal/webp": 5
+        "drupal/webp": 5,
+        "novicell/premium_calendar": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

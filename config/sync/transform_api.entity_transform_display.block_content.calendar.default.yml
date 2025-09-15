@@ -1,0 +1,34 @@
+uuid: d4b554b3-2a84-4fee-bf44-4c42a25b7e44
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.calendar
+    - field.field.block_content.calendar.field_display
+    - field.field.block_content.calendar.field_event_types
+  module:
+    - styles
+_core:
+  default_config_hash: JIP4Pqt8d8jqiJJMqFzlZBpF3hSIQq740Poq6bs5jSY
+id: block_content.calendar.default
+targetEntityType: block_content
+bundle: calendar
+mode: default
+content:
+  field_display:
+    type: styles
+    weight: '0'
+    region: content
+    label: omit
+    settings: {  }
+    third_party_settings: {  }
+  field_event_types:
+    type: entity_reference_labels
+    weight: '1'
+    region: content
+    label: omit
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  label: true
+  langcode: true

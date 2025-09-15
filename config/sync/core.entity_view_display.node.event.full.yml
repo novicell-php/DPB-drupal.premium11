@@ -1,0 +1,174 @@
+uuid: c0ce05f9-8c61-4817-a26d-95e340748f04
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - core.date_format.medium
+    - core.entity_view_mode.node.full
+    - field.field.node.event.body
+    - field.field.node.event.field_date_recur
+    - field.field.node.event.field_description
+    - field.field.node.event.field_event_display
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_meta_tags
+    - field.field.node.event.layout_builder__layout
+    - node.type.event
+  module:
+    - date_recur
+    - layout_builder
+    - layout_builder_restrictions
+    - metatag
+    - premium_layout_builder_restrictions
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_hero_section
+        layout_settings:
+          label: ''
+          column_widths: ''
+          color_theme: {  }
+          column_spacing_top: section--spacing-top-none
+          column_spacing_bottom: section--spacing-bottom-none
+          hide_breadcrumbs: false
+          column_width: section--width-full
+          context_mapping: {  }
+        components:
+          aedba2e2-5ebe-44f7-afad-684269a193aa:
+            uuid: aedba2e2-5ebe-44f7-afad-684269a193aa
+            region: content
+            configuration:
+              id: 'inline_block:hero'
+              label: 'Inline block'
+              label_display: ''
+              provider: layout_builder
+              view_mode: full
+              block_id: 74
+              block_revision_id: 89
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      allowed_layouts:
+        - layout_onecol
+        - layout_twocol_section
+        - layout_threecol_section
+        - layout_hero_section
+      denylisted_blocks:
+        'Custom block types': {  }
+        'Inline blocks': {  }
+      allowlisted_blocks: {  }
+      restricted_categories:
+        - Announcements
+        - 'Content fields'
+        - Devel
+        - Forms
+        - Help
+        - 'Lists (Views)'
+        - Menus
+        - Premium
+        - System
+        - User
+        - Webform
+        - Workspace
+        - core
+    entity_view_mode_restriction_by_region:
+      allowed_layouts:
+        - layout_onecol
+        - layout_twocol_section
+        - layout_threecol_section
+        - layout_hero_section
+      allowlisted_blocks:
+        layout_hero_section:
+          all_regions:
+            'Inline blocks':
+              - 'inline_block:hero'
+      denylisted_blocks:
+        layout_threecol_section:
+          all_regions:
+            'Custom block types':
+              - appetizer
+              - hero
+            'Inline blocks':
+              - 'inline_block:appetizer'
+              - 'inline_block:hero'
+        layout_twocol_section:
+          all_regions:
+            'Custom block types':
+              - appetizer
+              - hero
+            'Inline blocks':
+              - 'inline_block:appetizer'
+              - 'inline_block:hero'
+    unique_section_restriction:
+      unique_layouts:
+        - layout_hero_section
+    singular_block_region_restriction:
+      singular_regions:
+        layout_hero_section:
+          - content
+_core:
+  default_config_hash: MtWTsBJL7yBs2e8pXUXxkl-er1u4_vOmNLCBLHfMCf0
+id: node.event.full
+targetEntityType: node
+bundle: event
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_date_recur:
+    type: date_recur_basic_formatter
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+      from_to: both
+      separator: '-'
+      show_next: 5
+      count_per_item: true
+      occurrence_format_type: medium
+      same_end_date_format_type: medium
+      interpreter: null
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_event_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_description: true
+  field_event_display: true
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

@@ -1,0 +1,19 @@
+uuid: 4258dde7-ed3a-4c4a-bc6d-480100e07fc0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: hC-N8R5Z8UXsMWZeJ4wCJhaqKEdzUywESp3G7y1xs_Y
+name: Event
+type: event
+description: 'Use <em>events</em> for your events, courses and the like so they show up in the calendar.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

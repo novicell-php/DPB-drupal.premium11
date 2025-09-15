@@ -1,0 +1,23 @@
+uuid: bb78f384-3ba3-421c-b41a-b7a82c919dc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.calendar
+    - field.storage.block_content.field_display
+  module:
+    - styles
+_core:
+  default_config_hash: ILpq5Bn4ss6BVUFmsFe38Jb_pJjsve21u8z3mfMeMYI
+id: block_content.calendar.field_display
+field_name: field_display
+entity_type: block_content
+bundle: calendar
+label: Display
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: styles

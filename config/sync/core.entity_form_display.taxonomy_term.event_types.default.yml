@@ -1,0 +1,68 @@
+uuid: d14521ce-0ff5-4f54-98d9-e9b7889e93fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.event_types.field_background_color
+    - field.field.taxonomy_term.event_types.field_text_color
+    - taxonomy.vocabulary.event_types
+  module:
+    - color_field
+    - text
+_core:
+  default_config_hash: DKfn8UyAqRNBhVJmq5mDGfR1yEc-3hGFTPeI6SexaLU
+id: taxonomy_term.event_types.default
+targetEntityType: taxonomy_term
+bundle: event_types
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_background_color:
+    type: color_field_widget_html5
+    weight: 4
+    region: content
+    settings:
+      show_extra: true
+    third_party_settings: {  }
+  field_text_color:
+    type: color_field_widget_html5
+    weight: 3
+    region: content
+    settings:
+      show_extra: true
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 0
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  translation:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  path: true
+  status: true

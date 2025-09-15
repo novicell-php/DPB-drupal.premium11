@@ -1,0 +1,32 @@
+uuid: 50a8c1cf-8ac8-4d42-959e-1d871e24bb76
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.calendar
+    - field.field.block_content.calendar.field_display
+    - field.field.block_content.calendar.field_event_types
+  module:
+    - styles
+_core:
+  default_config_hash: 7icK368n6y1jcehtDKcVvbMHQx5nJDqn1o9sAinfRSg
+id: block_content.calendar.default
+targetEntityType: block_content
+bundle: calendar
+mode: default
+content:
+  field_display:
+    type: styles
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_event_types:
+    type: options_buttons
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  info: true
+  langcode: true

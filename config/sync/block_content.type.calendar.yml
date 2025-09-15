@@ -1,0 +1,10 @@
+uuid: 5285dda6-2157-40e7-8a92-1fc200a45483
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8qe7xXOBsB4FtFuIb6HzsYdDpalCCeKk-cakf-usSbA
+id: calendar
+label: Calendar
+revision: false
+description: 'A block that shows a calendar of events.'
