@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d18d691fb90b5e3647f8d0180113e81",
+    "content-hash": "19b17493e81361819eefeea0a746be19",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6570,16 +6570,16 @@
         },
         {
             "name": "novicell/premium_articles",
-            "version": "3.2.8",
+            "version": "4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/novicell-drupal/premium_articles.git",
-                "reference": "4f31127d5d9c2949cdbe953c3c75574844788aba"
+                "reference": "9c54d95226fa9bb94985eb6dd9b71cda995cd082"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/novicell-drupal/premium_articles/zipball/4f31127d5d9c2949cdbe953c3c75574844788aba",
-                "reference": "4f31127d5d9c2949cdbe953c3c75574844788aba",
+                "url": "https://api.github.com/repos/novicell-drupal/premium_articles/zipball/9c54d95226fa9bb94985eb6dd9b71cda995cd082",
+                "reference": "9c54d95226fa9bb94985eb6dd9b71cda995cd082",
                 "shasum": ""
             },
             "require": {
@@ -6599,9 +6599,9 @@
             ],
             "support": {
                 "issues": "https://github.com/novicell-drupal/premium_articles/issues",
-                "source": "https://github.com/novicell-drupal/premium_articles/tree/3.2.8"
+                "source": "https://github.com/novicell-drupal/premium_articles/tree/4.0"
             },
-            "time": "2025-07-31T13:05:12+00:00"
+            "time": "2025-09-25T11:42:35+00:00"
         },
         {
             "name": "novicell/premium_calendar",
