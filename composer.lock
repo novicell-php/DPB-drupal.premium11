@@ -6605,16 +6605,16 @@
         },
         {
             "name": "novicell/premium_calendar",
-            "version": "1.0",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/novicell-drupal/premium_calendar.git",
-                "reference": "7403d72fb0b0c6cc0562a160cca281e11d8e6795"
+                "reference": "72c35cf404297112fb17e26ce9cc295c71582eaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/novicell-drupal/premium_calendar/zipball/7403d72fb0b0c6cc0562a160cca281e11d8e6795",
-                "reference": "7403d72fb0b0c6cc0562a160cca281e11d8e6795",
+                "url": "https://api.github.com/repos/novicell-drupal/premium_calendar/zipball/72c35cf404297112fb17e26ce9cc295c71582eaa",
+                "reference": "72c35cf404297112fb17e26ce9cc295c71582eaa",
                 "shasum": ""
             },
             "require": {
@@ -6640,7 +6640,7 @@
                 "issues": "https://www.drupal.org/project/issues/premium_calendar",
                 "source": "https://git.drupalcode.org/project/premium_calendar"
             },
-            "time": "2025-09-15T10:46:39+00:00"
+            "time": "2025-09-25T08:39:17+00:00"
         },
         {
             "name": "novicell/premium_core",
