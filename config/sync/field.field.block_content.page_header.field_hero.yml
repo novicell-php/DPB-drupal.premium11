@@ -5,8 +5,6 @@ dependencies:
   config:
     - block_content.type.page_header
     - field.storage.block_content.field_hero
-    - paragraphs.paragraphs_type.basic_hero
-    - paragraphs.paragraphs_type.page_title
   module:
     - entity_reference_revisions
 id: block_content.page_header.field_hero
@@ -22,9 +20,7 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles:
-      basic_hero: basic_hero
-      page_title: page_title
+    target_bundles: {  }
     negate: 0
     target_bundles_drag_drop:
       accordion_item:
