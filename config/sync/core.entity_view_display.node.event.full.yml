@@ -31,13 +31,13 @@ third_party_settings:
         layout_id: layout_hero_section
         layout_settings:
           label: ''
+          context_mapping: {  }
           column_widths: ''
           color_theme: {  }
           column_spacing_top: section--spacing-top-none
           column_spacing_bottom: section--spacing-bottom-none
           hide_breadcrumbs: false
           column_width: section--width-full
-          context_mapping: {  }
         components:
           aedba2e2-5ebe-44f7-afad-684269a193aa:
             uuid: aedba2e2-5ebe-44f7-afad-684269a193aa
@@ -47,11 +47,11 @@ third_party_settings:
               label: 'Inline block'
               label_display: ''
               provider: layout_builder
+              context_mapping: {  }
               view_mode: full
               block_id: 74
               block_revision_id: 89
               block_serialized: null
-              context_mapping: {  }
             weight: 0
             additional: {  }
         third_party_settings: {  }
