@@ -10,6 +10,7 @@ dependencies:
     - field.field.block_content.hero.field_overlay
     - field.field.block_content.hero.field_text
     - field.field.block_content.hero.field_text_position
+    - field.field.block_content.hero.field_title
   module:
     - styles
 _core:
@@ -58,6 +59,13 @@ content:
   field_text_position:
     type: styles
     weight: '5'
+    region: content
+    label: omit
+    settings: {  }
+    third_party_settings: {  }
+  field_title:
+    type: value
+    weight: '6'
     region: content
     label: omit
     settings: {  }

@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - block_content.type.video
+    - field.field.block_content.video.field_show_video_captions
+    - field.field.block_content.video.field_show_video_transcript
     - field.field.block_content.video.field_video_media
     - transform_api.entity_transform_mode.block_content.full_width
 _core:
@@ -13,18 +15,28 @@ targetEntityType: block_content
 bundle: video
 mode: full_width
 content:
+  field_show_video_captions:
+    type: boolean
+    weight: '1'
+    region: content
+    label: omit
+    settings: {  }
+    third_party_settings: {  }
+  field_show_video_transcript:
+    type: boolean
+    weight: '2'
+    region: content
+    label: omit
+    settings: {  }
+    third_party_settings: {  }
   field_video_media:
     type: entity_transform
-    weight: '3'
+    weight: '0'
     region: content
     label: omit
     settings:
       transform_mode: image_full_width
     third_party_settings: {  }
-  label:
-    weight: -100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
 hidden:
+  label: true
   langcode: true
