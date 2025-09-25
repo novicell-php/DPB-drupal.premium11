@@ -1,10 +1,15 @@
 uuid: 9c246384-f1c6-487b-8935-66846f356c81
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - block_content.type.hero
-    - field.field.block_content.hero.field_hero
+    - field.field.block_content.hero.field_background
+    - field.field.block_content.hero.field_color_theme
+    - field.field.block_content.hero.field_cta
+    - field.field.block_content.hero.field_overlay
+    - field.field.block_content.hero.field_text
+    - field.field.block_content.hero.field_text_position
     - transform_api.entity_transform_mode.block_content.width_100
 _core:
   default_config_hash: '-jN5btLW8YSAh9e9Xvebkhy5baej5PHlkFGaXpK5CmE'
@@ -13,18 +18,16 @@ targetEntityType: block_content
 bundle: hero
 mode: width_100
 content:
-  field_hero:
-    type: entity_transform
-    weight: '0'
-    region: content
-    label: omit
-    settings:
-      transform_mode: width_100
-    third_party_settings: {  }
   label:
     weight: -100
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
+  field_background: true
+  field_color_theme: true
+  field_cta: true
+  field_overlay: true
+  field_text: true
+  field_text_position: true
   langcode: true

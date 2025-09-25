@@ -1,0 +1,20 @@
+uuid: cbf356e1-cb3f-438e-9450-d744ef60a220
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - styles
+id: block_content.field_cta
+field_name: field_cta
+entity_type: block_content
+type: styles_link_target
+settings:
+  collection: button_style
+module: styles
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

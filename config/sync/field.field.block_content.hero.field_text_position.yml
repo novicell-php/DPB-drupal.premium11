@@ -1,0 +1,23 @@
+uuid: c3ba925d-7260-46e9-af4e-679dc961b262
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_text_position
+  module:
+    - styles
+id: block_content.hero.field_text_position
+field_name: field_text_position
+entity_type: block_content
+bundle: hero
+label: 'Text position'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: hero--left
+default_value_callback: ''
+settings: {  }
+field_type: styles
