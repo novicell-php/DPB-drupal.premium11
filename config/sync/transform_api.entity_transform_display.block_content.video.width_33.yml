@@ -4,10 +4,7 @@ status: true
 dependencies:
   config:
     - block_content.type.video
-    - field.field.block_content.video.field_video_headline
     - field.field.block_content.video.field_video_media
-    - field.field.block_content.video.field_video_subline
-    - field.field.block_content.video.field_video_text_color
     - transform_api.entity_transform_mode.block_content.width_33
 _core:
   default_config_hash: Er72XLj3a6Mho5hioH0YhkByMgd4NzUwAeXz-CTDGzs
@@ -16,13 +13,6 @@ targetEntityType: block_content
 bundle: video
 mode: width_33
 content:
-  field_video_headline:
-    type: value
-    weight: '0'
-    region: content
-    label: omit
-    settings: {  }
-    third_party_settings: {  }
   field_video_media:
     type: entity_transform
     weight: '3'
@@ -30,20 +20,6 @@ content:
     label: omit
     settings:
       transform_mode: image_width_33
-    third_party_settings: {  }
-  field_video_subline:
-    type: value
-    weight: '1'
-    region: content
-    label: omit
-    settings: {  }
-    third_party_settings: {  }
-  field_video_text_color:
-    type: value
-    weight: '2'
-    region: content
-    label: omit
-    settings: {  }
     third_party_settings: {  }
   label:
     weight: -100

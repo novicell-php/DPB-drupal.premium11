@@ -1,0 +1,19 @@
+uuid: 081641ac-a057-4a87-b57d-b76f2e32840f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_title
+id: block_content.hero.field_title
+field_name: field_title
+entity_type: block_content
+bundle: hero
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

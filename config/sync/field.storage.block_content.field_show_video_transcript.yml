@@ -1,0 +1,18 @@
+uuid: 802a35ab-90f8-4347-aee8-ac93a2b70c85
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_show_video_transcript
+field_name: field_show_video_transcript
+entity_type: block_content
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

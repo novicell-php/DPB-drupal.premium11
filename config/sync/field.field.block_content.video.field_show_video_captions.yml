@@ -1,0 +1,21 @@
+uuid: d9a391bd-6eb4-4f51-ade9-2e9f00fda50b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video
+    - field.storage.block_content.field_show_video_captions
+id: block_content.video.field_show_video_captions
+field_name: field_show_video_captions
+entity_type: block_content
+bundle: video
+label: 'Show captions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,21 @@
+uuid: d2389c69-217b-4641-a7f6-09582b7aafe0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video
+    - field.storage.block_content.field_show_video_transcript
+id: block_content.video.field_show_video_transcript
+field_name: field_show_video_transcript
+entity_type: block_content
+bundle: video
+label: 'Show transcript'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
