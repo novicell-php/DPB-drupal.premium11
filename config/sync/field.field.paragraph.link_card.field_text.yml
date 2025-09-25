@@ -1,0 +1,22 @@
+uuid: 1cc4dac7-d0e8-4da2-bd0c-b1871438d6f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.link_card
+  module:
+    - text
+id: paragraph.link_card.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: link_card
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
