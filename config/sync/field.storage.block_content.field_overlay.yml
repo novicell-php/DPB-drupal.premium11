@@ -1,0 +1,18 @@
+uuid: e25b49db-440e-4d42-9705-a3a77cbc9822
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_overlay
+field_name: field_overlay
+entity_type: block_content
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

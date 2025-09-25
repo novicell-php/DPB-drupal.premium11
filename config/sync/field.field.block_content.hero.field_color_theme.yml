@@ -1,0 +1,21 @@
+uuid: f603aa35-d101-4d17-820b-2b266c21a730
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_color_theme
+  module:
+    - styles
+id: block_content.hero.field_color_theme
+field_name: field_color_theme
+entity_type: block_content
+bundle: hero
+label: 'Color theme'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: styles

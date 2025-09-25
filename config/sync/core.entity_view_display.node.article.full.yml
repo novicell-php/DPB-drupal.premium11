@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.hero
     - core.entity_view_mode.node.full
     - field.field.node.article.body
     - field.field.node.article.field_article_categories
@@ -37,22 +36,7 @@ third_party_settings:
           column_spacing_bottom: section--spacing-bottom-none
           hide_breadcrumbs: false
           column_width: section--width-full
-        components:
-          f335daf6-869b-47f9-bc95-33632c25930c:
-            uuid: f335daf6-869b-47f9-bc95-33632c25930c
-            region: content
-            configuration:
-              id: 'inline_block:hero'
-              label: 'Inline block'
-              label_display: ''
-              provider: layout_builder
-              context_mapping: {  }
-              view_mode: full
-              block_id: 8
-              block_revision_id: 8
-              block_serialized: null
-            weight: 0
-            additional: {  }
+        components: {  }
         third_party_settings: {  }
       -
         layout_id: layout_article_sidebar_section

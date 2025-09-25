@@ -1,0 +1,20 @@
+uuid: edd01812-83c9-4d6c-b0d2-cba0de2b0b6c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - styles
+id: block_content.field_text_position
+field_name: field_text_position
+entity_type: block_content
+type: styles
+settings:
+  collection: hero_text_align
+module: styles
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
