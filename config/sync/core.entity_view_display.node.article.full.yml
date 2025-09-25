@@ -17,7 +17,7 @@ dependencies:
     - datetime
     - layout_builder
     - layout_builder_restrictions
-    - premium_articles_layout
+    - premium_articles
     - premium_layout_builder_restrictions
     - user
 third_party_settings:

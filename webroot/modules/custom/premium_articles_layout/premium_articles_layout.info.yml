@@ -1,0 +1,11 @@
+name: Premium articles layout
+description: Premium articles layout
+package: Drupal Premium
+type: module
+core_version_requirement: ^11
+
+dependencies:
+  - premium_core:premium_core
+
+interface translation project: premium_demo
+interface translation server pattern: modules/custom/premium_demo/translations/%language.po
