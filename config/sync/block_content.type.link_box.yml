@@ -1,0 +1,8 @@
+uuid: e26410e4-92d4-41a3-8b5c-a71764c2ab1b
+langcode: en
+status: true
+dependencies: {  }
+id: link_box
+label: 'Link box'
+revision: false
+description: 'A block that contains a list of link cards.'

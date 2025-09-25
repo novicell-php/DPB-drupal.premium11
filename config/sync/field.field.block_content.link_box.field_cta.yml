@@ -1,0 +1,23 @@
+uuid: 690e0c29-c6c8-452d-a0a7-1bbfcd8325b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_box
+    - field.storage.block_content.field_cta
+  module:
+    - styles
+id: block_content.link_box.field_cta
+field_name: field_cta
+entity_type: block_content
+bundle: link_box
+label: 'Call to action'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: '17'
+  title: '2'
+field_type: styles_link_target
