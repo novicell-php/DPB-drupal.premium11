@@ -6674,16 +6674,16 @@
         },
         {
             "name": "novicell/premium_headless",
-            "version": "2.1.1",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/novicell-drupal/premium_headless.git",
-                "reference": "0ef5eee53e702a2d25674b434e97912fcb561c81"
+                "reference": "550a69462d25b3aa082efa8f0c5b4ab157075b89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/novicell-drupal/premium_headless/zipball/0ef5eee53e702a2d25674b434e97912fcb561c81",
-                "reference": "0ef5eee53e702a2d25674b434e97912fcb561c81",
+                "url": "https://api.github.com/repos/novicell-drupal/premium_headless/zipball/550a69462d25b3aa082efa8f0c5b4ab157075b89",
+                "reference": "550a69462d25b3aa082efa8f0c5b4ab157075b89",
                 "shasum": ""
             },
             "require": {
@@ -6701,9 +6701,9 @@
             ],
             "support": {
                 "issues": "https://github.com/novicell-drupal/premium_headless/issues",
-                "source": "https://github.com/novicell-drupal/premium_headless/tree/2.1.1"
+                "source": "https://github.com/novicell-drupal/premium_headless/tree/2.2.1"
             },
-            "time": "2025-08-25T12:48:29+00:00"
+            "time": "2025-09-26T07:30:51+00:00"
         },
         {
             "name": "novicell/premium_headless_theme",
