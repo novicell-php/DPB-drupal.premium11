@@ -1,0 +1,24 @@
+uuid: 4165be8c-51bf-46f6-9d90-506a4d5be302
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.carousel_card
+  module:
+    - text
+id: paragraph.carousel_card.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: carousel_card
+label: Text
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

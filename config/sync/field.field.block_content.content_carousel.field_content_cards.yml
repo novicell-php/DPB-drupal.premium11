@@ -1,0 +1,37 @@
+uuid: 5d2a6c5e-8831-4f1e-bb66-30b1cbe0d1df
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content_carousel
+    - field.storage.block_content.field_content_cards
+    - paragraphs.paragraphs_type.carousel_card
+  module:
+    - entity_reference_revisions
+id: block_content.content_carousel.field_content_cards
+field_name: field_content_cards
+entity_type: block_content
+bundle: content_carousel
+label: 'Content cards'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      carousel_card: carousel_card
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_item:
+        weight: 5
+        enabled: false
+      carousel_card:
+        weight: 4
+        enabled: true
+      link_card:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

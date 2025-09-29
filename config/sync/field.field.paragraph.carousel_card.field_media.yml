@@ -1,0 +1,29 @@
+uuid: 156e6790-d4f9-4bc9-91a7-4e3d072c9d0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media
+    - media.type.image
+    - paragraphs.paragraphs_type.carousel_card
+id: paragraph.carousel_card.field_media
+field_name: field_media
+entity_type: paragraph
+bundle: carousel_card
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: icon
+field_type: entity_reference

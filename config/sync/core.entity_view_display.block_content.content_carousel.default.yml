@@ -1,0 +1,35 @@
+uuid: cf1fb2a4-d5e6-4229-9439-12f54a994ade
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content_carousel
+    - field.field.block_content.content_carousel.field_content_cards
+    - field.field.block_content.content_carousel.field_title
+  module:
+    - entity_reference_revisions
+id: block_content.content_carousel.default
+targetEntityType: block_content
+bundle: content_carousel
+mode: default
+content:
+  field_content_cards:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
