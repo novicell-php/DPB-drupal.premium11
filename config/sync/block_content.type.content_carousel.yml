@@ -1,0 +1,8 @@
+uuid: ea93ed43-5581-48f4-a903-3733050b5497
+langcode: en
+status: true
+dependencies: {  }
+id: content_carousel
+label: 'Content carousel'
+revision: false
+description: 'A block that contains a carousel of cards.'

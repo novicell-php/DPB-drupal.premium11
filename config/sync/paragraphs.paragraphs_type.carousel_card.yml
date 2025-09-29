@@ -1,0 +1,10 @@
+uuid: 04789033-f042-4113-9c11-98ef9eed270a
+langcode: en
+status: true
+dependencies: {  }
+id: carousel_card
+label: 'Carousel card'
+icon_uuid: null
+icon_default: null
+description: 'Cards for a content carousel.'
+behavior_plugins: {  }

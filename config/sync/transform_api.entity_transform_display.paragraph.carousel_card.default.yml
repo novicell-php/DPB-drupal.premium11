@@ -1,0 +1,48 @@
+uuid: bc3e0376-c39b-4672-9835-1cec13344b5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carousel_card.field_media
+    - field.field.paragraph.carousel_card.field_styled_link
+    - field.field.paragraph.carousel_card.field_text
+    - field.field.paragraph.carousel_card.field_title
+    - paragraphs.paragraphs_type.carousel_card
+  module:
+    - styles
+id: paragraph.carousel_card.default
+targetEntityType: paragraph
+bundle: carousel_card
+mode: default
+content:
+  field_media:
+    type: entity_transform
+    weight: '2'
+    region: content
+    label: omit
+    settings:
+      transform_mode: list_view
+    third_party_settings: {  }
+  field_styled_link:
+    type: styled_link
+    weight: '3'
+    region: content
+    label: omit
+    settings: {  }
+    third_party_settings: {  }
+  field_text:
+    type: plain_text
+    weight: '1'
+    region: content
+    label: omit
+    settings:
+      text_length: 0
+    third_party_settings: {  }
+  field_title:
+    type: value
+    weight: '0'
+    region: content
+    label: omit
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
