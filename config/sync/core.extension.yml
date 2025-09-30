@@ -1,6 +1,7 @@
 _core:
   default_config_hash: 4GIX5Esnc_umpXUBj4IIocRX7Mt5fPhm4AgXfE3E56E
 module:
+  premium_headless: -10
   admin_toolbar: 0
   allowed_formats: 0
   announcement: 0
@@ -86,7 +87,6 @@ module:
   premium_calendar: 0
   premium_core: 0
   premium_demo: 0
-  premium_headless: 0
   premium_layout_builder_restrictions: 0
   premium_search: 0
   premium_theme_helper: 0
