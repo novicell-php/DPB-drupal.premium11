@@ -63,6 +63,7 @@ permissions:
   - 'administer url aliases'
   - 'administer users'
   - 'administer webform'
+  - 'administer webform overview'
   - 'administer webform submission'
   - 'assign editor role'
   - 'assign webmaster role'
