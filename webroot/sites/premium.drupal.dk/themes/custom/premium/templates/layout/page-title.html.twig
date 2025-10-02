@@ -1,5 +1,13 @@
-<section class="section section--spacing-top-small section--spacing-bottom-small">
-  <div class="container">
-    <h1>{{ title }}</h1>
-  </div>
-</section>
+{% if title %}
+  <section class="section section--spacing-top-medium section--spacing-bottom-medium">
+    <div class="container">
+      <h1 class="h2">{{ title }}</h1>
+      <div class="title__arrow">
+        {% include '@reusable-component/svg-icon.twig' with {
+          'attributes': '',
+          'svgIconName': 'chevron-down'
+        } %}
+      </div>
+    </div>
+  </section>
+{% endif %}

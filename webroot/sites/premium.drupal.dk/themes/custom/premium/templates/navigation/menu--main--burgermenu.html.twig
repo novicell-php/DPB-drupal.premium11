@@ -1,0 +1,68 @@
+{#
+/**
+ * @file
+ * Theme override to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ */
+#}
+
+<ul class="burger-menu-list">
+  {%- for item in items -%}
+    <li class="burger-menu-list-item js-burger-menu-list-item{{ item.in_active_trail ? ' active' : '' }}{{ item.below is not empty ? ' burger-menu-list-item--has-children': '' }}">
+      {% if item.url.routeName == '<nolink>' %}
+        <span class="burger-menu-list-item__link" tabindex="0" role="menuitem">{{ item.title }}</span>
+      {% else %}
+        {{ link(item.title, item.url, {'class': 'burger-menu-list-item__link'}) }}
+      {% endif %}
+      {% if item.below is not empty %}
+        <button class="burger-menu-list-item__toggle js-burger-menu-list-item__toggle" aria-expanded="false" aria-label="Expand submenu">
+          {% include '@reusable-component/svg-icon.twig' with {
+            'attributes': '',
+            'svgIconName': 'arrow-right'
+          } %}
+        </button>
+        <ul class="burger-submenu-list js-burger-submenu-list">
+          {%- for item_below in item.below -%}
+            <li class="burger-submenu-list-item js-burger-submenu-list-item{{ item_below.in_active_trail ? ' active' : '' }}{{ item_below.below is not empty ? ' burger-menu-list-item--has-children': '' }}">
+              {{ link(item_below.title, item_below.url, {
+                'class': ['burger-submenu-list-item__link'],
+                'tabindex': '-1'
+              }) }}
+              {% if item_below.below %}
+                <button class="burger-submenu-list-item__toggle js-burger-submenu-list-item__toggle" aria-expanded="false" aria-label="Expand submenu" tabindex="-1">
+                  {% include '@reusable-component/svg-icon.twig' with {
+                    'attributes': '',
+                    'svgIconName': 'chevron-down'
+                  } %}
+                </button>
+                <ul class="burger-submenu-list js-burger-submenu-list">
+                  {%- for item_below_below in item_below.below -%}
+                    <li class="burger-submenu-list-item js-burger-submenu-list-item">
+                      {{ link(item_below_below.title, item_below_below.url, {
+                        'class': ['burger-submenu-list-item__link'],
+                        'tabindex': '-1'
+                      }) }}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {% endif %}
+            </li>
+          {%- endfor -%}
+        </ul>
+      {% endif %}
+    </li>
+  {%- endfor -%}
+</ul>

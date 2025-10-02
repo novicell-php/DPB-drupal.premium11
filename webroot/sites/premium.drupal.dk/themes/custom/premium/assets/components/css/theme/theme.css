@@ -28,7 +28,6 @@
 
   .accordion-item {
     color: var(--theme-accordion-text-color);
-    background-color: var(--theme-accordion-background-color);
     border-color: var(--theme-accordion-border-color);
   }
 

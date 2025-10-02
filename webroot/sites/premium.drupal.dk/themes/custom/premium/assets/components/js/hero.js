@@ -87,6 +87,7 @@ Drupal.behaviors.hero = {
         }
         iframe.setAttribute('src', newSrc);
         iframe.setAttribute('allow', 'autoplay; fullscreen');
+        iframe.setAttribute('tabindex', '-1');
         iframeWrapper.classList.add('active');
       } else if (iframeWrapper.querySelector('video')) {
         const video = iframeWrapper.querySelector('video');

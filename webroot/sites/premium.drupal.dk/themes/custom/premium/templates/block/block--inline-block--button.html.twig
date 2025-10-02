@@ -25,7 +25,8 @@
  * @see template_preprocess_block()
  */
 #}
-<div{{ attributes }}>
+
+<div{{ attributes.addClass(['button-block', 'button-block--' ~ content.field_button_alignment['#items'].value]) }}>
   {{ title_prefix }}
   {{ title_suffix }}
   {{ content.field_button }}
