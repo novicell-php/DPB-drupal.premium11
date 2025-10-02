@@ -21,8 +21,12 @@ a.button {
   text-decoration: none;
   background-color: var(--theme-button-background-color);
   border: 1px solid transparent;
-  border-radius: 50px;
   cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    background-color: var(--theme-button-hover-background-color);
+  }
 
   &[disabled],
   [disabled] & {
@@ -34,7 +38,17 @@ a.button {
     color: currentcolor;
     background-color: transparent;
     border: 1px solid var(--theme-button-background-color);
+
+    &:hover {
+      color: var(--theme-button-color);
+      background-color: var(--theme-button-background-color);
+    }
   }
+}
+
+.button-block {
+  position: relative;
+  display: inline-flex;
 
   &--center {
     left: 50%;
@@ -46,4 +60,3 @@ a.button {
     transform: translateX(-100%);
   }
 }
-/* stylelint-enable selector-class-pattern */

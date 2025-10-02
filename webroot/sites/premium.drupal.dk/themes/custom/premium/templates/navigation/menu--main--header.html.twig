@@ -24,26 +24,33 @@
 <nav class="navigation js-navigation">
   <ul class="navigation-list">
     {%- for item in items -%}
-      <li{{ create_attribute().addClass(['navigation-item', 'js-navigation-item'])
-        .addClass(item.in_active_trail ? 'active')
-        .addClass(item.below ? 'navigation-item--has-children') }}>
-        {{ link(item.title, item.url, {'class': 'navigation-item__link'}) }}
+      <li class="navigation-item js-navigation-item{{ item.in_active_trail ? ' active' : '' }}{{ item.below is not empty ? ' navigation-item--has-children': '' }}"{{ item.below is not empty ? ' aria-haspopup="true" aria-expanded="false"' : '' }}>
+        {% if item.url.routeName == '<nolink>' %}
+          <span class="navigation-item__link" tabindex="0" role="menuitem">{{ item.title }}</span>
+        {% else %}
+          {{ link(item.title, item.url, {'class': 'navigation-item__link'}) }}
+        {% endif %}
         {% if item.below %}
-          {% include '@reusable-component/svg-icon.twig' with {
-            'attributes': '',
-            'svgIconName': 'arrow-line-down'
-          } %}
-          <div class="sub-navigation">
+          <div class="sub-navigation js-sub-navigation">
             <ul class="sub-navigation__list">
               {%- for item_below in item.below -%}
-                <li class="sub-navigation__item">
-                  <a href="{{ item_below.url }}" class="sub-navigation__link">
-                    {{ item_below.title }}
+                <li class="sub-navigation-item js-sub-navigation-item">
+                  {{ link(item_below.title, item_below.url, {'class': 'sub-navigation__link'}) }}
+                  {% if item_below.below %}
                     {% include '@reusable-component/svg-icon.twig' with {
                       'attributes': '',
-                      'svgIconName': 'arrow-right'
+                      'svgIconName': 'chevron-down'
                     } %}
-                  </a>
+                    <div class="sub-navigation js-sub-navigation">
+                      <ul class="sub-navigation__list">
+                        {%- for item_below_below in item_below.below -%}
+                          <li class="sub-navigation-item js-sub-navigation-item">
+                            {{ link(item_below_below.title, item_below_below.url, {'class': 'sub-navigation__link'}) }}
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                    </div>
+                  {% endif %}
                 </li>
               {%- endfor -%}
             </ul>

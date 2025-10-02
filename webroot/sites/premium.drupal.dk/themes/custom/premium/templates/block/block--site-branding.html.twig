@@ -30,5 +30,7 @@
 <a{{ attributes.addClass('logo').setAttribute('href', path('<front>'))
   .setAttribute('title', 'Home'|t)
   .setAttribute('rel', 'home') }}>
-  <img class="logo__image" src="{{ site_logo }}" alt="{{ 'Home'|t }}">
+  <svg{{ (not attributes ? create_attribute() : attributes).addClass('logo__image').removeClass('logo') }}>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/{{ directory }}/logo.svg"></use>
+  </svg>
 </a>

@@ -3,10 +3,6 @@
  * Accordion toggle.
  */
 
-import Vue from 'vue';
-
-require('../../../scripts/vue.config')(Vue);
-
 Drupal.behaviors.accordion = {
   attach(context) {
     const accordions = document.querySelectorAll('.js-accordion:not(.loaded)');
@@ -14,50 +10,38 @@ Drupal.behaviors.accordion = {
       return;
     }
 
-    const accordionItem = {
-      props: ['title', 'id', 'hidden'],
-      data() {
-        return {
-          isOpen: false,
-        };
-      },
-      methods: {
-        toggleAccordionItem() {
-          this.isOpen = !this.isOpen;
-        },
-      },
-      template: `
-        <div class="accordion-item" v-show="!hidden">
-        <div :aria-expanded="isOpen ? 'true' : 'false'" :aria-controls="'accordion-content-' + id" :class="{'active': isOpen}" class="accordion-item__headline" @click="toggleAccordionItem">
-          <h3 class="accordion-item__title">{{ title }}</h3>
-          <div class="accordion-item__icon"></div>
-        </div>
-        <div class="accordion-item__content" :aria-hidden="!isOpen ? 'true' : 'false'" :id="'accordion-content-' + id" :class="{'active': isOpen}">
-          <div class="accordion-item__text">
-            <slot/>
-          </div>
-        </div>
-        </div>
-      `,
-    };
-
     for (let i = 0; i < accordions.length; i += 1) {
-      accordions[i].classList.add('loaded');
-      const vm = new Vue({
-        delimiters: ['${', '}'],
-        el: accordions[i],
-        data: {
-          showAllHiddenItems: false,
-        },
-        components: {
-          accordionItem,
-        },
-        methods: {
-          displayHiddenItems() {
-            this.showAllHiddenItems = true;
-          },
-        },
-      });
+      const accordion = accordions[i];
+      accordion.classList.add('loaded');
+      const accordionItems = accordion.querySelectorAll('.js-accordion-item');
+      if (accordionItems.length === 0) {
+        return;
+      }
+
+      for (let j = 0; j < accordionItems.length; j += 1) {
+        const accordionItem = accordionItems[j];
+        const accordionItemHeader = accordionItem.querySelector('.js-accordion-item__headline');
+        accordionItemHeader.addEventListener('click', () => {
+          accordionItem.classList.toggle('is-expanded');
+          if (accordionItem.classList.contains('is-expanded')) {
+            accordionItemHeader.setAttribute('aria-expanded', 'true');
+          } else {
+            accordionItemHeader.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+
+      const hiddenAccordions = accordion.querySelectorAll('.js-accordion-item.is-hidden');
+
+      if (hiddenAccordions.length > 0) {
+        const showMoreButton = accordion.querySelector('.js-accordion__showmore');
+        showMoreButton.addEventListener('click', () => {
+          showMoreButton.remove();
+          for (let k = 0; k < hiddenAccordions.length; k += 1) {
+            hiddenAccordions[k].classList.remove('is-hidden');
+          }
+        });
+      }
     }
   },
 };

@@ -4,6 +4,7 @@
  */
 
 .section {
+  position: relative;
   padding-top: var(--grid-section-spacing-mobile);
   padding-bottom: var(--grid-section-spacing-mobile);
 

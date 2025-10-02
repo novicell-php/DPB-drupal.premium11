@@ -29,19 +29,31 @@
 
 {% set autoplay = content['#block_content'].field_slideshow_autoplay.value == 1 %}
 
-<div{{ attributes.addClass('image-slideshow-wrapper').addClass('js-image-slideshow-wrapper').setAttribute('data-autoplay', autoplay ? 'true' : 'false') }}>
+<div{{ (not attributes ? create_attribute() : attributes).addClass(['image-slideshow-wrapper', 'js-image-slideshow-wrapper', 'swiper']).setAttribute('data-autoplay', autoplay ? 'true' : 'false') }}>
   {{ title_prefix }}
   {{ title_suffix }}
-  <ul class="image-slideshow js-image-slideshow">
-    {% for item in items %}
-      <li class="image-slideshow-slide">
-        {{ item.image }}
-      </li>
-    {% endfor %}
-  </ul>
-  <ul class="image-slideshow-navigation js-image-slideshow-navigation">
-    {% for item in items %}
-      <li class="image-slideshow-navigation__dot"></li>
-    {% endfor %}
-  </ul>
+  <div class="image-slideshow__button-wrapper">
+    <button class="image-slideshow__button image-slideshow__button--prev" aria-label="Previous slide">
+      {% include '@reusable-component/svg-icon.twig' with {
+        'attributes': '',
+        'svgIconName': 'chevron-down'
+      } %}
+    </button>
+    <button class="image-slideshow__button image-slideshow__button--next" aria-label="Next slide">
+      {% include '@reusable-component/svg-icon.twig' with {
+        'attributes': '',
+        'svgIconName': 'chevron-down'
+      } %}
+    </button>
+  </div>
+  <div class="image-slideshow js-image-slideshow swiper-container">
+    <div class="swiper-wrapper">
+      {% for item in items %}
+        <div class="swiper-slide image-slideshow-slide">
+          {{ item.image }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="image-slideshow-navigation"></div>
 </div>

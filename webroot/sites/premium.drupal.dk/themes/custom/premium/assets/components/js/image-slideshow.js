@@ -1,12 +1,8 @@
-/**
- * @file
- * Image slideshow.
- */
-
-import Flickity from 'flickity';
-import FlickityFade from 'flickity-fade';
-import FlickityAsNavFor from 'flickity-as-nav-for';
-import 'flickity/css/flickity.css';
+import Swiper from 'swiper';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 Drupal.behaviors.imageSlideshow = {
   attach(context) {
@@ -14,34 +10,46 @@ Drupal.behaviors.imageSlideshow = {
     if (imageSlideShowsWrappers.length === 0) {
       return;
     }
-
     for (let i = 0; i < imageSlideShowsWrappers.length; i += 1) {
       const current = imageSlideShowsWrappers[i];
-      const slideshow = current.querySelector('.js-image-slideshow');
-      const navigation = current.querySelector('.js-image-slideshow-navigation');
+      const currentSlidePrev = current.querySelector('.image-slideshow__button--prev');
+      const currentSlideNext = current.querySelector('.image-slideshow__button--next');
       current.classList.add('loaded');
-
-      setTimeout(() => {
-        const flktySlideshow = new Flickity(slideshow, {
-          // options
-          cellAlign: 'left',
-          contain: true,
-          pageDots: false,
-          prevNextButtons: false,
-          fade: true,
-          wrapAround: true,
-          autoPlay: current.dataset.autoplay === 'true' ? 3000 : '',
-          cellSelector: '.image-slideshow-slide',
+      // Build slider
+      if (current.dataset.autoplay === 'true') {
+        const swiper = new Swiper(current.querySelector('.swiper-container'), {
+          modules: [Navigation, Pagination, Autoplay],
+          lazy: true,
+          loop: true,
+          autoplay: {
+            delay: 3000,
+          },
+          pagination: {
+            el: current.querySelector('.image-slideshow-navigation'),
+            type: 'bullets',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: currentSlideNext,
+            prevEl: currentSlidePrev,
+          },
         });
-
-        const flktyNavigation = new Flickity(navigation, {
-          // options
-          contain: true,
-          pageDots: false,
-          prevNextButtons: false,
-          asNavFor: slideshow,
+      } else {
+        const swiper = new Swiper(current.querySelector('.swiper-container'), {
+          modules: [Navigation, Pagination, Autoplay],
+          lazy: true,
+          loop: false,
+          pagination: {
+            el: current.querySelector('.image-slideshow-navigation'),
+            type: 'bullets',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: currentSlideNext,
+            prevEl: currentSlidePrev,
+          },
         });
-      });
+      }
     }
   },
 };

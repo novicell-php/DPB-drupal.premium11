@@ -37,7 +37,7 @@
     {% for item in items %}
       <li{{ item.attributes }}>
         {% set svg_icon = (item.svg_icon ? '<svg '~(item.svg_icon.clickAction ? '@click='~(item.svg_icon.clickAction)~'')~' class="icon icon--'~item.svg_icon.name~'">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/'~directory~'/build-assets/dist/icons/icons.svg#'~item.svg_icon.name~'"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/'~directory~'/dist/icons/icons.svg#'~item.svg_icon.name~'"></use>
         </svg>') %}
         {% if item.url %}
           <a href="{{ item.url }}" {{ item.link_options.class ? 'class='~(item.link_options.class|join(' '))~'' }}>{{ item.title }} {{ svg_icon|raw }}</a>
