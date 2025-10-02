@@ -5,11 +5,23 @@
 
 .logo {
   z-index: 3;
-  margin-right: auto;
+  margin-right: 40px;
+}
 
-  &__image {
-    display: block;
-    height: 35px;
-    margin: 0 auto;
+.logo__image {
+  display: block;
+  width: 100px;
+  height: 54px;
+  transition: all .2s;
+  fill: var(--color-black);
+
+  @media (--viewport-lg-min) {
+    width: 125px;
+    height: 67px;
+  }
+
+  .header--sticky & {
+    width: 100px;
+    height: 54px;
   }
 }

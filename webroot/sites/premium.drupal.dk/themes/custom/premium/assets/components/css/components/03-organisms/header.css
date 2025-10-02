@@ -21,34 +21,48 @@ body.gin--classic-toolbar {
   color: var(--color-gray-dark-1);
   font-weight: 500;
   font-family: var(--heading-font-family);
-  background-color: var(--color-white);
-  box-shadow: 0 25px 75px rgb(0 0 0 / 10%);
+  background-color: var(--site-background-color);
+  transition: transform .2s ease;
+
+  &--sticky {
+    box-shadow: 0 3px 10px 0 rgb(0 0 0 / 10%);
+    transform: translateY(0);
+
+    @media (--viewport-lg-min) {
+      transform: translateY(calc(var(--meta-menu-height) * -1));
+    }
+  }
+
+  &.header--hidden {
+    transform: translateY(calc(var(--header-height-mobile) * -1));
+
+    @media (--viewport-lg-min) {
+      transform: translateY(calc(calc(var(--header-height) + var(--meta-menu-height)) * -1));
+    }
+  }
 
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: var(--header-height-mobile);
+    padding-right: 15px;
+    padding-left: 15px;
 
-    @media (--viewport-md-min) {
-      justify-content: flex-end;
+    @media (--viewport-lg-min) {
       height: var(--header-height);
-    }
+      padding-right: 55px;
+      padding-left: 55px;
 
-    .search-toggle {
-      margin-right: 50px;
-
-      @media (--viewport-md-min) {
-        margin-right: 0;
+      .header--sticky & {
+        height: calc(var(--header-height) - 20px);
       }
     }
+  }
 
-    .burger {
-      order: 2;
-
-      @media (--viewport-md-min) {
-        order: 0;
-      }
-    }
+  /* When user is logged in, we remove fixed from header */
+  .gin--classic-toolbar.toolbar-horizontal &,
+  .gin--classic-toolbar.toolbar-horizontal.toolbar-tray-open & {
+    position: relative;
   }
 }

@@ -116,6 +116,10 @@ burger:
   css:
     theme:
       dist/components/css/components/02-molecules/burger.css: {}
+  js:
+    dist/components/js/burger.js: {}
+  dependencies:
+    - core/drupal
 
 divider:
   version: VERSION
@@ -173,6 +177,8 @@ navigation:
       dist/components/css/components/02-molecules/navigation.css: {}
   js:
     dist/components/js/navigation.js: {}
+  dependencies:
+    - core/drupal
 
 quote:
   version: VERSION
@@ -233,13 +239,17 @@ burger-menu:
     theme:
       dist/components/css/components/03-organisms/burger-menu.css: {}
   js:
-    dist/components/js/burger-menu.js: {}
+    dist/components/js/burger-menu.js: {preprocess: false}
+  dependencies:
+    - core/drupal
 
 header:
   version: VERSION
   css:
     theme:
       dist/components/css/components/03-organisms/header.css: {}
+  js:
+    dist/components/js/header.js: {}
 
 hero:
   version: VERSION
@@ -250,6 +260,14 @@ hero:
     dist/components/js/hero.js: {}
   dependencies:
     - core/drupal
+    - premium/theme
+    - premium/theme-primary
+    - premium/theme-secondary
+    - premium/theme-dark
+    - premium/theme-green
+    - premium/theme-red
+    - premium/theme-seashell
+    - premium/theme-yellow
 
 inline-navigation:
   version: VERSION

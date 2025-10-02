@@ -5,9 +5,9 @@
 
 .meta-menu {
   display: none;
-  background-color: var(--color-gray-light);
+  background-color: var(--color-gray-light2);
 
-  @media (--viewport-md-min) {
+  @media (--viewport-lg-min) {
     display: block;
   }
 
@@ -16,6 +16,8 @@
     align-items: center;
     justify-content: flex-end;
     height: var(--meta-menu-height);
+    padding-right: 55px;
+    padding-left: 55px;
   }
 }
 

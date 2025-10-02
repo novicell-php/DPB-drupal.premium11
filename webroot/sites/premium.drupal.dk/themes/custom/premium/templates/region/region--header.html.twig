@@ -21,32 +21,26 @@
 
 <header class="header">
   <div class="meta-menu">
-    <div class="container">
-      <div class="meta-menu__inner">
-        {{ elements.languageswitcher }}
-        {{ elements.metamenu }}
-      </div>
+    <div class="meta-menu__inner">
+      {{ elements.languageswitcher }}
+      {{ elements.metamenu }}
     </div>
   </div>
-  <div class="container">
-    <div class="header__inner">
-      {{ elements.site_branding }}
-      {{ elements.mainnavigation }}
-      <div class="burger" id="js-burger">
-        <div class="burger__lines">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="burger__label">{{ 'Menu'|t }}</div>
+  <div class="header__inner">
+    {{ elements.site_branding }}
+    {{ elements.mainnavigation }}
+    <button class="search-toggle js-search-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Open search overlay">
+      {% include '@reusable-component/svg-icon.twig' with {
+        'attributes': '',
+        'svgIconName': 'search'
+      } %}
+    </button>
+    <button class="burger" id="js-burger" aria-haspopup="true" aria-expanded="false" aria-label="Open navigation menu">
+      <div class="burger__lines">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="search-toggle js-search-toggle">
-        {% include '@reusable-component/svg-icon.twig' with {
-          'attributes': '',
-          'svgIconName': 'search'
-        } %}
-        {{ 'Search'|t }}
-      </div>
-    </div>
+    </button>
   </div>
 </header>
