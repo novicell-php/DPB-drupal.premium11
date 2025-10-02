@@ -6711,16 +6711,16 @@
         },
         {
             "name": "novicell/premium_headless_theme",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/novicell-drupal/premium_headless_theme.git",
-                "reference": "d9a0315f91bf4f19cd8ca2b9f4be5a39e5b181f7"
+                "reference": "190a0a4b29a791babdcbc9a4d359a104859798e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/novicell-drupal/premium_headless_theme/zipball/d9a0315f91bf4f19cd8ca2b9f4be5a39e5b181f7",
-                "reference": "d9a0315f91bf4f19cd8ca2b9f4be5a39e5b181f7",
+                "url": "https://api.github.com/repos/novicell-drupal/premium_headless_theme/zipball/190a0a4b29a791babdcbc9a4d359a104859798e1",
+                "reference": "190a0a4b29a791babdcbc9a4d359a104859798e1",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -6731,9 +6731,9 @@
             "description": "Premium headless theme",
             "support": {
                 "issues": "https://github.com/novicell-drupal/premium_headless_theme/issues",
-                "source": "https://github.com/novicell-drupal/premium_headless_theme/tree/1.1.1"
+                "source": "https://github.com/novicell-drupal/premium_headless_theme/tree/1.1.2"
             },
-            "time": "2025-09-30T12:03:52+00:00"
+            "time": "2025-10-02T06:59:55+00:00"
         },
         {
             "name": "novicell/premium_profile",
