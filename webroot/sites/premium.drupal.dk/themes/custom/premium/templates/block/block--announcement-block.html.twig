@@ -1,0 +1,62 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+{{ attach_library('premium/announcement') }}
+
+{#{% set position = content.field_text_position['#items'][0].value %}#}
+{#{% set color_theme = content.field_color_theme['#items'][0].value %}#}
+{#{% set overlay = content.field_overlay['#items'][0].value %}#}
+
+
+{% set classes = [
+  'announcement',
+  'theme',
+  'theme-red'
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+  {% for announcement in content.announcements %}
+    {% if (announcement['#announcement']) %}
+      <div data-id="announcement-{{ loop.index }}" class="announcement-item js-announcement-item">
+        {% if announcement['#announcement'].field_dismissable.value %}
+          <button class="announcement__dismiss js-announcement__dismiss" aria-label="Dismiss announcement"></button>
+        {% endif %}
+        <div class="announcement-item__content">
+          {% set announcement_text = {
+            '#type':   'processed_text',
+            '#text':    announcement['#announcement'].body.value,
+            '#format': 'full_html',
+          } %}
+          <h2 class="h5 announcement-item__title">{{ announcement['#announcement'].title.value }}</h2>
+          <div class="announcement-item__body">
+            {{ announcement_text }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
