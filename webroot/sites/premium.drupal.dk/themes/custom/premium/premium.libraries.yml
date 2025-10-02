@@ -105,6 +105,16 @@ button-preview:
       dist/components/css/preview/button.css: {}
 
 # Molecules.
+announcement:
+  version: VERSION
+  css:
+    theme:
+      dist/components/css/components/02-molecules/announcement.css: {}
+  js:
+    dist/components/js/announcement.js: {}
+  dependencies:
+    - core/drupal
+
 breadcrumb:
   version: VERSION
   css:

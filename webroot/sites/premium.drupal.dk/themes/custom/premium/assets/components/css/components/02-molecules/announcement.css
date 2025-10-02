@@ -1,0 +1,83 @@
+/**
+ * Type: Molecules.
+ * Announcement.
+ */
+
+.announcement {
+  color: var(--theme-color);
+  background-color: var(--theme-background-color);
+
+  &-item {
+    display: none;
+    position: relative;
+    padding: 15px 50px;
+    text-align: center;
+    transition: all .3s ease;
+
+    &.is-visible {
+      display: block;
+      border-bottom: 1px solid var(--theme-color);
+    }
+
+    &:nth-last-child(1 of .is-visible) {
+      border-bottom: none;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+
+    &__body {
+      line-height: 1.2;
+
+      & p {
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__dismiss {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    color: var(--theme-color);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform .4s;
+    -webkit-appearance: none; /* stylelint-disable-line */
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      transform: rotate(180deg);
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      height: 2px;
+      background-color: var(--theme-color);
+      content: "";
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}
