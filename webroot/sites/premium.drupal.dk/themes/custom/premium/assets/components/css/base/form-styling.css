@@ -11,6 +11,7 @@
   @nestedimport "./assets/components/css/components/01-particles/radio.css";
   @nestedimport "./assets/components/css/components/01-particles/select.css";
   @nestedimport "./assets/components/css/components/01-particles/textarea.css";
+  @nestedimport "./assets/components/css/components/02-molecules/fieldset.css";
 
   .form-item {
     margin-bottom: 15px;

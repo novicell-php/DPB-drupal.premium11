@@ -1,7 +1,31 @@
+{{ attach_library('premium/overview-form') }}
+
+{% set show_facets = form.facets.text or form.facets.field_article_categories or form.facets.field_article_type %}
+
 <form{{ attributes }}>
-  <div class="overview-form-facets">
-    {{ form.facets }}
+  {% if form.facets.count or form.facets.sort %}
+    <div class="row">
+      <div class="col-xs-12 {{ show_facets ? ' col-md-offset-3 col-md-9' }}">
+        <div class="overview-form-facets__sorting">
+          {{ form.facets.sort }}
+          {{ form.facets.count }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  <div class="row">
+    {% if show_facets %}
+      <div class="col-xs-12 col-md-3">
+        <div class="overview-form-facets">
+          {{ form.facets.text }}
+          {{ form.facets.field_article_categories }}
+          {{ form.facets.field_article_type }}
+        </div>
+      </div>
+    {% endif %}
+    <div class="col-xs-12 {{ show_facets ? ' col-md-9' }}">
+      {{ form.content }}
+    </div>
   </div>
-  {{ form.content }}
   {{ form|without('content', 'facets') }}
 </form>

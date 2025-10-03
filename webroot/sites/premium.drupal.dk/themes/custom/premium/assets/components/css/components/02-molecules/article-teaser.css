@@ -5,8 +5,8 @@
 
 .article-teaser {
   position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: var(--half-gutter-width);
+  padding-bottom: var(--half-gutter-width);
 
   &__link {
     display: block;
@@ -47,6 +47,7 @@
   &__content {
     position: relative;
     padding: 40px;
+    color: var(--color-black);
   }
 
   &__date {
@@ -81,6 +82,7 @@
 
     .tag {
       display: inline-block;
+      color: var(--color-gray-medium);
 
       &-separator {
         margin: 0 5px;
@@ -91,7 +93,7 @@
   }
 
   &__title {
-    font-weight: 700;
-    font-size: 28px;
+    margin-bottom: 0;
+    color: var(--color-black);
   }
 }

@@ -1,0 +1,25 @@
+/**
+ * Type: Molecules.
+ * Fieldset.
+ */
+
+fieldset {
+  position: relative;
+  display: block;
+  margin: 0 0 15px;
+  padding: 15px 20px;
+  background-color: var(--color-white);
+  border: none;
+  box-shadow: 0 3px 20px rgba(49 51 53 / 3%);
+
+  legend {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: 19px;
+  }
+}
