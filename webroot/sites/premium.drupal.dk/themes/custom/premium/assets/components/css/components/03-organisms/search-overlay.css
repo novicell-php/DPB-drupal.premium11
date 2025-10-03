@@ -24,37 +24,39 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--color-black);
-    font-weight: 400;
-    font-size: 17px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    color: var(--theme-color);
+    background: transparent;
+    border: none;
     cursor: pointer;
+    transition: transform .4s;
+    -webkit-appearance: none; /* stylelint-disable-line */
 
-    &-label {
-      display: none;
-      margin-right: 15px;
-      opacity: .6;
-      transition: opacity .2s;
-
-      @media (--viewport-md-min) {
-        display: block;
-      }
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      transform: rotate(180deg);
     }
 
-    .icon--close {
-      width: 19px;
-      height: 19px;
-      transition: transform .4s;
-      fill: var(--color-black);
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 30px;
+      height: 1px;
+      background-color: var(--theme-color);
+      content: "";
     }
 
-    &:hover {
-      .search-overlay__close-label {
-        opacity: 1;
-      }
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
 
-      .icon--close {
-        transform: rotate(180deg);
-      }
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
     }
   }
 
