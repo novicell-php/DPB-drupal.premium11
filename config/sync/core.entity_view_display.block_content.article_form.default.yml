@@ -15,12 +15,12 @@ bundle: article_form
 mode: default
 content:
   field_articles_form:
-    weight: 1
+    type: overview_filter_form
     label: hidden
     settings:
       view_mode: teaser
     third_party_settings: {  }
-    type: overview_filter_form
+    weight: 1
     region: content
 hidden:
   langcode: true

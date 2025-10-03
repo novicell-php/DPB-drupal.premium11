@@ -38,7 +38,6 @@ settings:
         - right
     ckeditor5_heading:
       enabled_headings:
-        - heading1
         - heading2
         - heading3
     ckeditor5_list:
