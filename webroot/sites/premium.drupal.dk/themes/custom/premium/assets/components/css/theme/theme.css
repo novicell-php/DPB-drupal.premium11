@@ -91,15 +91,4 @@
       background-color: var(--theme-status-message-background-color-error);
     }
   }
-
-  .pager {
-    &__item {
-      background-color: var(--theme-color);
-      box-shadow: 0 2px 0 0 var(--theme-color);
-    }
-
-    a {
-      color: var(--theme-link-color);
-    }
-  }
 }

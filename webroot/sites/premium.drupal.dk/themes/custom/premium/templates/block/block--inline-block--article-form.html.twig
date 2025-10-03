@@ -27,7 +27,7 @@
 #}
 {{ attach_library('premium/articles') }}
 
-<div{{ attributes.addClass(['articles', section_width ? 'articles--full-width']) }}>
+<div{{ attributes.addClass(['articles', section_width == 'section--width-full' ? 'articles--full-width']) }}>
   {{ title_prefix }}
   {{ title_suffix }}
   {{ content }}
