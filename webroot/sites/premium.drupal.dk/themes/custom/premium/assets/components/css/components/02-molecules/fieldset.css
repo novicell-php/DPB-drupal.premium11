@@ -7,7 +7,7 @@ fieldset {
   position: relative;
   display: block;
   margin: 0 0 15px;
-  padding: 15px 20px;
+  padding: 25px 30px 15px;
   background-color: var(--color-white);
   border: none;
   box-shadow: 0 3px 20px rgba(49 51 53 / 3%);
