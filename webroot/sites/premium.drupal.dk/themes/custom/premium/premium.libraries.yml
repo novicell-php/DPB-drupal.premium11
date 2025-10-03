@@ -115,6 +115,12 @@ announcement:
   dependencies:
     - core/drupal
 
+article-teaser:
+  version: VERSION
+  css:
+    theme:
+      dist/components/css/components/02-molecules/article-teaser.css: {}
+
 breadcrumb:
   version: VERSION
   css:
@@ -242,6 +248,12 @@ appetiser:
   css:
     theme:
       dist/components/css/components/03-organisms/appetiser.css: {}
+
+articles:
+  version: VERSION
+  css:
+    theme:
+      dist/components/css/components/03-organisms/articles.css: {}
 
 burger-menu:
   version: VERSION

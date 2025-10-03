@@ -1,0 +1,21 @@
+/**
+ * Type: Organisms.
+ * Articles.
+ */
+
+.articles {
+  position: relative;
+  width: 100%;
+
+  &--full-width {
+    .overview-form-contents__content {
+      padding-right: var(--half-gutter-width);
+      padding-left: var(--half-gutter-width);
+    }
+  }
+
+  .overview-form-contents__footer {
+    padding: 15px;
+    text-align: center;
+  }
+}
