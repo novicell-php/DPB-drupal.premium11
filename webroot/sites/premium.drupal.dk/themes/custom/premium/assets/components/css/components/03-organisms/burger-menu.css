@@ -97,11 +97,30 @@ body.adminimal-admin-toolbar.toolbar-tray-open .burger-menu__inner {
       transition: opacity .2s;
     }
 
-    .icon--close {
+    &-icon {
+      position: relative;
       width: 19px;
       height: 19px;
-      transition: transform .4s;
-      fill: var(--color-white);
+      transition: all .4s;
+
+      &::before,
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 24px;
+        height: 1px;
+        background-color: var(--color-white);
+        content: "";
+      }
+
+      &::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
     }
 
     &:hover {
@@ -109,7 +128,7 @@ body.adminimal-admin-toolbar.toolbar-tray-open .burger-menu__inner {
         opacity: 1;
       }
 
-      .icon--close {
+      .burger-menu__close-icon {
         transform: rotate(180deg);
       }
     }
