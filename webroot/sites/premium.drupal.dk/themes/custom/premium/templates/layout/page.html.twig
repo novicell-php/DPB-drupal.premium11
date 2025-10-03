@@ -120,13 +120,7 @@
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/{{ directory }}/logo.svg"></use>
         </svg>
       </div>
-      <button class="search-overlay__close js-search-overlay__close" aria-label="Close search overlay">
-        <span class="search-overlay__close-label">{{ 'Close'|t }}</span>
-        {% include '@reusable-component/svg-icon.twig' with {
-          'attributes': '',
-          'svgIconName': 'close'
-        } %}
-      </button>
+      <button class="search-overlay__close js-search-overlay__close" aria-label="Close search overlay"></button>
     </div>
     <div class="search-overlay__content">
       <div class="container">
