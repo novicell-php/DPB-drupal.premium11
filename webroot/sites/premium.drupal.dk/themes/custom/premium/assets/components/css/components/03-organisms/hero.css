@@ -58,16 +58,12 @@
     & h1,
     & h2,
     & h3 {
-      color: inherit;
+      color: var(--theme-color);
     }
 
     @media (--viewport-md-min) {
       padding-top: 120px;
       padding-bottom: 120px;
-    }
-
-    .hero--image-added & {
-      color: var(--color-white);
     }
 
     a.button:focus-visible {
@@ -147,6 +143,16 @@
       margin-top: auto;
       margin-bottom: auto;
     }
+
+    .hero__content {
+      color: var(--color-white);
+
+      & h1,
+      & h2,
+      & h3 {
+        color: var(--color-white);
+      }
+    }
   }
 
   &--no-image {
@@ -161,7 +167,7 @@
     .hero__content {
       padding-top: 0;
       padding-bottom: 0;
-      color: var(--color-text);
+      color: var(--color-black);
 
       & h2,
       & h3 {
