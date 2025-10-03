@@ -19,7 +19,7 @@ h6 {
 h1,
 .h1 {
   font-size: 125px;
-  line-height: 1;
+  line-height: .95;
 
   #block-pageheader & {
     text-align: center;
