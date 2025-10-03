@@ -54,7 +54,7 @@
   .form-item-text {
     position: relative;
     display: block;
-    padding: 15px 20px;
+    padding: 25px 30px 30px;
     background-color: var(--color-white);
     border: none;
     box-shadow: 0 3px 20px rgba(49 51 53 / 3%);
