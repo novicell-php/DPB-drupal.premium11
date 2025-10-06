@@ -93,22 +93,105 @@ third_party_settings:
             'Inline blocks':
               - 'inline_block:hero'
       denylisted_blocks:
+        layout_hero_section:
+          all_regions:
+            'Custom block types':
+              - hero
         layout_threecol_section:
           all_regions:
             'Custom block types':
               - appetizer
+              - articles
+              - article_form
+              - calendar
+              - content_carousel
               - hero
+              - slideshow
             'Inline blocks':
               - 'inline_block:appetizer'
+              - 'inline_block:article_form'
+              - 'inline_block:articles'
+              - 'inline_block:calendar'
+              - 'inline_block:content_carousel'
               - 'inline_block:hero'
+              - 'inline_block:slideshow'
         layout_twocol_section:
           all_regions:
             'Custom block types':
               - appetizer
+              - articles
+              - article_form
+              - calendar
+              - content_carousel
               - hero
             'Inline blocks':
               - 'inline_block:appetizer'
+              - 'inline_block:article_form'
+              - 'inline_block:articles'
+              - 'inline_block:calendar'
+              - 'inline_block:content_carousel'
               - 'inline_block:hero'
+      restricted_categories:
+        layout_onecol:
+          all_regions:
+            - Announcements
+            - 'Content fields'
+            - Devel
+            - Forms
+            - Help
+            - 'Lists (Views)'
+            - Menus
+            - Premium
+            - System
+            - User
+            - Webform
+            - Workspace
+            - core
+        layout_twocol_section:
+          all_regions:
+            - Announcements
+            - 'Content fields'
+            - Devel
+            - Forms
+            - Help
+            - 'Lists (Views)'
+            - Menus
+            - Premium
+            - System
+            - User
+            - Webform
+            - Workspace
+            - core
+        layout_threecol_section:
+          all_regions:
+            - Announcements
+            - 'Content fields'
+            - Devel
+            - Forms
+            - Help
+            - 'Lists (Views)'
+            - Menus
+            - Premium
+            - System
+            - User
+            - Webform
+            - Workspace
+            - core
+        layout_hero_section:
+          all_regions:
+            - Announcements
+            - 'Content fields'
+            - Devel
+            - Forms
+            - Help
+            - 'Lists (Views)'
+            - Menus
+            - Premium
+            - System
+            - User
+            - Webform
+            - Workspace
+            - core
     unique_section_restriction:
       unique_layouts:
         - layout_hero_section
