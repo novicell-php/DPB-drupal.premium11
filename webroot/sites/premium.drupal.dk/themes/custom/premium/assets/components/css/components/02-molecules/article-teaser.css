@@ -5,8 +5,6 @@
 
 .article-teaser {
   position: relative;
-  padding-top: var(--half-gutter-width);
-  padding-bottom: var(--half-gutter-width);
 
   &__link {
     display: block;
