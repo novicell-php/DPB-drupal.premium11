@@ -16,7 +16,13 @@
 
 /* Large screen / wide desktop */
 @custom-media --viewport-lg-min (min-width: 1200px);
-@custom-media --viewport-lg-max (max-width: 1399px);
+@custom-media --viewport-lg-max (max-width: 1439px);
 
 /* X Large screen / X wide desktop */
-@custom-media --viewport-xl-min (min-width: 1400px);
+@custom-media --viewport-xl-min (min-width: 1440px);
+
+/* XX Large screen / XX wide desktop */
+@custom-media --viewport-xxl-min (min-width: 1600px);
+
+/* XX Large screen / XX wide desktop */
+@custom-media --viewport-xxxl-min (min-width: 1920px);
