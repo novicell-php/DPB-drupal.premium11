@@ -35,6 +35,7 @@ third_party_settings:
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_block_categories:
+      - Announcements
       - 'Content fields'
       - 'Custom block types'
       - Devel
@@ -47,6 +48,7 @@ third_party_settings:
       - System
       - User
       - Webform
+      - Workspace
       - core
     entity_view_mode_restriction:
       allowed_layouts:
@@ -54,11 +56,10 @@ third_party_settings:
         - layout_twocol_section
         - layout_threecol_section
         - layout_hero_section
-      denylisted_blocks:
-        'Inline blocks':
-          - 'inline_block:basic'
+      denylisted_blocks: {  }
       allowlisted_blocks: {  }
       restricted_categories:
+        - Announcements
         - 'Content fields'
         - Devel
         - Forms
@@ -69,6 +70,7 @@ third_party_settings:
         - System
         - User
         - Webform
+        - Workspace
         - core
       whitelisted_blocks:
         'Chaos Tools': {  }
@@ -96,19 +98,105 @@ third_party_settings:
       allowlisted_blocks:
         layout_hero_section:
           all_regions:
+            'Custom block types':
+              - hero
             'Inline blocks':
               - 'inline_block:hero'
       denylisted_blocks:
         layout_threecol_section:
           all_regions:
+            'Custom block types':
+              - appetizer
+              - articles
+              - article_form
+              - calendar
+              - content_carousel
+              - hero
+              - slideshow
             'Inline blocks':
               - 'inline_block:appetizer'
+              - 'inline_block:article_form'
+              - 'inline_block:articles'
+              - 'inline_block:calendar'
+              - 'inline_block:content_carousel'
               - 'inline_block:hero'
+              - 'inline_block:slideshow'
         layout_twocol_section:
           all_regions:
+            'Custom block types':
+              - appetizer
+              - articles
+              - article_form
+              - calendar
+              - content_carousel
+              - hero
             'Inline blocks':
               - 'inline_block:appetizer'
+              - 'inline_block:article_form'
+              - 'inline_block:articles'
+              - 'inline_block:calendar'
+              - 'inline_block:content_carousel'
               - 'inline_block:hero'
+      restricted_categories:
+        layout_onecol:
+          all_regions:
+            - Announcements
+            - 'Content fields'
+            - Devel
+            - Forms
+            - Help
+            - 'Lists (Views)'
+            - Menus
+            - Premium
+            - System
+            - User
+            - Webform
+            - Workspace
+            - core
+        layout_twocol_section:
+          all_regions:
+            - Announcements
+            - 'Content fields'
+            - Devel
+            - Forms
+            - Help
+            - 'Lists (Views)'
+            - Menus
+            - Premium
+            - System
+            - User
+            - Webform
+            - Workspace
+            - core
+        layout_threecol_section:
+          all_regions:
+            - Announcements
+            - 'Content fields'
+            - Devel
+            - Forms
+            - Help
+            - 'Lists (Views)'
+            - Menus
+            - Premium
+            - System
+            - User
+            - Webform
+            - Workspace
+            - core
+        layout_hero_section:
+          all_regions:
+            - Announcements
+            - 'Content fields'
+            - Devel
+            - Forms
+            - Help
+            - 'Lists (Views)'
+            - Menus
+            - Premium
+            - System
+            - User
+            - Webform
+            - core
     unique_section_restriction:
       unique_layouts:
         - layout_hero_section
