@@ -114,6 +114,7 @@ announcement:
     dist/components/js/announcement.js: {}
   dependencies:
     - core/drupal
+    - premium/theme-red
 
 article-teaser:
   version: VERSION

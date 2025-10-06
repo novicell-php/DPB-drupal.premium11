@@ -14,7 +14,7 @@ settings:
   label: 'Main navigation'
   provider: transform_api
   level: '1'
-  depth: '0'
-  expand_all_items: 0
+  depth: '3'
+  expand_all_items: 1
   label_display: null
 visibility: {  }
