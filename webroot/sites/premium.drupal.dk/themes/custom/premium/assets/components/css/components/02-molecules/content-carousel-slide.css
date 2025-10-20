@@ -1,0 +1,59 @@
+/**
+ * Type: Organisms.
+ * Content carousel slide.
+ */
+
+.content-carousel {
+  &-slide {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    color: var(--theme-color);
+
+    &__image {
+      position: relative;
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      &--placeholder {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 0 32px;
+      text-align: center;
+
+      .h2 {
+        margin-bottom: 16px;
+      }
+    }
+
+    &__text {
+      padding-top: 32px;
+      font-size: 17px;
+
+      & p {
+        margin-bottom: 8px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__button {
+      margin-top: 24px;
+    }
+  }
+}

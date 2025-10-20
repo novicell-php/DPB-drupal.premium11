@@ -138,6 +138,12 @@ burger:
   dependencies:
     - core/drupal
 
+content-carousel-slide:
+  version: VERSION
+  css:
+    theme:
+      dist/components/css/components/02-molecules/content-carousel-slide.css: {}
+
 divider:
   version: VERSION
   css:
@@ -265,6 +271,15 @@ burger-menu:
     dist/components/js/burger-menu.js: {preprocess: false}
   dependencies:
     - core/drupal
+
+content-carousel:
+  version: VERSION
+  css:
+    theme:
+      dist/components/js/content-carousel.css: {}
+      dist/components/css/components/03-organisms/content-carousel.css: {}
+  js:
+    dist/components/js/content-carousel.js: {}
 
 header:
   version: VERSION
