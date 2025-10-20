@@ -93,3 +93,7 @@
     }
   }
 }
+
+span.sub-navigation__link {
+  cursor: default;
+}

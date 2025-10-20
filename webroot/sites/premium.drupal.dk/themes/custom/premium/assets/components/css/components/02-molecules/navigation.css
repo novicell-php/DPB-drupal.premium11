@@ -35,7 +35,6 @@
   height: 100%;
   margin: 0;
   color: var(--color-gray-dark-1);
-  cursor: pointer;
 
   .icon--chevron-down {
     display: none;
