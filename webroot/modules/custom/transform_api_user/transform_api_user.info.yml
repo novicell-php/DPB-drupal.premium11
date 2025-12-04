@@ -1,0 +1,11 @@
+name: Transform API User
+description: Enables login and other user with the use of JWT tokens.
+type: module
+package: Web services
+core_version_requirement: ^10.3 || ^11
+
+dependencies:
+  - core:user
+  - transform_api:transform_api
+  - jwt:jwt
+  - jwt:jwt_auth_issuer

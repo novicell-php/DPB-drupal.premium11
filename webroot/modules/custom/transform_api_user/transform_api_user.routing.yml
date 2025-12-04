@@ -1,0 +1,58 @@
+transform_api_user.user:
+  path: '/transform/user/register'
+  defaults:
+    _title: 'Transforms entity into JSON response.'
+    _controller: '\Drupal\transform_api_user\Controller\UserController::register'
+  methods: [POST]
+  options:
+    _auth: ['basic_auth', 'cookie', 'oauth2']
+  requirements:
+    _user_is_logged_in: 'FALSE'
+    _access: 'TRUE'
+    _format: json
+
+transform_api_user.generate_token:
+  path: '/transform/user/token'
+  defaults:
+    _title: 'JWT Auth Issuer'
+    _controller: '\Drupal\transform_api_user\Controller\UserController::tokenResponse'
+  methods: [ GET ]
+  options:
+    _auth: [ 'jwt_auth', 'basic_auth', 'cookie' ]
+  requirements:
+    _user_is_logged_in: 'TRUE'
+
+transform_api_user.reset:
+  path: '/transform/user/reset/{uid}/{timestamp}/{hash}'
+  defaults:
+    _controller: '\Drupal\transform_api_user\Controller\UserController::resetPass'
+    _title: 'Reset password'
+  methods: [ PUT ]
+  requirements:
+    _access: 'TRUE'
+  options:
+    no_cache: TRUE
+
+transform_api_user.user.edit:
+  path: '/transform/user/{user}/edit'
+  defaults:
+    _title: 'Edit user'
+    _controller: '\Drupal\transform_api_user\Controller\UserController::editUser'
+  methods: [ PUT ]
+  options:
+    _auth: [ 'jwt_auth', 'basic_auth', 'cookie']
+  requirements:
+    _entity_access: 'user.update'
+    _format: json
+
+transform_api_user.user.changepw:
+  path: '/transform/user/{user}/changepw'
+  defaults:
+    _title: 'Change password'
+    _controller: '\Drupal\transform_api_user\Controller\UserController::changePassword'
+  methods: [ PUT ]
+  options:
+    _auth: [ 'jwt_auth', 'basic_auth', 'cookie']
+  requirements:
+    _entity_access: 'user.update'
+    _format: json
