@@ -84,3 +84,7 @@ logs/*
 !*/.keep
 composer-src/
 jwt_keys/
+
+# Ignore PHPStorm http client files
+*.http
+/http-client.private.env.json

@@ -120,6 +120,7 @@ module:
   transform_api_preview: 0
   transform_api_redirect: 0
   transform_api_responsive_image: 0
+  transform_api_user: 0
   user: 0
   view_unpublished: 0
   views_ui: 0
