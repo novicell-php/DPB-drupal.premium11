@@ -25,6 +25,7 @@ mounts:
   "/private": "shared:files/private"
   "/.drush": "shared:files/.drush"
   "/drush-backups": "shared:files/drush-backups"
+  "/jwt_keys": "shared:files/jwt_keys"
   "/logs":
     source: local
     source_path: logs

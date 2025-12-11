@@ -83,4 +83,4 @@ logs/*
 .composer
 !*/.keep
 composer-src/
-jwt_keys/*.key
+jwt_keys/
