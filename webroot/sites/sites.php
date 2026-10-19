@@ -56,6 +56,7 @@
  * @see https://www.drupal.org/documentation/install/multi-site
  */
 $sites['premium.localhost'] = 'premium.drupal.dk';
+$sites['dpb-drupal-premium11.ddev.site'] = 'premium.drupal.dk';
 $sites['staging.premium.drupal.dk'] = 'premium.drupal.dk';
 $sites['prod.premium.drupal.dk'] = 'premium.drupal.dk';
 
