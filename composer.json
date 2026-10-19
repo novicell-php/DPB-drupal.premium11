@@ -20,6 +20,7 @@
     "require": {
         "php": ">=8.3",
         "ext-json": "*",
+        "ext-openssl": "*",
         "ext-pdo": "*",
         "bower-asset/jquery-simple-color": "^1.2",
         "bower-asset/spectrum": "^1.8",
@@ -34,7 +35,7 @@
         "drupal/config_split": "^2.0",
         "drupal/core-composer-scaffold": "^11",
         "drupal/core-project-message": "^11",
-        "drupal/core-recommended": "^11",
+        "drupal/core-recommended": "^11.3",
         "drupal/core-vendor-hardening": "^11.0",
         "drupal/editor_advanced_link": "^2.2",
         "drupal/entity_clone": "^2.0@beta",
@@ -90,8 +91,7 @@
         "novicell/styles": "^1.0",
         "oomphinc/composer-installers-extender": "^2.0",
         "vlucas/phpdotenv": "^5.3",
-        "wikimedia/composer-merge-plugin": "^2.0",
-        "ext-openssl": "*"
+        "wikimedia/composer-merge-plugin": "^2.0"
     },
     "require-dev": {
         "drupal/devel": "^5.0",
@@ -116,7 +116,8 @@
             "drupal/core-vendor-hardening": true,
             "composer/installers": true,
             "wikimedia/composer-merge-plugin": true,
-            "oomphinc/composer-installers-extender": true
+            "oomphinc/composer-installers-extender": true,
+            "symfony/runtime": true
         }
     },
     "extra": {

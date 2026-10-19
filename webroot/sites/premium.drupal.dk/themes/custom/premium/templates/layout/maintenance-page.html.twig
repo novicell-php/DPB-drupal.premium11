@@ -9,14 +9,13 @@
  * @see template_preprocess_maintenance_page()
  */
 #}
-{{ attach_library('premium/maintenance-page') }}
-
 {% extends "page.html.twig" %}
 
 {% block page_top %}
 {% endblock %}
 
 {% block page_main %}
+  {{ attach_library('premium/maintenance-page') }}
   <main role="main" vocab="http://schema.org" typeof="WebPageElement" property="mainContentOfPage">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
     <div class="layout-content">
