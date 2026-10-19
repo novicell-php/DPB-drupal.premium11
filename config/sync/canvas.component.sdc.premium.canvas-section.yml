@@ -1,0 +1,33 @@
+uuid: f1c98de2-692c-480a-b0a2-96cb251ad304
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - premium
+active_version: dfdd7ea098d19176
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        background:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: Content
+          description: 'Drop headings, text, and other components here.'
+label: 'Canvas section'
+id: sdc.premium.canvas-section
+provider: premium
+source: sdc
+source_local_id: 'premium:canvas-section'

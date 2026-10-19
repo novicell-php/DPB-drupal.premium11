@@ -1,0 +1,18 @@
+name: Canvas heading
+description: A page or section heading.
+status: stable
+group: Canvas demo
+props:
+  type: object
+  required: [text, level]
+  properties:
+    text:
+      title: Heading
+      type: string
+      examples: ['Build your next experience']
+    level:
+      title: Heading level
+      type: string
+      enum: [h1, h2, h3]
+      default: h2
+      examples: [h2]

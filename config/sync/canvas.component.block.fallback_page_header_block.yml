@@ -1,0 +1,22 @@
+uuid: 9f37bb42-945e-4a2b-914f-7387f2daf3cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - premium_core
+active_version: 5c1f8305754f7de9
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: fallback_page_header_block
+        label: 'Fallback page header block'
+        label_display: '0'
+        provider: premium_core
+    fallback_metadata:
+      slot_definitions: null
+label: 'Fallback page header block'
+id: block.fallback_page_header_block
+provider: premium_core
+source: block
+source_local_id: fallback_page_header_block

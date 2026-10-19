@@ -1,0 +1,22 @@
+uuid: 919417ee-a9b5-454f-af39-835efd8329df
+langcode: en
+status: true
+dependencies:
+  module:
+    - premium_core
+active_version: 3d9cd93c136fff15
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: fallback_breadcrumb_block
+        label: 'Fallback breadcrumb block'
+        label_display: '0'
+        provider: premium_core
+    fallback_metadata:
+      slot_definitions: null
+label: 'Fallback breadcrumb block'
+id: block.fallback_breadcrumb_block
+provider: premium_core
+source: block
+source_local_id: fallback_breadcrumb_block

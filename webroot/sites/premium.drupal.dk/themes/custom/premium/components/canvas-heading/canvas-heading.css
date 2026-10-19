@@ -1,0 +1,4 @@
+.canvas-heading { color: inherit; line-height: 1.15; margin: 0 0 1.5rem; }
+h1.canvas-heading { font-size: clamp(2.5rem, 5vw, 4.5rem); }
+h2.canvas-heading { font-size: clamp(2rem, 4vw, 3rem); }
+h3.canvas-heading { font-size: clamp(1.5rem, 3vw, 2rem); }

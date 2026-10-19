@@ -1,0 +1,14 @@
+name: Canvas text
+description: Rich text for page content.
+status: stable
+group: Canvas demo
+props:
+  type: object
+  required: [text]
+  properties:
+    text:
+      title: Text
+      type: string
+      contentMediaType: text/html
+      x-formatting-context: block
+      examples: ['<p>Add your content here.</p>']

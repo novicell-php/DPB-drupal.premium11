@@ -1,0 +1,23 @@
+uuid: 3c6eb998-17e7-4903-9d1c-3918a6c1d46c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_presentation
+    - node.type.page
+  module:
+    - options
+id: node.page.field_page_presentation
+field_name: field_page_presentation
+entity_type: node
+bundle: page
+label: 'Published presentation'
+description: 'Choose which version appears at this page’s URL. Publish the Canvas alternative before selecting Canvas. Changes follow the page’s editorial workflow.'
+required: true
+translatable: true
+default_value:
+  -
+    value: layout_builder
+default_value_callback: ''
+settings: {  }
+field_type: list_string

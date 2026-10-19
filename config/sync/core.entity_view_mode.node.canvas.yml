@@ -1,0 +1,11 @@
+uuid: 5951e522-65a7-40f8-bf07-bbf10358f9c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.canvas
+label: 'Canvas alternative'
+description: null
+targetEntityType: node
+cache: true

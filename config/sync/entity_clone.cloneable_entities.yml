@@ -62,3 +62,16 @@ cloneable_entities:
   - workspace
   - announcement
   - date_recur_interpreter
+  - js_component
+  - asset_library
+  - component
+  - color
+  - page_region
+  - content_template
+  - pattern
+  - page_variant
+  - staged_config_update
+  - staged_language_config_override
+  - brand_kit
+  - canvas_page
+  - folder

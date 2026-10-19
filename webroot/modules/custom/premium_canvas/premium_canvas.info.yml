@@ -1,0 +1,10 @@
+name: Premium Canvas
+type: module
+description: Adds a reversible Canvas alternative to existing Layout Builder pages.
+package: Drupal Premium
+core_version_requirement: ^11.3
+dependencies:
+  - canvas:canvas
+  - drupal:node
+  - drupal:options
+  - drupal:layout_builder

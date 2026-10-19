@@ -1,0 +1,22 @@
+uuid: 0cf99b1a-d7cb-460e-91cc-b54176f64ec3
+langcode: en
+status: true
+dependencies:
+  module:
+    - announcement
+active_version: b3e0fae0725ddc3d
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: announcement_block
+        label: Announcements
+        label_display: '0'
+        provider: announcement
+    fallback_metadata:
+      slot_definitions: null
+label: Announcements
+id: block.announcement_block
+provider: announcement
+source: block
+source_local_id: announcement_block

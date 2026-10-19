@@ -1,0 +1,44 @@
+uuid: 3d42e2f0-e4ec-48ca-96c2-46bc6e968369
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - premium
+active_version: 91ed5a451e2aa363
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        text:
+          required: true
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Build your next experience'
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        level:
+          required: true
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: h2
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Canvas heading'
+id: sdc.premium.canvas-heading
+provider: premium
+source: sdc
+source_local_id: 'premium:canvas-heading'

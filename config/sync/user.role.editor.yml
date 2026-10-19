@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_display.node.page.full
     - filter.format.basic_html
+    - filter.format.canvas_html_block
+    - filter.format.canvas_html_inline
     - filter.format.full_html
     - media.type.audio
     - media.type.document
@@ -15,6 +17,7 @@ dependencies:
     - workflows.workflow.editorial
   module:
     - atoms
+    - canvas
     - content_moderation
     - content_translation
     - contextual
@@ -67,6 +70,7 @@ permissions:
   - 'configure editable page node layout overrides'
   - 'create and edit custom blocks'
   - 'create audio media'
+  - 'create canvas_page'
   - 'create content translations'
   - 'create document media'
   - 'create image media'
@@ -86,6 +90,7 @@ permissions:
   - 'delete any video media'
   - 'delete any webform'
   - 'delete any webform submission'
+  - 'delete canvas_page'
   - 'delete content translations'
   - 'delete media'
   - 'delete own audio media'
@@ -106,6 +111,7 @@ permissions:
   - 'edit any webform'
   - 'edit any webform submission'
   - 'edit atom'
+  - 'edit canvas_page'
   - 'edit own audio media'
   - 'edit own document media'
   - 'edit own image media'
@@ -115,6 +121,7 @@ permissions:
   - 'edit own webform'
   - 'edit own webform submission'
   - 'edit webform assets'
+  - 'publish auto-saves'
   - 'rebuild node access permissions'
   - 'revert all revisions'
   - 'revert page revisions'
@@ -132,6 +139,8 @@ permissions:
   - 'use editorial transition publish'
   - 'use media icons'
   - 'use text format basic_html'
+  - 'use text format canvas_html_block'
+  - 'use text format canvas_html_inline'
   - 'use text format full_html'
   - 'view all media revisions'
   - 'view all revisions'

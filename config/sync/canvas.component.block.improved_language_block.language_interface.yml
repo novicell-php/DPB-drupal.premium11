@@ -1,0 +1,22 @@
+uuid: 740d30b4-a475-4109-a6d8-b1dce59eaba4
+langcode: en
+status: true
+dependencies:
+  module:
+    - premium_tools
+active_version: 8fb79743b96d7256
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'improved_language_block:language_interface'
+        label: 'Language switcher'
+        label_display: '0'
+        provider: premium_tools
+    fallback_metadata:
+      slot_definitions: null
+label: 'Language switcher'
+id: block.improved_language_block.language_interface
+provider: premium_tools
+source: block
+source_local_id: 'improved_language_block:language_interface'

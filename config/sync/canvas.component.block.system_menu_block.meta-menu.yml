@@ -1,0 +1,27 @@
+uuid: 38eac39d-0a70-4813-94dc-4df77c6bc04b
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.meta-menu
+  module:
+    - system
+active_version: 5899d0357d2740f3
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'system_menu_block:meta-menu'
+        label: 'Meta menu'
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: null
+        expand_all_items: false
+    fallback_metadata:
+      slot_definitions: null
+label: 'Meta menu'
+id: block.system_menu_block.meta-menu
+provider: system
+source: block
+source_local_id: 'system_menu_block:meta-menu'

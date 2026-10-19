@@ -1,0 +1,22 @@
+uuid: 71738ae8-be9c-4e13-87e5-8a5e6433a7e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - premium_core
+active_version: 78df70f9e5687eb4
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: premium_breadcrumb_block
+        label: 'Breadcrumb block'
+        label_display: '0'
+        provider: premium_core
+    fallback_metadata:
+      slot_definitions: null
+label: 'Breadcrumb block'
+id: block.premium_breadcrumb_block
+provider: premium_core
+source: block
+source_local_id: premium_breadcrumb_block

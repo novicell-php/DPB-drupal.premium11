@@ -1,0 +1,111 @@
+<?php
+
+use Drupal\Core\Cache\CacheableMetadata;
+use Drupal\Core\Cache\RefinableCacheableDependencyInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Url;
+use Drupal\node\NodeInterface;
+use Drupal\premium_canvas\PagePresentation;
+
+/**
+ * Implements hook_entity_bundle_field_info_alter().
+ */
+function premium_canvas_entity_bundle_field_info_alter(array &$fields, $entity_type, $bundle): void {
+  if ($entity_type->id() === 'node' && $bundle === 'page' && isset($fields['field_page_presentation'])) {
+    $fields['field_page_presentation']->addConstraint('PremiumCanvasPresentation');
+  }
+}
+
+/**
+ * Implements hook_node_view_mode_alter().
+ */
+function premium_canvas_node_view_mode_alter(&$view_mode, NodeInterface $node): void {
+  if ($node->bundle() !== 'page' || $view_mode !== 'full') {
+    return;
+  }
+  if (\Drupal::routeMatch()->getRouteName() !== 'premium_canvas.preview_layout' && PagePresentation::usesCanvas($node)) {
+    $view_mode = 'canvas';
+  }
+}
+
+/**
+ * Implements hook_node_build_defaults_alter().
+ */
+function premium_canvas_node_build_defaults_alter(array &$build, NodeInterface $node, $view_mode): void {
+  if ($node->bundle() === 'page' && $node->hasField('field_canvas_page') && ($id = $node->get('field_canvas_page')->target_id)) {
+    // Invalidate the fallback when the alternative is edited or republished.
+    CacheableMetadata::createFromRenderArray($build)->addCacheTags(['canvas_page:' . $id])->applyTo($build);
+  }
+}
+
+/**
+ * Implements hook_node_view_alter().
+ */
+function premium_canvas_node_view_alter(array &$build, NodeInterface $node, EntityViewDisplayInterface $display): void {
+  if ($node->bundle() !== 'page' || ($build['#view_mode'] ?? NULL) !== 'canvas') {
+    return;
+  }
+  foreach (Element::children($build) as $key) {
+    unset($build[$key]);
+  }
+  if ($page = PagePresentation::alternative($node)) {
+    $access = $page->access('view', NULL, TRUE);
+    CacheableMetadata::createFromRenderArray($build)->addCacheableDependency($page)->addCacheableDependency($access)->applyTo($build);
+    $build['canvas_alternative'] = ['#access' => $access] + $page->getComponentTree()->toRenderable($page);
+  }
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function premium_canvas_form_node_form_alter(array &$form, FormStateInterface $form_state): void {
+  $node = $form_state->getFormObject()->getEntity();
+  if (!$node instanceof NodeInterface || $node->bundle() !== 'page') {
+    return;
+  }
+  if ($node->get('field_page_presentation')->isEmpty() && isset($form['field_page_presentation']['widget'])) {
+    $form['field_page_presentation']['widget']['#default_value'] = 'layout_builder';
+  }
+  $form['canvas_presentation'] = [
+    '#type' => 'details', '#title' => t('Page presentation'), '#open' => TRUE, '#weight' => 15,
+  ];
+  foreach (['field_page_presentation', 'field_canvas_page'] as $field) {
+    if (isset($form[$field])) {
+      $form[$field]['#group'] = 'canvas_presentation';
+    }
+  }
+  if (!$node->isNew()) {
+    $url = Url::fromRoute('premium_canvas.manage', ['node' => $node->id()]);
+    $form['canvas_presentation']['manage'] = [
+      '#type' => 'link', '#title' => t('Create, edit, or preview the Canvas alternative'),
+      '#url' => $url, '#access' => $url->access(),
+    ];
+  }
+}
+
+/**
+ * Implements hook_menu_local_tasks_alter().
+ */
+function premium_canvas_menu_local_tasks_alter(array &$data, $route_name, RefinableCacheableDependencyInterface &$cacheability): void {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if (!$node instanceof NodeInterface) {
+    return;
+  }
+
+  $cacheability->addCacheableDependency($node);
+  if ($node->bundle() !== 'page') {
+    return;
+  }
+
+  $url = Url::fromRoute('premium_canvas.manage', ['node' => $node->id()]);
+  $access = $url->access(\Drupal::currentUser(), TRUE);
+  $cacheability->addCacheableDependency($access);
+  $data['tabs'][0]['premium_canvas.manage'] = [
+    '#theme' => 'menu_local_task',
+    '#link' => ['title' => t('Canvas alternative'), 'url' => $url],
+    '#weight' => 5,
+    '#access' => $access->isAllowed(),
+  ];
+}

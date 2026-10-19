@@ -1,0 +1,19 @@
+uuid: 3c31aae0-8fba-4c1a-9842-823d2e7c8515
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.fallback_breadcrumb_block
+    - canvas.component.block.fallback_page_header_block
+    - canvas.component.block.improved_language_block.language_interface
+    - canvas.component.block.premium_breadcrumb_block
+    - canvas.component.block.premium_hero_block
+name: Premium
+configEntityTypeId: component
+weight: 0
+items:
+  - block.fallback_breadcrumb_block
+  - block.fallback_page_header_block
+  - block.improved_language_block.language_interface
+  - block.premium_breadcrumb_block
+  - block.premium_hero_block

@@ -1,0 +1,15 @@
+uuid: 453942b3-bd94-4fc8-a665-63e826d30236
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.premium.canvas-heading
+    - canvas.component.sdc.premium.canvas-section
+    - canvas.component.sdc.premium.canvas-text
+name: 'Canvas demo'
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.premium.canvas-heading
+  - sdc.premium.canvas-section
+  - sdc.premium.canvas-text

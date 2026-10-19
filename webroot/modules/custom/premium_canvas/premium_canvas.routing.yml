@@ -1,0 +1,39 @@
+premium_canvas.manage:
+  path: '/node/{node}/canvas-alternative'
+  defaults:
+    _form: '\Drupal\premium_canvas\Form\CanvasAlternativeForm'
+    _title: 'Canvas alternative'
+  requirements:
+    _entity_access: 'node.update'
+    _custom_access: '\Drupal\premium_canvas\PagePresentation::manageAccess'
+  options:
+    _admin_route: true
+    parameters:
+      node:
+        type: entity:node
+
+premium_canvas.preview_layout:
+  path: '/node/{node}/preview-layout-builder'
+  defaults:
+    _controller: '\Drupal\premium_canvas\Controller\PresentationPreviewController::layout'
+    _title: 'Layout Builder preview'
+  requirements:
+    _entity_access: 'node.update'
+    _custom_access: '\Drupal\premium_canvas\PagePresentation::manageAccess'
+  options:
+    parameters:
+      node:
+        type: entity:node
+
+premium_canvas.preview_canvas:
+  path: '/node/{node}/preview-canvas'
+  defaults:
+    _controller: '\Drupal\premium_canvas\Controller\PresentationPreviewController::canvas'
+    _title: 'Canvas preview'
+  requirements:
+    _entity_access: 'node.update'
+    _custom_access: '\Drupal\premium_canvas\PagePresentation::manageAccess'
+  options:
+    parameters:
+      node:
+        type: entity:node

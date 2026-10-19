@@ -1,0 +1,5 @@
+.canvas-section { padding: clamp(2rem, 5vw, 5rem) 1.5rem; }
+.canvas-section__inner { max-width: 72rem; margin-inline: auto; }
+.canvas-section--white { background: #fff; color: #17253b; }
+.canvas-section--light { background: #f1f5f9; color: #17253b; }
+.canvas-section--dark { background: #17253b; color: #fff; }

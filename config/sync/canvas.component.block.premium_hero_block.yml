@@ -1,0 +1,22 @@
+uuid: a2c0c1b0-22d7-47ac-b4d8-de624051bfc8
+langcode: en
+status: true
+dependencies:
+  module:
+    - premium_core
+active_version: 80e215d051bac1e3
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: premium_hero_block
+        label: 'Hero block'
+        label_display: '0'
+        provider: premium_core
+    fallback_metadata:
+      slot_definitions: null
+label: 'Hero block'
+id: block.premium_hero_block
+provider: premium_core
+source: block
+source_local_id: premium_hero_block

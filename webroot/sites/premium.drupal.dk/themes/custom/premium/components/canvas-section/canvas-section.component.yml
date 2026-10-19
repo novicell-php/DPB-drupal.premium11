@@ -1,0 +1,16 @@
+name: Canvas section
+description: A centered section for composing page content.
+status: stable
+group: Canvas demo
+props:
+  type: object
+  properties:
+    background:
+      title: Background
+      type: string
+      enum: [white, light, dark]
+      default: white
+slots:
+  content:
+    title: Content
+    description: Drop headings, text, and other components here.

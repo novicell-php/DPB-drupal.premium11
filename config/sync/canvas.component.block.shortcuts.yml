@@ -1,0 +1,22 @@
+uuid: 20fc451c-b2d1-4324-9646-45ecc5c1b654
+langcode: en
+status: false
+dependencies:
+  module:
+    - shortcut
+active_version: 3b7ac0f230e0e909
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: shortcuts
+        label: Shortcuts
+        label_display: '0'
+        provider: shortcut
+    fallback_metadata:
+      slot_definitions: null
+label: Shortcuts
+id: block.shortcuts
+provider: shortcut
+source: block
+source_local_id: shortcuts
