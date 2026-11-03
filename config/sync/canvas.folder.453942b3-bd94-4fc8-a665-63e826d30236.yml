@@ -3,13 +3,25 @@ langcode: en
 status: true
 dependencies:
   config:
+    - canvas.component.sdc.premium.canvas-button
+    - canvas.component.sdc.premium.canvas-card
+    - canvas.component.sdc.premium.canvas-columns
     - canvas.component.sdc.premium.canvas-heading
+    - canvas.component.sdc.premium.canvas-hero
+    - canvas.component.sdc.premium.canvas-image
+    - canvas.component.sdc.premium.canvas-image-text
     - canvas.component.sdc.premium.canvas-section
     - canvas.component.sdc.premium.canvas-text
 name: 'Canvas demo'
 configEntityTypeId: component
 weight: 0
 items:
+  - sdc.premium.canvas-button
+  - sdc.premium.canvas-card
+  - sdc.premium.canvas-columns
   - sdc.premium.canvas-heading
+  - sdc.premium.canvas-hero
+  - sdc.premium.canvas-image
+  - sdc.premium.canvas-image-text
   - sdc.premium.canvas-section
   - sdc.premium.canvas-text
