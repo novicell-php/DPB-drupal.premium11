@@ -18,6 +18,7 @@ dependencies:
   module:
     - atoms
     - canvas
+    - canvas_ai
     - content_moderation
     - content_translation
     - contextual
@@ -132,6 +133,7 @@ permissions:
   - 'update any media'
   - 'update content translations'
   - 'update media'
+  - 'use Drupal Canvas AI'
   - 'use editorial transition archive'
   - 'use editorial transition archived_draft'
   - 'use editorial transition archived_published'

@@ -30,7 +30,28 @@ Canvas rendering integration before using the switch.
   The **Editor** role can create, edit, delete, and publish Canvas Pages.
 - The theme supplies **Canvas section**, **Canvas heading**, and **Canvas text**
   components in the Canvas demo group. A section accepts nested content.
-- Canvas AI is not enabled; it is a separate follow-up task.
+- Canvas AI uses the OpenAI provider with `gpt-5.4` for chat, tool calling,
+  vision, JSON output, and structured responses. The Editor role can use the
+  assistant; AI administration remains restricted to administrators.
+
+## OpenAI credentials
+
+Set `OPENAI_API_KEY` in your local `.env` file. The variable is listed, empty,
+in `.env.dist`. DDEV already passes `.env` into the web container; after adding
+or changing the key, run `ddev restart` and `ddev drush cr`.
+
+The Drupal Key entity `openai_api` reads this environment variable at runtime.
+Its exported configuration contains the variable name and no credential.
+For other hosting environments, provide the same variable to PHP.
+
+Provider settings are at `/admin/config/ai/providers/openai`; operation defaults
+are at `/admin/config/ai/settings`. Open a linked Canvas alternative and use its
+AI assistant to compose content. Creating the initial alternative still seeds
+only the page title and body or description; it does not automatically convert
+Layout Builder blocks or styling.
+
+Prompt logging is disabled. A live connection and generated output still need
+to be verified after supplying a key with access to the configured model.
 
 The local site was in maintenance mode before Canvas was installed. Log in to
 review it; the setup does not change maintenance mode.

@@ -75,3 +75,11 @@ cloneable_entities:
   - brand_kit
   - canvas_page
   - folder
+  - ai_prompt_type
+  - ai_guardrail_set
+  - ai_file
+  - ai_prompt
+  - ai_guardrail
+  - modeler_api_data_model
+  - ai_agent_override
+  - ai_agent
