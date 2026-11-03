@@ -1,0 +1,4 @@
+<figure class="canvas-image canvas-image--{{ ratio|default('natural') }}">
+  {% if image.src %}{% include 'canvas:image' with image|merge({class: 'canvas-image__media', sizes: 'auto 100vw'}) only %}{% endif %}
+  {% if caption %}<figcaption class="canvas-image__caption">{{ caption }}</figcaption>{% endif %}
+</figure>

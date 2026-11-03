@@ -1,0 +1,4 @@
+{% set destination = url|default('')|trim %}
+{% if destination matches '~^(https?://|mailto:|tel:|/|#)~i' %}
+  <a class="canvas-button canvas-button--{{ variant|default('primary') }}" href="{{ destination }}">{{ label }}</a>
+{% endif %}

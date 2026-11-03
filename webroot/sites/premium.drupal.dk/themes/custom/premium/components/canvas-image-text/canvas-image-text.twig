@@ -1,0 +1,4 @@
+<div class="canvas-image-text canvas-image-text--{{ image_position|default('left') }}">
+  <div class="canvas-image-text__media">{% if image.src %}{% include 'canvas:image' with image|merge({class: 'canvas-image-text__image', sizes: 'auto (min-width: 48rem) 50vw, 100vw'}) only %}{% endif %}</div>
+  <div class="canvas-image-text__content">{% block content %}{% endblock %}</div>
+</div>

@@ -1,0 +1,30 @@
+name: Canvas card
+description: A content card with optional image, heading, summary, and a slot for a button or additional content.
+status: stable
+group: Canvas demo
+props:
+  type: object
+  required: [heading]
+  properties:
+    image:
+      title: Image
+      description: Choose an image and provide alternative text; leave alt empty only for decorative images.
+      type: object
+      $ref: json-schema-definitions://canvas.module/image
+      examples:
+        - src: /core/misc/druplicon.png
+          alt: Drupal logo placeholder
+          width: 88
+          height: 100
+    heading:
+      title: Heading
+      type: string
+      examples: ['Explore our services']
+    summary:
+      title: Summary
+      type: string
+      examples: ['Discover how we can help you achieve your goals.']
+slots:
+  content:
+    title: Additional content
+    description: Add a button, rich text, or other content below the summary.

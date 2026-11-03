@@ -1,0 +1,5 @@
+.canvas-card { height: 100%; background: #fff; color: #17253b; border: 1px solid #cbd5e1; border-radius: .5rem; overflow-wrap: anywhere; }
+.canvas-card__image { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: .5rem .5rem 0 0; }
+.canvas-card__body { padding: 1.5rem; }
+.canvas-card__heading { color: inherit; font-size: 1.5rem; line-height: 1.25; margin: 0 0 1rem; }
+.canvas-card__summary { line-height: 1.6; margin: 0 0 1.25rem; }

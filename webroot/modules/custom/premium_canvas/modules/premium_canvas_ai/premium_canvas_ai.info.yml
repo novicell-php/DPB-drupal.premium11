@@ -1,0 +1,9 @@
+name: Premium Canvas AI
+type: module
+description: Integrates existing media with Canvas AI placement and editing.
+package: Drupal Premium
+core_version_requirement: ^11.3
+dependencies:
+  - premium_canvas:premium_canvas
+  - canvas:canvas_dev_ai
+  - drupal:media

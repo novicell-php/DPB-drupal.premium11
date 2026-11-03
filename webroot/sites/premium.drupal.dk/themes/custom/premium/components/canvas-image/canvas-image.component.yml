@@ -1,0 +1,26 @@
+name: Canvas image
+description: An image from the media library with optional caption and natural or cropped proportions.
+status: stable
+group: Canvas demo
+props:
+  type: object
+  required: [image]
+  properties:
+    image:
+      title: Image
+      description: Choose an image and provide alternative text; leave alt empty only for decorative images.
+      type: object
+      $ref: json-schema-definitions://canvas.module/image
+      examples:
+        - src: /core/misc/druplicon.png
+          alt: Drupal logo placeholder
+          width: 88
+          height: 100
+    caption:
+      title: Caption
+      type: string
+    ratio:
+      title: Aspect ratio
+      type: string
+      enum: [natural, landscape, square]
+      examples: [natural]

@@ -1,0 +1,10 @@
+<section class="canvas-hero canvas-hero--{{ background|default('dark') }}">
+  <div class="canvas-hero__inner{{ image.src ? ' canvas-hero__inner--with-image' : '' }}">
+    <div>
+      <h1 class="canvas-hero__heading">{{ heading }}</h1>
+      {% if summary %}<p class="canvas-hero__summary">{{ summary }}</p>{% endif %}
+      <div class="canvas-hero__actions">{% block actions %}{% endblock %}</div>
+    </div>
+    {% if image.src %}{% include 'canvas:image' with image|merge({class: 'canvas-hero__image', loading: 'eager', sizes: '(min-width: 75rem) 36rem, (min-width: 48rem) 50vw, 100vw'}) only %}{% endif %}
+  </div>
+</section>

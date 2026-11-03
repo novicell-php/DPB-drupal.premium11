@@ -1,0 +1,8 @@
+.canvas-image-text { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; }
+.canvas-image-text > * { min-width: 0; }
+.canvas-image-text__image { display: block; width: 100%; height: auto; border-radius: .5rem; }
+@media (min-width: 48rem) {
+  .canvas-image-text { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .canvas-image-text--right .canvas-image-text__media { grid-column: 2; grid-row: 1; }
+  .canvas-image-text--right .canvas-image-text__content { grid-column: 1; grid-row: 1; }
+}

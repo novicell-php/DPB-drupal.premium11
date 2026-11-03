@@ -1,0 +1,5 @@
+.canvas-button { display: inline-flex; align-items: center; justify-content: center; padding: .8rem 1.4rem; border: 2px solid #17253b; border-radius: .3rem; font-weight: 700; line-height: 1.4; text-decoration: none; }
+.canvas-button--primary, .canvas-button--primary:visited { color: #fff; background: #17253b; }
+.canvas-button--secondary, .canvas-button--secondary:visited { color: #17253b; background: #fff; }
+.canvas-button:hover { color: #fff; background: #334b6b; border-color: #334b6b; text-decoration: underline; }
+.canvas-button:focus-visible { outline: 3px solid #3079c2; outline-offset: 4px; }

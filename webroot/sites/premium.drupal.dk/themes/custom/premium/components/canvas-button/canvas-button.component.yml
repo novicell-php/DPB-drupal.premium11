@@ -1,0 +1,23 @@
+name: Canvas button
+description: A navigation link styled as a primary or secondary call-to-action button.
+status: stable
+group: Canvas demo
+props:
+  type: object
+  required: [label, url]
+  properties:
+    label:
+      title: Link text
+      type: string
+      examples: ['Learn more']
+    url:
+      title: Destination
+      description: Use a site path starting with /, an https URL, an anchor starting with #, or a mailto or tel link.
+      type: string
+      format: uri-reference
+      examples: ['/']
+    variant:
+      title: Style
+      type: string
+      enum: [primary, secondary]
+      examples: [primary]

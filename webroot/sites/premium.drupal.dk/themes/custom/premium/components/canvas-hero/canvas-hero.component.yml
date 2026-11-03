@@ -1,0 +1,35 @@
+name: Canvas hero
+description: A page introduction with a heading, summary, optional image, and a slot for calls to action.
+status: stable
+group: Canvas demo
+props:
+  type: object
+  required: [heading]
+  properties:
+    image:
+      title: Image
+      description: Choose an image and provide alternative text; leave alt empty only for decorative images.
+      type: object
+      $ref: json-schema-definitions://canvas.module/image
+      examples:
+        - src: /core/misc/druplicon.png
+          alt: Drupal logo placeholder
+          width: 88
+          height: 100
+    heading:
+      title: Heading
+      type: string
+      examples: ['Build your next experience']
+    summary:
+      title: Summary
+      type: string
+      examples: ['Bring your ideas to life with a website that works for you.']
+    background:
+      title: Background
+      type: string
+      enum: [light, dark]
+      examples: [dark]
+slots:
+  actions:
+    title: Calls to action
+    description: Add Canvas button components; use the secondary style on a dark background.

@@ -1,0 +1,10 @@
+.canvas-hero { padding: clamp(2.5rem, 6vw, 6rem) 1.5rem; }
+.canvas-hero--dark { background: #17253b; color: #fff; }
+.canvas-hero--light { background: #f1f5f9; color: #17253b; }
+.canvas-hero__inner { max-width: 72rem; margin-inline: auto; display: grid; gap: 2.5rem; align-items: center; }
+.canvas-hero__inner > * { min-width: 0; }
+.canvas-hero__heading { color: inherit; font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.1; margin: 0 0 1.5rem; overflow-wrap: anywhere; }
+.canvas-hero__summary { max-width: 48rem; font-size: 1.25rem; line-height: 1.6; margin: 0 0 1.5rem; }
+.canvas-hero__actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+.canvas-hero__image { width: 100%; height: auto; border-radius: .5rem; }
+@media (min-width: 48rem) { .canvas-hero__inner--with-image { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

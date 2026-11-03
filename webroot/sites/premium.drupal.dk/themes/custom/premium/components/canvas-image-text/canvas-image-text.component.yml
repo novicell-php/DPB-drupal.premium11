@@ -1,0 +1,27 @@
+name: Canvas image text
+description: An image alongside flexible content; ideal for service descriptions and feature sections.
+status: stable
+group: Canvas demo
+props:
+  type: object
+  required: [image]
+  properties:
+    image:
+      title: Image
+      description: Choose an image and provide alternative text; leave alt empty only for decorative images.
+      type: object
+      $ref: json-schema-definitions://canvas.module/image
+      examples:
+        - src: /core/misc/druplicon.png
+          alt: Drupal logo placeholder
+          width: 88
+          height: 100
+    image_position:
+      title: Image position on desktop
+      type: string
+      enum: [left, right]
+      examples: [left]
+slots:
+  content:
+    title: Content
+    description: Add headings, rich text, and buttons beside the image.

@@ -1,0 +1,8 @@
+<article class="canvas-card">
+  {% if image.src %}{% include 'canvas:image' with image|merge({class: 'canvas-card__image', sizes: 'auto (min-width: 48rem) 50vw, 100vw'}) only %}{% endif %}
+  <div class="canvas-card__body">
+    <h3 class="canvas-card__heading">{{ heading }}</h3>
+    {% if summary %}<p class="canvas-card__summary">{{ summary }}</p>{% endif %}
+    {% block content %}{% endblock %}
+  </div>
+</article>

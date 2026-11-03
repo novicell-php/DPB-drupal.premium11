@@ -1,0 +1,50 @@
+uuid: 167a4cd1-ebdf-4179-bcfd-9b854630a048
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - premium
+active_version: 6484b4102d8408e0
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        split:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: equal
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        alignment:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: start
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions:
+        first:
+          title: 'First column'
+          description: 'Content shown first on mobile and on the left on desktop.'
+        second:
+          title: 'Second column'
+          description: 'Content shown second on mobile and on the right on desktop.'
+label: 'Canvas columns'
+id: sdc.premium.canvas-columns
+provider: premium
+source: sdc
+source_local_id: 'premium:canvas-columns'

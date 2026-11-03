@@ -1,0 +1,8 @@
+.canvas-columns { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); }
+.canvas-columns__column { min-width: 0; }
+.canvas-columns--center { align-items: center; }
+@media (min-width: 48rem) {
+  .canvas-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .canvas-columns--wide-left { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); }
+  .canvas-columns--wide-right { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }
+}

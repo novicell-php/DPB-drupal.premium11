@@ -1,0 +1,9 @@
+services:
+  premium_canvas_ai.media_reference_normalizer:
+    class: Drupal\premium_canvas_ai\MediaReferenceNormalizer
+    arguments: ['@entity_type.manager', '@Drupal\canvas\AutoSave\AutoSaveManager', '@current_user']
+  premium_canvas_ai.media_context_subscriber:
+    class: Drupal\premium_canvas_ai\EventSubscriber\MediaContextSubscriber
+    arguments: ['@canvas_ai.tempstore', '@premium_canvas_ai.media_reference_normalizer', '@request_stack']
+    tags:
+      - { name: event_subscriber }

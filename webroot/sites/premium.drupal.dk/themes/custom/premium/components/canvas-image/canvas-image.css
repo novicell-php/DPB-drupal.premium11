@@ -1,0 +1,5 @@
+.canvas-image { margin: 0; }
+.canvas-image__media { display: block; width: 100%; height: auto; }
+.canvas-image--landscape .canvas-image__media { aspect-ratio: 16 / 9; object-fit: cover; }
+.canvas-image--square .canvas-image__media { aspect-ratio: 1; object-fit: cover; }
+.canvas-image__caption { margin-top: .75rem; font-size: .9rem; line-height: 1.5; }

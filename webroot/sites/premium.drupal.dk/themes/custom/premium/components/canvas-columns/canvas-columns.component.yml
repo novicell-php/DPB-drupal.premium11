@@ -1,0 +1,24 @@
+name: Canvas columns
+description: Two responsive columns for composing content; stack vertically on small screens.
+status: stable
+group: Canvas demo
+props:
+  type: object
+  properties:
+    split:
+      title: Column widths
+      type: string
+      enum: [equal, wide-left, wide-right]
+      examples: [equal]
+    alignment:
+      title: Vertical alignment
+      type: string
+      enum: [start, center]
+      examples: [start]
+slots:
+  first:
+    title: First column
+    description: Content shown first on mobile and on the left on desktop.
+  second:
+    title: Second column
+    description: Content shown second on mobile and on the right on desktop.

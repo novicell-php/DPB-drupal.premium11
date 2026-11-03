@@ -1,0 +1,4 @@
+main_agent: drupal_canvas_page_agent
+tools:
+  - canvas_component_agent
+keep_tool_calls_in_history: false
