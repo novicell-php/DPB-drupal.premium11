@@ -490,17 +490,6 @@ display:
           tokenize: false
           content: 'There are no custom blocks available.'
           plugin_id: text_custom
-        block_content_listing_empty:
-          admin_label: ''
-          empty: true
-          field: block_content_listing_empty
-          group_type: group
-          id: block_content_listing_empty
-          label: ''
-          relationship: none
-          table: block_content
-          plugin_id: block_content_listing_empty
-          entity_type: block_content
       relationships: {  }
       arguments: {  }
       display_extenders: {  }

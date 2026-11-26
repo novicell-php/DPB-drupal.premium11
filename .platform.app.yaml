@@ -39,6 +39,11 @@ web:
       passthru: /index.php
       allow: false
       rules:
+        # SA-CORE-2026-019: block the installer, including PATH_INFO suffixes.
+        '^/(core/)?install\.php':
+          allow: false
+          scripts: false
+          passthru: false
         '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf|webp)$':
           allow: true
           expires: 1y
@@ -72,6 +77,7 @@ hooks:
     /app/vendor/bin/drush locale-update
     /app/vendor/bin/drush image-flush --all
     /app/vendor/bin/drush sset system.maintenance_mode 0 --input-format=integer
+    /app/vendor/bin/drush -y cache-rebuild
 relationships:
   database: "db:mysql"
   redis: "redis:redis"

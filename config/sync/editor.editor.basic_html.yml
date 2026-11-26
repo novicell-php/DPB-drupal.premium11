@@ -36,8 +36,10 @@ settings:
         - heading2
         - heading3
     ckeditor5_list:
-      reversed: false
-      startIndex: true
+      properties:
+        reversed: false
+        startIndex: true
+        styles: false
     editor_advanced_link_link:
       enabled_attributes:
         - target
