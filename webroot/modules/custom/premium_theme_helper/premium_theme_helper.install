@@ -11,3 +11,39 @@
 function premium_theme_helper_install() {
   \Drupal::service('theme_installer')->install(['premium']);
 }
+
+/**
+ * Normalize legacy CKEditor list settings before core's post-updates run.
+ *
+ * @see https://www.drupal.org/project/drupal/issues/3492837
+ */
+function premium_theme_helper_update_11001(): void {
+  foreach (\Drupal::configFactory()->listAll('editor.editor.') as $name) {
+    $config = \Drupal::configFactory()->getEditable($name);
+    if ($config->get('editor') !== 'ckeditor5') {
+      continue;
+    }
+
+    $list = $config->get('settings.plugins.ckeditor5_list');
+    if (!is_array($list)) {
+      continue;
+    }
+
+    $legacy = array_intersect_key($list, ['reversed' => TRUE, 'startIndex' => TRUE]);
+    if (!$legacy) {
+      continue;
+    }
+
+    $properties = $list['properties'] ?? [];
+    if (!is_array($properties)) {
+      throw new \Drupal\Core\Utility\UpdateException("Invalid CKEditor list properties in $name.");
+    }
+
+    // Preserve nested values when both old and new keys are present.
+    $list['properties'] = $properties + $legacy;
+    unset($list['reversed'], $list['startIndex']);
+
+    // Save raw config to avoid triggering editor presave hooks during updates.
+    $config->set('settings.plugins.ckeditor5_list', $list)->save(TRUE);
+  }
+}
