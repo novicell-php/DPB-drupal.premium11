@@ -115,6 +115,7 @@ permissions:
   - 'edit own webform'
   - 'edit own webform submission'
   - 'edit webform assets'
+  - 'rebuild node access permissions'
   - 'revert all revisions'
   - 'revert page revisions'
   - 'select account cancellation method'
